@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'inclusao';
+    src: url(../fontes/open-dyslexic.ttf) format(truetype);
+}
+body {
+    font-size: 1.8em;
+    font-family: 'inclusao';
+    text-align: center;
+}
+.nome {
+    margin-top: -1.5%;
+    margin-bottom: -1.5%;
+}
+.igual {
+    width: 37%;
+    height: auto;
+}
+.la {
+    width: 28%;
+    height: auto;
+}
+.pé {
+    width: 21%;
+    height: auto;
+}
+.botao {
+    width: 4%;
+    height: auto;
+    margin-top: -5.5%;
+    overflow: hidden;
+    border-radius: 60%;
+    margin-inline-start: 1%;
+    margin-inline-end: 1%;
+}
+.botao:hover {
+    box-shadow: 0px 0px 20px 10px #ff609a;
+}
+.botao:active {
+    box-shadow: 0px 0px 20px 10px #FFC8DD;
+}
+
+/* A responsividade do site */
+
+@media only screen and (max-width: 1000px) {
+    .nome {
+        font-size: 15px; 
+    }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1133px) {
+    .nome {
+        font-size: 20px; 
+    }
+}
+@media only screen and (min-width: 1133px) and (max-width: 1215px) {
+    .nome {
+        font-size: 20px; 
+    }
+}
+@media only screen and (min-width: 1215px) and (max-width: 1300px) {
+    .nome {
+        font-size: 25px; 
+    }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1400px) {
+    .nome {
+        font-size: 28px;
+    }
+}
+@media only screen and (min-width: 1400px) and (max-width: 2000px) {
+    .nome {
+        font-size: 35px;
+    }
+}
