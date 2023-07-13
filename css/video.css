@@ -45,10 +45,14 @@ body {
 
 @media screen and (max-width: 600px) {
     body {
-        font-size: 1.8em;
+        font-size: 1.5em;
+    }
+    .nome {
+        margin-top: -2.5%;
+        margin-bottom: -4.5%;
     }
     .igual {
-        width: 98%;
+        width: 88%;
     }
     .la {
         width: 89%;
