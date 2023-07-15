@@ -12,6 +12,9 @@ body {
     font-family: 'inclusao';
     width: 100%;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 /* O corpo do site */
 
