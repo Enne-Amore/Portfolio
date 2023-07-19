@@ -33,12 +33,15 @@ body {
     border-radius: 60%;
     margin-inline-start: 1%;
     margin-inline-end: 1%;
+    transition-duration: .1s;
 }
 .botao:hover {
     box-shadow: 0px 0px 20px 10px #ff609a;
+    transition-duration: .1s;
 }
 .botao:active {
     box-shadow: 0px 0px 20px 10px #FFC8DD;
+    transition-duration: .1s;
 }
 
 /* A responsividade do site */

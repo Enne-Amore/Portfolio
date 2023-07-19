@@ -11,6 +11,8 @@ body {
     margin: 0;
     font-family: 'inclusao';
     width: 100%;
+    font-size: 2em;
+    text-align: center;
 }
 html {
     scroll-behavior: smooth;
@@ -23,7 +25,6 @@ html {
     text-align: center;
     background-color: #FFC8DD;
     color: #a479c0;
-    font-size: 2em;
     font-weight: bolder;
     letter-spacing: 1px;
     text-transform: none;
@@ -32,58 +33,71 @@ html {
     background-color: rgb(248, 248, 248);
 }
 .nav ul {
-    display: flex;
-    gap: 3em;
-    width: auto;
-    align-items: center;
-    margin: 0 14%;
-    padding: 0.5em;
     list-style: none;
+    display: flex;
+    gap: 4%;
+    padding: 0 10%;
+    margin: auto;
+    width: auto;
 }
-.nav ul li h2 {
-    color: #698bac;
-    font-size: 2em;
-}
-.nav ul li a {
-    background-color: rgb(248, 248, 248);
-    font-size: 1.5em;
-    align-items: center;
+.nav ul a {
+    margin: auto;
+    padding: auto;
+    font-size: 0.7em;
     color: #7cc2ff;
+    text-decoration: none;
+    transition-duration: .6s;
+    width: auto;
 }
-.nav ul li a:hover {
-    color: #698bac;
+.nav ul a:hover {
+    background-color: #698bac;
+    border-radius: 1.2em;
+    color: white;
+    padding: 0 3%;
+    transition-duration: .6s;
 }
-.nav ul li a:active {
-    text-shadow: 1px 1px 2px #698bac;
+.nav ul a:active {
+    background-color: #7cc2ff;
+    color: rgb(248, 248, 248);
+    transition-duration: .2s;
 }
 #áreas {
     height: 2500px;
     max-width: 100%;
     background-color: rgb(248, 248, 248);
     float: left;
-    padding: 15px;
-    padding-left: 1%;
-    padding-right: 1%;
+    padding: 0 1%;
     float: left;
     color: #698bac;
     text-align: justify;
-    font-size: 0.8em;
+    font-size: 0.4em;
     text-transform: none;
     letter-spacing: 1px;
     font-style: italic;
 }
-#áreas a {
+#áreas label h2 {
+    margin-bottom: 15%;
+}
+#áreas a, #áreas a h3 {
+    text-decoration: none;
     color: #7cc2ff;
+    margin-bottom: 15%;
+    transition-duration: .6s;
 }
-#áreas a:hover {
-    color: #698bac;
+#áreas a:hover, #áreas a h3:hover {
+    color: rgb(248, 248, 248);
+    background-color: #698bac;
+    transition-duration: .6s;
+    border-radius: 1em;
+    padding: 3% 0;
 }
-#áreas a:active {
-    text-shadow: 1px 1px 2px #698bac;
+#áreas a:active, #áreas a h3:active {
+    color: rgb(248, 248, 248);
+    background-color: #7cc2ff;
+    transition-duration: .1s;
 } 
 #conteúdo {
     text-align: center;
-    font-size: 1.9em;
     color: #ff609a;
     letter-spacing: 1px;
     text-transform: none;
@@ -91,6 +105,7 @@ html {
     max-width: 100%;
     height: 100%;
     line-height: 150%;
+    font-size: 0.9em;
 }
 .coisa {
     width: 30%;
@@ -110,6 +125,7 @@ html {
     border-radius: 50%;
     display: flex;
     margin-left: 5%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.514);
 }
 .circulo img {
     width: 100%;
@@ -132,32 +148,44 @@ html {
 .retangulo h3 {
     color: #ff81b1;
 }
+.link div {
+    margin: 2% auto;
+}
 .link div a h3 {
     font-size: 30px;
-    text-decoration: underline;
     color: #ff81b1;
     display: inline-block;
     vertical-align: top;
-    line-height: 140%;
+    line-height: 1.3em;
     margin-top: 4%;
+    transition-duration: .6s;
+    border-radius: 0.9em;
+    padding: 1%;
 }
 .link div a h3:hover {
-    color: #ff609a;
+    color: white;
+    background-color: #ff609a;
+    transition-duration: .6s;
 }
 .link div a h3:active {
-    text-shadow: 5px 5px 20px #FFC8DD;
+    background-color: #ff81b1;
+    color: rgb(248, 248, 248);
+    transition-duration: .2s;
 }
 .igual {
     width: auto;
     min-height: 50px;
     max-height: 450px;
-    border-radius: 10%;
+    border-radius: 1.5em;
+    transition-duration: .6s;
 }
 .igual:hover {
     box-shadow: 0px 0px 30px 5px #FFC8DD;
+    transition-duration: .2s;
 }
 .igual:active {
     box-shadow: 0px 0px 30px 5px #ff609a;
+    transition-duration: .1s;
 }
 .iguali {
     width: 40%;
@@ -171,7 +199,6 @@ html {
     background-color: #FFC8DD;
     text-align: center;
     color: #a479c0;
-    font-size: 1.9em;
     padding: 1px;
     text-transform: none;
     letter-spacing: 1px;
@@ -182,24 +209,32 @@ html {
     align-items: center;
 }
 .table {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -5px;
-    margin-bottom: auto;
+    margin: -5px auto 5% auto;
     text-align: center;
     position: sticky;
     font-size: 28px;
     align-items: center;
+    border: 0.3em groove #7cc2ff;
 }
-.cima a h3 {
+.cima a h3, .cima a {
     display: inline-block;
     vertical-align: top;
     color: white;
     text-align: center;
     align-items: center;
+    text-decoration: none;
+    transition-duration: .6s;
+    border-radius: 0.5em;
 }
 .cima a h3:hover {
-    color: #a479c0;
+    background-color: #a479c0;
+    color: white;
+    transition-duration: .2s;
+}
+.cima a h3:active {
+    color: rgb(248, 248, 248);
+    background-color: #ff609a;
+    transition-duration: .2s;
 }
 .contato {
     color: white;
@@ -207,32 +242,41 @@ html {
     vertical-align: super;
     text-decoration: underline;
     align-items: center;
+    margin: 3% 0;
+    padding: 1% 0 0;
 }
 .la {
     width: 60px;
     height: 60px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 1% 0.4em;
+    padding: 0.5% 0 0;
     display: inline-block;
     vertical-align: bottom;
     align-items: center;
 }
 .list {
-    margin-top: 0%;
+    margin-top: -2%;
     display: flex;
     list-style: none;
     gap: 40px;
     font-size: 22px;
     margin-right: 4%;
 }
-.list li a {
+.list li a, .list li a h5, .list li h5 {
     color: white;
-    text-decoration: underline;
+    text-decoration: none;
+    transition-duration: .6s;
+    border-radius: 1em;
 }
-.list li a:hover {
-    color: #a479c0;
+.list li a h5:hover, .list li h5 a:hover {
+    background-color: #a479c0;
+    color: white;
+    transition-duration: .2s;
+}
+.list li a h5:active, .list li h5 a:active  {
+    color: rgb(248, 248, 248);
+    background-color: #ff609a;
+    transition-duration: .2s;
 }
 
 /* A responsividade do site */
@@ -240,6 +284,14 @@ html {
 @media only screen and (max-width: 600px) {
     #cabeçalho {
         font-size: 10px;
+    }
+    .nav {
+        font-size: 0.4em;
+    }
+    .nav ul {
+        gap: 0;
+        padding: 0;
+        margin: 0;
     }
     #áreas {
         font-size: 5px;
@@ -267,24 +319,21 @@ html {
     .la {
         width: 20px;
         height: 20px;
-        margin-top: 1px;
-        margin-bottom: 5px;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-    .nav {
-        font-size: 0.4em;
-    }
-    .nav ul {
-        margin: 0 2%;
-    }
-    .nav ul li h2 {
-        font-size: 2em;
+        margin: 0;
+        padding: 0;
     }
 }
 @media only screen and (min-width: 600px) and (max-width: 650px) {
     #cabeçalho {
         font-size: 13px;
+    }
+    .nav {
+        font-size: 0.4em;
+    }
+    .nav ul {
+        gap: 1%;
+        padding: 0;
+        margin: 0 10%;
     }
     #áreas {
         font-size: 8px;
@@ -297,6 +346,7 @@ html {
     }
     .list {
         font-size: 10px;
+        padding: 0;
     }
     .table {
         font-size: 12px;
@@ -312,24 +362,21 @@ html {
     .la {
         width: 30px;
         height: 30px;
-        margin-top: 10px;
-        margin-bottom: 8px;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-    .nav {
-        font-size: 0.4em;
-    }
-    .nav ul {
-        margin: 0 10%;
-    }
-    .nav ul li h2 {
-        font-size: 2em;
+        margin: 0;
+        padding: 0;
     }
 }
 @media only screen and (min-width: 650px) and (max-width: 750px) {
     #cabeçalho {
         font-size: 15px;
+    }
+    .nav {
+        font-size: 0.5em;
+    }
+    .nav ul {
+        margin: 0 6%;
+        gap: 1%;
+        padding: 0;
     }
     #áreas {
         font-size: 8px;
@@ -342,6 +389,7 @@ html {
     }
     .list {
         font-size: 11px;
+        padding: 0;
     }
     .table {
         font-size: 13px;
@@ -360,19 +408,18 @@ html {
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    .nav {
-        font-size: 0.5em;
-    }
-    .nav ul {
-        margin: 0 6%;
-    }
-    .nav ul li h2 {
-        font-size: 2em;
-    }
 }
 @media only screen and (min-width: 750px) and (max-width: 1000px) {
     #cabeçalho {
         font-size: 20px;
+    }
+    .nav {
+        font-size: 0.9em;
+    }
+    .nav ul {
+        margin: 0 4%;
+        gap: 1%;
+        padding: 0;
     }
     #conteúdo {
         font-size: 15px;
@@ -385,6 +432,7 @@ html {
     }
     .list {
         font-size: 15px;
+        padding: 0;
     }
     .table {
         font-size: 16px;
@@ -403,20 +451,20 @@ html {
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    .nav {
-        font-size: 0.6em;
-    }
-    .nav ul {
-        margin: 0 4%;
-    }
-    .nav ul li h2 {
-        font-size: 2em;
-    }
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1133px) {
     #cabeçalho {
         font-size: 20px;
+    }
+    .nav {
+        font-size: 0.7em;
+    }
+    .nav ul {
+        margin: 0 10%;
+    }
+    .nav ul li h2 {
+        font-size: 2em;
     }
     #conteúdo {
         font-size: 20px;
@@ -447,8 +495,10 @@ html {
         margin-top: 10px;
         margin-bottom: 10px;
     }
+}
+@media only screen and (min-width: 1133px) and (max-width: 1215px) {
     .nav {
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
     .nav ul {
         margin: 0 10%;
@@ -456,8 +506,6 @@ html {
     .nav ul li h2 {
         font-size: 2em;
     }
-}
-@media only screen and (min-width: 1133px) and (max-width: 1215px) {
     #conteúdo {
         font-size: 25px;
     }
@@ -475,17 +523,17 @@ html {
     .list {
         font-size: 18px;
     }
+}
+@media only screen and (min-width: 1215px) and (max-width: 1350px) {
     .nav {
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
     .nav ul {
-        margin: 0 10%;
+        margin: 0 8%;
     }
     .nav ul li h2 {
         font-size: 2em;
     }
-}
-@media only screen and (min-width: 1215px) and (max-width: 1350px) {
     #conteúdo {
         font-size: 26px;
     }
@@ -499,23 +547,10 @@ html {
     }
     #áreas {
         font-size: 13px;
-    }
-    .nav {
-        font-size: 0.9em;
-    }
-    .nav ul {
-        margin: 0 8%;
-    }
-    .nav ul li h2 {
-        font-size: 2em;
+        margin-top: -5em;
     }
 }
 @media only screen and (min-width: 1350px) and (max-width: 1500px) {
-    .igual {
-        width: auto;
-        min-height: 50px;
-        max-height: 350px;
-    }
     .nav {
         font-size: 1em;
     }
@@ -525,8 +560,19 @@ html {
     .nav ul li h2 {
         font-size: 2em;
     }
+    #áreas {
+        margin-top: -6em;
+    }
+    .igual {
+        width: auto;
+        min-height: 50px;
+        max-height: 350px;
+    }
 }
-@media only screen and (min-width: 1500px) and (max-width: 1600px) {
+@media only screen and (min-width: 1500px) {
+    #áreas {
+        margin-top: -7em;
+    }
     .igual {
         width: auto;
         min-height: 50px;
