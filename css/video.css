@@ -16,14 +16,17 @@ body {
 .igual {
     width: 37%;
     height: auto;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.411);
 }
 .la {
     width: 28%;
     height: auto;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.411);
 }
 .pé {
     width: 21%;
     height: auto;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.411);
 }
 .botao {
     width: 4%;
@@ -34,13 +37,14 @@ body {
     margin-inline-start: 1%;
     margin-inline-end: 1%;
     transition-duration: .1s;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.158);
 }
 .botao:hover {
-    box-shadow: 0px 0px 20px 10px #ff609a;
+    box-shadow: 0px 0px 20px 5px #ff609a;
     transition-duration: .1s;
 }
 .botao:active {
-    box-shadow: 0px 0px 20px 10px #FFC8DD;
+    box-shadow: 0px 0px 20px 5px #FFC8DD;
     transition-duration: .1s;
 }
 

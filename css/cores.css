@@ -17,6 +17,9 @@ body {
 html {
     scroll-behavior: smooth;
 }
+fieldset {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.411);
+}
 
 /* O corpo do site */
 
@@ -110,6 +113,7 @@ html {
 .coisa {
     width: 30%;
     height: auto;
+    margin-top: 0.2em;
 }
 .grid {
     display: grid;
@@ -125,7 +129,7 @@ html {
     border-radius: 50%;
     display: flex;
     margin-left: 5%;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.514);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.226);
 }
 .circulo img {
     width: 100%;
@@ -178,6 +182,7 @@ html {
     max-height: 450px;
     border-radius: 1.5em;
     transition-duration: .6s;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
 }
 .igual:hover {
     box-shadow: 0px 0px 30px 5px #FFC8DD;
@@ -190,10 +195,13 @@ html {
 .iguali {
     width: 40%;
     height: auto;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.212);
+    border-radius: 1em;
 }
 .pé {
     width: 45%;
     height: auto;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.055);
 }
 #final {
     background-color: #FFC8DD;
@@ -215,16 +223,22 @@ html {
     font-size: 28px;
     align-items: center;
     border: 0.3em groove #7cc2ff;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.411);
 }
-.cima a h3, .cima a {
-    display: inline-block;
-    vertical-align: top;
-    color: white;
-    text-align: center;
+.cima {
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+.cima a {
+    display: flex;
     align-items: center;
+    color: white;
     text-decoration: none;
     transition-duration: .6s;
     border-radius: 0.5em;
+    margin: 0;
+    padding: 0;
 }
 .cima a h3:hover {
     background-color: #a479c0;
@@ -237,22 +251,21 @@ html {
     transition-duration: .2s;
 }
 .contato {
-    color: white;
-    display: inline-block;
-    vertical-align: super;
-    text-decoration: underline;
+    display: flex;
     align-items: center;
-    margin: 3% 0;
-    padding: 1% 0 0;
+    transition-duration: .6s;
+    border-radius: 0.5em;
+    color: white;
+    margin: 0;
+    padding: 0;
 }
 .la {
+    align-items: center;
+    display: flex;
     width: 60px;
     height: 60px;
-    margin: 1% 0.4em;
-    padding: 0.5% 0 0;
-    display: inline-block;
-    vertical-align: bottom;
-    align-items: center;
+    margin: 0 0.3em;
+    padding: 0;
 }
 .list {
     margin-top: -2%;
@@ -266,7 +279,7 @@ html {
     color: white;
     text-decoration: none;
     transition-duration: .6s;
-    border-radius: 1em;
+    border-radius: 0.8em;
 }
 .list li a h5:hover, .list li h5 a:hover {
     background-color: #a479c0;
@@ -302,8 +315,14 @@ html {
     #final {
         font-size: 15px;
     }
+    #autorias h4 {
+        margin: 0;
+    }
     .list {
         font-size: 6px;
+        padding: 1% 0;
+        margin: 0 4%;
+        gap: 2%;
     }
     .table {
         font-size: 9px;
@@ -319,8 +338,7 @@ html {
     .la {
         width: 20px;
         height: 20px;
-        margin: 0;
-        padding: 0;
+        margin: 0.3em 0.3em;
     }
 }
 @media only screen and (min-width: 600px) and (max-width: 650px) {
@@ -344,9 +362,14 @@ html {
     #final {
         font-size: 15px;
     }
+    #autorias h4 {
+        margin: 0;
+    }
     .list {
         font-size: 10px;
-        padding: 0;
+        padding: 1% 0;
+        margin: 0 4%;
+        gap: 2%;
     }
     .table {
         font-size: 12px;
@@ -362,8 +385,7 @@ html {
     .la {
         width: 30px;
         height: 30px;
-        margin: 0;
-        padding: 0;
+        margin: 0.3em 0.3em;
     }
 }
 @media only screen and (min-width: 650px) and (max-width: 750px) {
@@ -387,9 +409,14 @@ html {
     #final {
         font-size: 18px;
     }
+    #autorias h4 {
+        margin: 0;
+    }
     .list {
         font-size: 11px;
-        padding: 0;
+        padding: 1% 0;
+        margin: 0 4%;
+        gap: 2%;
     }
     .table {
         font-size: 13px;
@@ -430,9 +457,14 @@ html {
     #final {
         font-size: 23px;
     }
+    #autorias h4 {
+        margin: 0;
+    }
     .list {
         font-size: 15px;
-        padding: 0;
+        padding: 1% 0;
+        margin: 0 4%;
+        gap: 2%;
     }
     .table {
         font-size: 16px;
@@ -520,6 +552,9 @@ html {
     #áreas {
         font-size: 12px;
     }
+    .la {
+        margin: 0.3em 0.3em;
+    }
     .list {
         font-size: 18px;
     }
@@ -549,6 +584,9 @@ html {
         font-size: 13px;
         margin-top: -5em;
     }
+    .la {
+        margin: 0.3em 0.3em;
+    }
 }
 @media only screen and (min-width: 1350px) and (max-width: 1500px) {
     .nav {
@@ -568,6 +606,9 @@ html {
         min-height: 50px;
         max-height: 350px;
     }
+    .la {
+        margin: 0.3em 0.3em;
+    }
 }
 @media only screen and (min-width: 1500px) {
     #áreas {
@@ -577,5 +618,8 @@ html {
         width: auto;
         min-height: 50px;
         max-height: 400px;
+    }
+    .la {
+        margin: 0.3em 0.3em;
     }
 }
