@@ -4,15 +4,25 @@
     font-family: 'inclusao';
     src: url(../fontes/open-dyslexic.ttf) format(truetype);
 }
+
+/* A mente do site */
+
 body {
     font-size: 1.8em;
     font-family: 'inclusao';
     text-align: center;
 }
+
+/* O corpo do site */
+/* O nome do vídeo do site */
+
 .nome {
     margin-top: -1.5%;
     margin-bottom: -1.5%;
 }
+
+/* O vídeo e seus tamanhos */
+
 .igual {
     width: 37%;
     height: auto;
@@ -28,6 +38,9 @@ body {
     height: auto;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.411);
 }
+
+/* Os botões */
+
 .botao {
     width: 4%;
     height: auto;
