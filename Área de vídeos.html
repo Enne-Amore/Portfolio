@@ -69,10 +69,11 @@
 </head>
 <body>
     <header>
-        <div id="cabeçalho">
+        <img id="menu" class="menu" onclick="abrirMenu()" src="Imagens para todas/menu.png" alt="Menu de páginas">
+        <div onclick="sairDoMenu()" id="cabeçalho">
             <label for="texto"><h1>Vídeos editados meus</h1></label>
         </div>
-        <nav class="nav">
+        <nav onclick="sairDoMenu()" class="nav">
             <ul>
                 <a href="#conteúdo"><li><h3>Sobre</h3></li></a>
                 <a href="#videos"><li><h3>Vídeos</h3></li></a>
@@ -80,16 +81,16 @@
                 <a href="#autorias"><h3>Autorias</h3></a>
             </ul>
         </nav>
-        <nav id="áreas">
+        <nav id="areas">
             <label for="texto e link"><h2>Áreas a acessar:</h2></label>
             <a href="index.html"><h3>Entrada principal</h3></a>
             <a href="Área de imagens.html"><h3>Imagens editadas</h3></a>
-            <a href="Área de inspiração audiovisual.html"><h3>Inspirações <br> de vídeo</h3></a>
-            <a href="Área de inspiração visual.html"><h3>Inspirações <br> de imagem</h3></a>
-            <a href="Considerações finais.html"><h3>Considerações <br> finais</h3></a>
+            <a href="Área de inspiração audiovisual.html"><h3>Inspirações de vídeo</h3></a>
+            <a href="Área de inspiração visual.html"><h3>Inspirações de imagem</h3></a>
+            <a href="Considerações finais.html"><h3>Considerações finais</h3></a>
         </nav>
     </header>
-    <main id="conteúdo">
+    <main onclick="sairDoMenu()" id="conteúdo">
         <section>
             <p>
                 <label for="imagem e texto"><img src="Imagens para todas/sobre.png" alt="Sobre:" class="coisa"></label>
@@ -106,68 +107,71 @@
             <label for="imagem, texto e link"></label>
             <img src="Imagens para todas/videos a ver.png" id="videos" class="coisa" alt="Vídeos a ver:">
             <fieldset>
-                <div>
-                    <a href="lumity.html" rel="next"><img class="igual" src="Área de vídeos editados meus/capas/Lumity.png" alt=""><h3>Lumity</h3></a>
-                    <a href="sammyna.html" rel="next"><img class="igual" src="Área de vídeos editados meus/capas/Sammyna.jpg" alt=""><h3>Sammyna</h3></a>
+                <div class="capas cima">
+                    <a href="lumity.html" rel="next"><img class="igual cima" src="Área de vídeos editados meus/capas/Lumity.png" alt=""><h3>Lumity</h3></a>
+                    <a href="sammyna.html" rel="next"><img class="igual cima" src="Área de vídeos editados meus/capas/Sammyna.jpg" alt=""><h3>Sammyna</h3></a>
                 </div>
-                <div>
-                    <a href="snap_dragon.html" rel="next"><h3>Snap <br> Dragon</h3><img class="igual" src="Área de vídeos editados meus/capas/SnapDragon.jpg" alt=""></a>
-                    <a href="sciset.html" rel="next"><h3>Sciset</h3><img class="igual" src="Área de vídeos editados meus/capas/Sciset.jpg" alt=""></a>
+                <div class="capas baixas">
+                    <a href="snap_dragon.html" rel="next"><h3>Snap <br> Dragon</h3><img class="igual baixa" src="Área de vídeos editados meus/capas/SnapDragon.jpg" alt=""></a>
+                    <a href="sciset.html" rel="next"><h3>Sciset</h3><img class="igual baixa" src="Área de vídeos editados meus/capas/Sciset.jpg" alt=""></a>
                 </div>
-                <div>
-                    <a href="rarijack.html" rel="next"><img class="igual" src="Área de vídeos editados meus/capas/Rarijack.png" alt=""><h3>Rarijack</h3></a>
-                    <a href="sunset_shimmer.html" rel="next"><img class="igual" src="Área de vídeos editados meus/capas/Sunset Shimmer.jpg" alt=""><h3>Sunset <br>Shimmer</h3></a>
+                <div class="capas cima">
+                    <a href="rarijack.html" rel="next"><img class="igual cima" src="Área de vídeos editados meus/capas/Rarijack.png" alt=""><h3>Rarijack</h3></a>
+                    <a href="sunset_shimmer.html" rel="next"><img class="igual cima" src="Área de vídeos editados meus/capas/Sunset Shimmer.jpg" alt=""><h3>Sunset <br> Shimmer</h3></a>
                 </div>
-                <div>
-                    <a href="fred.html" rel="next"><h3>Fred</h3><img class="igual" src="Área de vídeos editados meus/capas/Fred.png" alt=""></a>
-                    <a href="familia_verdadeira.html" rel="next"><h3>Família <br> verdadeira</h3><img class="igual" src="Área de vídeos editados meus/capas/Família verdadeira.png" alt=""></a>
+                <div class="capas baixas">
+                    <a href="fred.html" rel="next"><h3>Fred</h3><img class="igual baixa" src="Área de vídeos editados meus/capas/Fred.png" alt=""></a>
+                    <a href="familia_verdadeira.html" rel="next"><h3>Família <br> verdadeira</h3><img class="igual baixa" src="Área de vídeos editados meus/capas/Família verdadeira.png" alt=""></a>
                 </div>
             </fieldset>
         </section>
+        <div id="topo">
+            <img class="topo" src="Imagens para todas/topo.png" alt="Clique aqui para voltar ao topo da página">
+        </div>
     </main>
-    <footer id="final">
+    <footer id="final" onclick="sairDoMenu()">
         <section>
             <label for="texto, imagem e link"><h2>Meus Contatos</h2></label>
             <table border="1" class="table">
                 <thead>
                     <tr>
-                        <th>
+                        <th colspan="100%">
                             <div class="cima">
-                                <a href="https://www.instagram.com/enne_jim10/" target="_blank" rel="external"><img src="Imagens para todas/instagram.png" alt="" class="la"><h3 class="contato">Instagram</h3></a>
-                            </div>
-                        </th>
-                        <th>
-                            <div class="cima">
-                                <a href="https://discord.com/channels/@me" target="_blank" rel="external"><img src="Imagens para todas/discordia.png" alt="" class="la"><h3 class="contato"><span lang="en-us">Discord</span>: Enne#9035</h3></a>
-                            </div>
-                        </th>
-                        <th>
-                            <div class="cima">
-                                <a href="https://www.tiktok.com/@enne_jim_pessoa?is_from_webapp=1&sender_device=pc" target="_blank" rel="external"><img src="Imagens para todas/tik-tok.png" alt="" class="la"><h3 class="contato">Tik Teko</h3></a>
-                            </div>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>
-                            <div class="cima">
-                                <a href="https://github.com/Enne-Amore" rel="external" target="_blank"><img src="Imagens para todas/github.png" alt="" class="la"><h3 class="contato">GitHub</h3></a>
+                                <a href="https://www.instagram.com/enne_jim10/" target="_blank" rel="external"><img src="Imagens para todas/instagram.png" alt="" class="la"><h3 class="contato"><abbr title="@enne_jim10">Instagram</abbr></h3></a>
                             </div>
                         </th>
                         <th colspan="10%">
                             <div class="cima">
-                                <a href="tel:+5583981448264" target="_blank" rel="external"><img src="Imagens para todas/telefone.png" alt="" class="la"><h3 class="contato">Número de telefone: (83) 981448264</h3></a>
+                                <a href="https://discord.com/channels/@me" target="_blank" rel="external"><img src="Imagens para todas/discordia.png" alt="" class="la"><h3 class="contato"><span lang="en-us"><abbr title="Enne#9035">Discord</abbr></span></h3></a>
+                            </div>
+                        </th>
+                        <th colspan="10%">
+                            <div class="cima">
+                                <a href="mailto:ennefofe10@gmail.com" target="_blank" rel="external"><img src="Imagens para todas/email.png" alt="" class="la"><h3 class="contato"><span lang="en-us"><abbr title="EnneFofe10@gmail.com">Email</abbr></span></h3></a>
                             </div>
                         </th>
                     </tr>
                     <tr>
-                        <th colspan="2%">
+                        <th colspan="100%">
                             <div class="cima">
-                                <a href="mailto:ennefofe10@gmail.com" target="_blank" rel="external"><img src="Imagens para todas/email.png" alt="" class="la"><h3 class="contato"><span lang="en-us">Email</span>: EnneFofe10@gmail.com</h3></a>
+                                <a href="https://github.com/Enne-Amore" rel="external" target="_blank"><img src="Imagens para todas/github.png" alt="" class="la"><h3 class="contato"><abbr title="Enne-Amore">GitHub</abbr></h3></a>
                             </div>
                         </th>
-                        <th colspan="1%">
+                        <th colspan="100%">
                             <div class="cima">
-                                <a href="https://www.facebook.com/people/Enne-Jim-Pessoa/pfbid0aQ6yJzDEVnNtwyvhJpWuwZpj3WJCVeGaacUncsjyKa69tKhu13Ng9Nd64FHmxzwwl/" target="_blank" rel="external"><img src="Imagens para todas/facebook.png" alt="" class="la"><h3 class="contato"><span lang="en-us">Facebook</span></h3></a>
+                                <a href="tel:+5583981448264" target="_blank" rel="external"><img src="Imagens para todas/telefone.png" alt="" class="la"><h3 class="contato"><abbr title="(83) 981448264">Telefone</abbr></h3></a>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="100%">
+                            <div class="cima">
+                                <a href="https://www.tiktok.com/@enne_jim_pessoa?is_from_webapp=1&sender_device=pc" target="_blank" rel="external"><img src="Imagens para todas/tik-tok.png" alt="" class="la"><h3 class="contato"><abbr title="@enne_jim_pessoa">Tik Tok</abbr></h3></a>
+                            </div>
+                        </th>
+                        <th colspan="100%">
+                            <div class="cima">
+                                <a href="https://www.facebook.com/people/Enne-Jim-Pessoa/pfbid0aQ6yJzDEVnNtwyvhJpWuwZpj3WJCVeGaacUncsjyKa69tKhu13Ng9Nd64FHmxzwwl/" target="_blank" rel="external"><img src="Imagens para todas/facebook.png" alt="" class="la"><h3 class="contato"><span lang="en-us"><abbr title="Enne Jim Pessoa">Facebook</abbr></span></h3></a>
                             </div>
                         </th>
                     </tr>
@@ -200,5 +204,7 @@
             </ul>
         </section>
     </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/topo.js"></script>
 </body>
 </html>

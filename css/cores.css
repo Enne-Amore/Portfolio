@@ -13,6 +13,7 @@ body {
     width: 100%;
     font-size: 1.5em;
     text-align: center;
+    overflow-x: hidden;
 }
 html {
     scroll-behavior: smooth;
@@ -25,7 +26,7 @@ fieldset {
 /* E o seu cabeçalho */
 
 #cabeçalho {
-    padding: 0.1%;
+    padding: 3%;
     text-align: center;
     background-color: #FFC8DD;
     color: #a479c0;
@@ -34,15 +35,19 @@ fieldset {
     text-transform: none;
     font-size: 1.5em;
 }
+#cabeçalho h1 {
+    margin: auto 5%;
+}
 .nav {
     background-color: rgb(248, 248, 248);
 }
 .nav ul {
+    font-size: 1.1em;
     list-style: none;
     display: flex;
-    gap: 4%;
-    padding: 0 10%;
-    margin: auto;
+    gap: 0%;
+    padding: 0;
+    margin: 0 auto;
     width: auto;
 }
 .nav ul a {
@@ -69,37 +74,55 @@ fieldset {
 
 /* O menu de páginas do site */
 
-#áreas {
+.menu {
+    position: absolute;
+    width: 13%;
+    height: auto;
+    left: 1%;
+    top: 1%;
+    cursor: pointer;
+    border-radius: 50% 50% 100% 100%;
+    transition-duration: .6s;
+    transition-delay: .1s;
+}
+#areas {
     height: 2500px;
-    max-width: 100%;
+    width: max-content;
     background-color: rgb(248, 248, 248);
     float: left;
-    padding: 0 1%;
-    float: left;
-    color: #698bac;
-    text-align: justify;
-    font-size: 0.6em;
-    text-transform: none;
+    padding: 2%;
+    color: hsl(210, 29%, 54%);
+    text-align: left;
+    font-size: 1em;
     letter-spacing: 1px;
     font-style: italic;
+    position: fixed;
+    top: 0;
+    left: -50%;
+    opacity: 0;
+    transition-duration: .8s;
 }
-#áreas label h2 {
-    margin-bottom: 15%;
+#areas label h2 {
+    margin-bottom: 10%;
 }
-#áreas a, #áreas a h3 {
+#areas a h3 {
+    padding: 0 1%;
+    width: max-content;
+}
+#areas a, #areas a h3 {
     text-decoration: none;
     color: #7cc2ff;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
     transition-duration: .6s;
 }
-#áreas a:hover, #áreas a h3:hover {
+#areas a:hover, #areas a h3:hover {
     color: rgb(248, 248, 248);
     background-color: #698bac;
     transition-duration: .6s;
     border-radius: 1em;
-    padding: 3% 0;
+    padding: 3%;
 }
-#áreas a:active, #áreas a h3:active {
+#areas a:active, #areas a h3:active {
     color: rgb(248, 248, 248);
     background-color: #7cc2ff;
     transition-duration: .1s;
@@ -118,6 +141,9 @@ fieldset {
     line-height: 150%;
     font-size: 1.2em;
 }
+#conteúdo fieldset {
+    margin: auto 5% 5%;
+}
 .coisa {
     width: 30%;
     height: auto;
@@ -127,7 +153,7 @@ fieldset {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5% 5% 5% 20%;
+    margin: 5%;
     gap: 4%;
 }
 .circulo {
@@ -156,7 +182,9 @@ fieldset {
 .retangulo.esquerdo h2, .retangulo.esquerdo h3 {
     text-align: right;
 }
-.link div {
+
+
+/* .link div {
     margin: 2% auto;
 }
 .link div a h3 {
@@ -179,6 +207,49 @@ fieldset {
     background-color: #ff81b1;
     color: rgb(248, 248, 248);
     transition-duration: .2s;
+} */
+
+.link fieldset {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5em;
+    line-height: 1.5em;
+}
+.capas {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1em;
+}
+.capas.cima a, .capas.baixas a {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0;
+    margin: 0;
+    text-decoration: none;
+}
+.capas.cima a h3, .capas.baixas a h3 {
+    color: white;
+    background-color: #7cc2ff;
+    border-radius: 0.9em;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
+    transition-duration: .6s;
+    padding: 2%;
+    margin: 8% 0;
+    height: max-content;
+}
+.capas.cima a h3:hover, .capas.baixas a h3:hover {
+    color: white;
+    background-color: #ff81b1;
+    transition-duration: .4s;
+}
+.capas.cima a h3:active, .capas.baixas a h3:active {
+    background-color: #FFC8DD;
+    color: rgb(248, 248, 248);
+    transition-duration: .2s;
 }
 .igual {
     width: auto;
@@ -196,6 +267,7 @@ fieldset {
     box-shadow: 0px 0px 30px 5px #ff609a;
     transition-duration: .1s;
 }
+
 .imagens {
     display: flex;
     justify-content: center;
@@ -214,6 +286,25 @@ fieldset {
     height: auto;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.055);
 }
+.topo {
+    width: 6%;
+    height: auto;
+    right: 1%;
+    bottom: 1%;
+    position: fixed;
+    cursor: pointer;
+    border-radius: 60%;
+    transition-duration: .1s;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.158);
+}
+.topo:hover {
+    box-shadow: 0px 0px 20px 5px #ff609a;
+    transition-duration: .1s;
+}
+.topo:active {
+    box-shadow: 0px 0px 20px 5px #FFC8DD;
+    transition-duration: .1s;
+}
 
 /* O rodapé do site */
 
@@ -225,24 +316,28 @@ fieldset {
     text-transform: none;
     letter-spacing: 1px;
     font-weight: bolder;
-    position: absolute;
+    position: static;
     width: 100%;
     height: auto;
     align-items: center;
+    font-size: 1.5em;
 }
 .table {
     margin: -5px auto 5% auto;
     text-align: center;
-    position: sticky;
-    font-size: 28px;
+    position: static;
+    font-size: 1em;
     align-items: center;
     border: 0.3em groove #7cc2ff;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.411);
+    width: 80%;
+    padding: 0;
 }
 .cima {
     display: flex;
     justify-content: center;
-    width: auto;
+    margin: 0;
+    padding: 0;
 }
 .cima a {
     display: flex;
@@ -267,6 +362,7 @@ fieldset {
 .contato {
     display: flex;
     align-items: center;
+    justify-content: center;
     transition-duration: .6s;
     border-radius: 0.5em;
     color: white;
@@ -285,8 +381,8 @@ fieldset {
     margin-top: -2%;
     display: flex;
     list-style: none;
-    gap: 40px;
-    font-size: 22px;
+    gap: 1em;
+    font-size: 1em;
     margin-right: 4%;
 }
 .list li a, .list li a h5, .list li h5 {
@@ -309,11 +405,18 @@ fieldset {
 /* A responsividade do site */
 
 @media only screen and (max-width: 600px) {
+    body {
+        font-size: 1em;
+    }
     #cabeçalho {
-        font-size: 0.7em;
+        font-size: 1em;
+        padding: 3%;
+    }
+    #cabeçalho h1 {
+        margin: auto 10%;
     }
     .nav {
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
     .nav ul {
         gap: 0;
@@ -321,10 +424,15 @@ fieldset {
         margin: auto 0.5em;
     }
     #áreas {
-        font-size: 5px;
+        font-size: 1em;
     }
     #conteúdo {
-        font-size: 0.5em;
+        font-size: 1em;
+    }
+    #conteúdo fieldset {
+        margin: auto 1% 15%;
+        font-size: 1.5em;
+        line-height: 2em;
     }
     .coisa {
         width: 50%;
@@ -348,60 +456,134 @@ fieldset {
     .retangulo.esquerdo h2, .retangulo.esquerdo h3 {
         text-align: center;
     }
+    .link fieldset {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 3em;
+    }
+    .link br {
+        display: none;
+    }
+    .capas.cima, .capas.baixas {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 3em;
+    }
+    .capas.cima a, .capas.baixas a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        align-self: center;
+        gap: 0;
+        text-decoration: none;
+    }
+    .capas.cima a h3, .capas.baixas a h3 {
+        color: white;
+        background-color: #7cc2ff;
+        margin-top: 0;
+        margin-bottom: 0;
+        transition-duration: .6s;
+        padding: 2%;
+        width: 95%;
+        line-height: 1.1em;
+    }
+    .capas.cima a h3 {
+        border-radius: 0 0 0.9em 0.9em;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
+    }
+    .capas.baixas a h3 {
+        border-radius: 0.9em 0.9em 0 0;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
+    }
+    .igual.cima {
+        border-radius: 1.5em 1.5em 0 0;
+    }
+    .igual.baixa {
+        border-radius: 0 0 1.5em 1.5em ;
+    }
+    .igual {
+        height: auto;
+        max-height: 100%;
+        width: 280px;
+    }
     .imagens {
         flex-direction: column;
         margin: 5% auto;
         gap: 1em;
     }
     .iguali {
+        width: 80%;
+    }
+    .table {
+        margin: 5% 5% 10%;
+        padding: 0;
+        display: flex;
+    }
+    .table thead tr {
+        font-size: 0.8em;
+        margin: auto 0% auto 0;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
         width: 100%;
     }
-    #final {
-        font-size: 15px;
+    .cima {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    .la {
+        width: 20px;
+        height: 20px;
+        margin: 0;
+        padding: 0;
     }
     #autorias h4 {
         margin: 0;
     }
     .list {
-        font-size: 6px;
+        font-size: 0.6em;
         padding: 1% 0;
         margin: 0 4%;
         gap: 2%;
     }
-    .table {
-        font-size: 9px;
-    }
-    .link div a h3 {
-        font-size: 6px; 
-    }
-    .igual {
-        width: auto;
-        min-height: 50px;
-        max-height: 100px;
-    }
-    .la {
-        width: 20px;
-        height: 20px;
-        margin: 0.3em 0.3em;
-    }
 }
 @media only screen and (min-width: 600px) and (max-width: 650px) {
+    body {
+        font-size: 1.2em;
+    }
     #cabeçalho {
-        font-size: 13px;
+        font-size: 1.2em;
+        padding: 3%;
+    }    
+    #cabeçalho h1 {
+        margin: auto 8%;
+    }
+    .menu {
+        width: 15%;
     }
     .nav {
-        font-size: 0.4em;
+        font-size: 1.2em;
     }
     .nav ul {
-        gap: 1%;
+        gap: auto;
         padding: 0;
-        margin: 0 10%;
+        margin: 0 1%;
     }
     #áreas {
-        font-size: 8px;
+        font-size: 1em;
     }
     #conteúdo {
-        font-size: 11px;
+        font-size: 1em;
+    }
+    #conteúdo fieldset {
+        margin: auto 1% 15%;
+        font-size: 1.5em;
+        line-height: 2em;
     }
     .coisa {
         width: 50%;
@@ -425,16 +607,69 @@ fieldset {
     .retangulo.esquerdo h2, .retangulo.esquerdo h3 {
         text-align: center;
     }
+    .link fieldset {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 3em;
+    }
+    .link br {
+        display: none;
+    }
+    .capas.cima, .capas.baixas {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 3em;
+    }
+    .capas.cima a, .capas.baixas a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        align-self: center;
+        gap: 0;
+        text-decoration: none;
+    }
+    .capas.cima a h3, .capas.baixas a h3 {
+        color: white;
+        background-color: #7cc2ff;
+        margin-top: 0;
+        margin-bottom: 0;
+        transition-duration: .6s;
+        padding: 2%;
+        width: 95%;
+    }
+    .capas.cima a h3 {
+        border-radius: 0 0 0.9em 0.9em;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
+    }
+    .capas.baixas a h3 {
+        border-radius: 0.9em 0.9em 0 0;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
+    }
+    .igual.cima {
+        border-radius: 1.5em 1.5em 0 0;
+    }
+    .igual.baixa {
+        border-radius: 0 0 1.5em 1.5em ;
+    }
+    .igual {
+        height: auto;
+        max-height: 100%;
+        width: 350px;
+    }
     .imagens {
         flex-direction: column;
         margin: 5% auto;
         gap: 1em;
     }
     .iguali {
-        width: 100%;
+        width: 80%;
     }
     #final {
-        font-size: 15px;
+        font-size: 1em;
     }
     #autorias h4 {
         margin: 0;
@@ -448,14 +683,6 @@ fieldset {
     .table {
         font-size: 12px;
     }
-    .link div a h3 {
-        font-size: 6px; 
-    }
-    .igual {
-        width: auto;
-        min-height: 50px;
-        max-height: 150px;
-    }
     .la {
         width: 30px;
         height: 30px;
@@ -463,22 +690,37 @@ fieldset {
     }
 }
 @media only screen and (min-width: 650px) and (max-width: 750px) {
+    body {
+        font-size: 1.3em;
+    }
     #cabeçalho {
-        font-size: 15px;
+        font-size: 1.2em;
+        padding: 3%;
+    }    
+    #cabeçalho h1 {
+        margin: auto 10%;
+    }
+    .menu {
+        width: 20%;
     }
     .nav {
-        font-size: 0.5em;
+        font-size: 1.3em;
     }
     .nav ul {
-        margin: 0 6%;
+        margin: 0 1%;
         gap: 1%;
         padding: 0;
     }
-    #áreas {
-        font-size: 8px;
+    #areas {
+        font-size: 1.3em;
     }
     #conteúdo {
-        font-size: 12px;
+        font-size: 1em;
+    }
+    #conteúdo fieldset {
+        margin: auto 1% 15%;
+        font-size: 1.5em;
+        line-height: 2em;
     }
     .coisa {
         width: 50%;
@@ -502,13 +744,66 @@ fieldset {
     .retangulo.esquerdo h2, .retangulo.esquerdo h3 {
         text-align: center;
     }
+    .link fieldset {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 3em;
+    }
+    .link br {
+        display: none;
+    }
+    .capas.cima, .capas.baixas {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 3em;
+    }
+    .capas.cima a, .capas.baixas a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        align-self: center;
+        gap: 0;
+        text-decoration: none;
+    }
+    .capas.cima a h3, .capas.baixas a h3 {
+        color: white;
+        background-color: #7cc2ff;
+        margin-top: 0;
+        margin-bottom: 0;
+        transition-duration: .6s;
+        padding: 2%;
+        width: 96%;
+    }
+    .capas.cima a h3 {
+        border-radius: 0 0 0.9em 0.9em;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
+    }
+    .capas.baixas a h3 {
+        border-radius: 0.9em 0.9em 0 0;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
+    }
+    .igual.cima {
+        border-radius: 1.5em 1.5em 0 0;
+    }
+    .igual.baixa {
+        border-radius: 0 0 1.5em 1.5em ;
+    }
+    .igual {
+        height: auto;
+        max-height: 100%;
+        width: 450px;
+    }
     .imagens {
         flex-direction: column;
         margin: 5% auto;
         gap: 1em;
     }
     .iguali {
-        width: 100%;
+        width: 80%;
     }
     #final {
         font-size: 18px;
@@ -525,14 +820,6 @@ fieldset {
     .table {
         font-size: 13px;
     }
-    .link div a h3 {
-        font-size: 10px; 
-    }
-    .igual {
-        width: auto;
-        min-height: 50px;
-        max-height: 150px;
-    }
     .la {
         width: 30px;
         height: 30px;
@@ -541,19 +828,37 @@ fieldset {
     }
 }
 @media only screen and (min-width: 750px) and (max-width: 1000px) {
+    body {
+        font-size: 1.4em;
+    }
     #cabeçalho {
-        font-size: 20px;
+        font-size: 1.3em;
+        padding: 3%;
+    }    
+    #cabeçalho h1 {
+        margin: auto 18%;
+    }
+    .menu {
+        width: 20%;
     }
     .nav {
-        font-size: 0.9em;
+        font-size: 1.4em;
     }
     .nav ul {
-        margin: 0 4%;
+        margin: 0 1%;
         gap: 1%;
         padding: 0;
     }
+    #areas {
+        font-size: 1.3em;
+    }
     #conteúdo {
-        font-size: 15px;
+        font-size: 1em;
+    }
+    #conteúdo fieldset {
+        margin: auto 1% 15%;
+        font-size: 1.5em;
+        line-height: 2em;
     }
     .coisa {
         width: 50%;
@@ -577,39 +882,84 @@ fieldset {
     .retangulo.esquerdo h2, .retangulo.esquerdo h3 {
         text-align: center;
     }
+    .link fieldset {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 3em;
+    }
+    .link br {
+        display: none;
+    }
+    .capas.cima, .capas.baixas {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 3em;
+    }
+    .capas.cima a, .capas.baixas a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        align-self: center;
+        gap: 0;
+        text-decoration: none;
+    }
+    .capas.cima a h3, .capas.baixas a h3 {
+        color: white;
+        background-color: #7cc2ff;
+        margin-top: 0;
+        margin-bottom: 0;
+        transition-duration: .6s;
+        padding: 2%;
+        width: 95%;
+    }
+    .capas.cima a h3 {
+        border-radius: 0 0 0.9em 0.9em;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
+    }
+    .capas.baixas a h3 {
+        border-radius: 0.9em 0.9em 0 0;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
+    }
+    .igual.cima {
+        border-radius: 1.5em 1.5em 0 0;
+    }
+    .igual.baixa {
+        border-radius: 0 0 1.5em 1.5em ;
+    }
+    .igual {
+        height: auto;
+        max-height: 100%;
+        width: 480px;
+    }
     .imagens {
         flex-direction: column;
         margin: 5% auto;
         gap: 1em;
     }
     .iguali {
-        width: 100%;
-    }
-    #áreas {
-        font-size: 10px;
+        width: 80%;
     }
     #final {
-        font-size: 23px;
+        font-size: 1em;
     }
     #autorias h4 {
         margin: 0;
     }
     .list {
-        font-size: 15px;
+        font-size: 1em;
         padding: 1% 0;
         margin: 0 4%;
         gap: 2%;
     }
     .table {
-        font-size: 16px;
+        font-size: 1em;
     }
     .link div a h3 {
-        font-size: 10px; 
-    }
-    .igual {
-        width: auto;
-        min-height: 50px;
-        max-height: 200px;
+        font-size: 1em; 
     }
     .la {
         width: 40px;
@@ -620,23 +970,43 @@ fieldset {
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1133px) {
+    body {
+        font-size: 1.5em;
+    }
     #cabeçalho {
-        font-size: 1em;
+        font-size: 1.5em;
+        padding: 3%;
+    }    
+    #cabeçalho h1 {
+        margin: auto 20%;
+    }
+    .menu {
+        width: 20%;
     }
     .nav {
-        font-size: 1em;
+        font-size: 1.5em;
     }
     .nav ul {
-        margin: 0 10%;
+        margin: 0 3%;
+        gap: 0%;
+        padding: 0;
     }
     .nav ul li h2 {
         font-size: 2em;
     }
+    #areas {
+        font-size: 1.5em;
+    }
     #conteúdo {
-        font-size: 20px;
+        font-size: 1em;
+    }
+    #conteúdo fieldset {
+        margin: auto 1% 15%;
+        font-size: 1.5em;
+        line-height: 2em;
     }
     .coisa {
-        width: 40%;
+        width: 50%;
     }
     .pé {
         width: 65%;
@@ -657,33 +1027,75 @@ fieldset {
     .retangulo.esquerdo h2, .retangulo.esquerdo h3 {
         text-align: center;
     }
-    .imagens {
+    .link fieldset {
+        display: flex;
+        justify-content: center;
         flex-direction: column;
-        margin: 5% auto;
-        gap: 1em;
+        gap: 3em;
     }
-    .iguali {
-        width: 100%;
+    .link br {
+        display: none;
     }
-    #final {
-        font-size: 23px;
+    .capas.cima, .capas.baixas {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 3em;
     }
-    .list {
-        font-size: 15px;
+    .capas.cima a, .capas.baixas a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        align-self: center;
+        gap: 0;
+        text-decoration: none;
     }
-    .link div a h3 {
-        font-size: 15px; 
+    .capas.cima a h3, .capas.baixas a h3 {
+        color: white;
+        background-color: #7cc2ff;
+        margin-top: 0;
+        margin-bottom: 0;
+        transition-duration: .6s;
+        padding: 2%;
+        width: 95%;
+    }
+    .capas.cima a h3 {
+        border-radius: 0 0 0.9em 0.9em;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
+    }
+    .capas.baixas a h3 {
+        border-radius: 0.9em 0.9em 0 0;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
+    }
+    .igual.cima {
+        border-radius: 1.5em 1.5em 0 0;
+    }
+    .igual.baixa {
+        border-radius: 0 0 1.5em 1.5em ;
     }
     .igual {
-        width: auto;
-        min-height: 50px;
-        max-height: 250px;
+        height: auto;
+        max-height: 100%;
+        width: 600px;
     }
-    #áreas {
-        font-size: 12px;
+    .imagens {
+        flex-direction: column;
+        margin: 9% auto;
+        gap: 2.5em;
+    }
+    .iguali {
+        width: 80%;
+    }
+    #final {
+        font-size: 1em;
+    }
+    .list {
+        font-size: 1em;
     }
     .table {
-        font-size: 20px;
+        font-size: 1em;
     }
     .la {
         width: 55px;
@@ -694,38 +1106,32 @@ fieldset {
 }
 @media only screen and (min-width: 1133px) and (max-width: 1215px) {
     .nav {
-        font-size: 0.8em;
+        font-size: 1em;
     }
     .nav ul {
         margin: 0 10%;
     }
-    .nav ul li h2 {
-        font-size: 2em;
-    }
     #conteúdo {
-        font-size: 25px;
-    }
-    .link div a h3 {
-        font-size: 20px; 
+        font-size: 1em;
     }
     .igual {
         width: auto;
         min-height: 50px;
         max-height: 300px;
     }
-    #áreas {
-        font-size: 12px;
+    #areas {
+        font-size: 1em;
     }
     .la {
         margin: 0.3em 0.3em;
     }
     .list {
-        font-size: 18px;
+        font-size: 1em;
     }
 }
 @media only screen and (min-width: 1215px) and (max-width: 1350px) {
     .nav {
-        font-size: 0.9em;
+        font-size: 1em;
     }
     .nav ul {
         margin: 0 8%;
@@ -734,19 +1140,12 @@ fieldset {
         font-size: 2em;
     }
     #conteúdo {
-        font-size: 26px;
-    }
-    .link div a h3 {
-        font-size: 25px; 
+        font-size: 1em;
     }
     .igual {
         width: auto;
         min-height: 50px;
         max-height: 300px;
-    }
-    #áreas {
-        font-size: 13px;
-        margin-top: -5em;
     }
     .la {
         margin: 0.3em 0.3em;
@@ -762,9 +1161,6 @@ fieldset {
     .nav ul li h2 {
         font-size: 2em;
     }
-    #áreas {
-        margin-top: -6em;
-    }
     .igual {
         width: auto;
         min-height: 50px;
@@ -775,9 +1171,6 @@ fieldset {
     }
 }
 @media only screen and (min-width: 1500px) {
-    #áreas {
-        margin-top: -7em;
-    }
     .igual {
         width: auto;
         min-height: 50px;
