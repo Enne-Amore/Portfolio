@@ -21,6 +21,10 @@ html {
 fieldset {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.411);
 }
+* {
+    margin: 0;
+    padding: 0;
+}
 
 /* O corpo do site */
 /* E o seu cabeçalho */
@@ -34,9 +38,24 @@ fieldset {
     letter-spacing: 1px;
     text-transform: none;
     font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #cabeçalho h1 {
     margin: auto 5%;
+    width: max-content;
+}
+.menu {
+    position: absolute;
+    width: 13%;
+    height: auto;
+    left: 1%;
+    top: 0.8%;
+    cursor: pointer;
+    border-radius: 50% 50% 100% 100%;
+    transition-duration: .6s;
+    transition-delay: .1s;
 }
 .nav {
     background-color: rgb(248, 248, 248);
@@ -46,14 +65,14 @@ fieldset {
     list-style: none;
     display: flex;
     gap: 0%;
-    padding: 0;
     margin: 0 auto;
     width: auto;
 }
 .nav ul a {
     margin: auto;
-    padding: auto;
+    padding: 2.5% 0;
     font-size: 1em;
+    border-radius: 1.2em;
     color: #7cc2ff;
     text-decoration: none;
     transition-duration: .6s;
@@ -61,9 +80,9 @@ fieldset {
 }
 .nav ul a:hover {
     background-color: #698bac;
-    border-radius: 1.2em;
     color: white;
-    padding: 0 3%;
+    margin: 0% auto;
+    padding: 2.5% 3%;
     transition-duration: .6s;
 }
 .nav ul a:active {
@@ -74,23 +93,12 @@ fieldset {
 
 /* O menu de páginas do site */
 
-.menu {
-    position: absolute;
-    width: 13%;
-    height: auto;
-    left: 1%;
-    top: 1%;
-    cursor: pointer;
-    border-radius: 50% 50% 100% 100%;
-    transition-duration: .6s;
-    transition-delay: .1s;
-}
 #areas {
     height: 2500px;
     width: max-content;
     background-color: rgb(248, 248, 248);
     float: left;
-    padding: 2%;
+    padding: 3%;
     color: hsl(210, 29%, 54%);
     text-align: left;
     font-size: 1em;
@@ -98,7 +106,7 @@ fieldset {
     font-style: italic;
     position: fixed;
     top: 0;
-    left: -50%;
+    left: -70%;
     opacity: 0;
     transition-duration: .8s;
 }
@@ -143,6 +151,7 @@ fieldset {
 }
 #conteúdo fieldset {
     margin: auto 5% 5%;
+    padding: 2%;
 }
 .coisa {
     width: 30%;
@@ -209,20 +218,21 @@ fieldset {
     transition-duration: .2s;
 } */
 
-.link fieldset {
+.link section {
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 1.5em;
     line-height: 1.5em;
+    margin: 5% auto;
 }
 .capas {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    gap: 1em;
+    gap: 2em;
 }
-.capas.cima a, .capas.baixas a {
+.capas.cimas a, .capas.baixas a {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -230,23 +240,25 @@ fieldset {
     gap: 0;
     margin: 0;
     text-decoration: none;
+    border-radius: 2em;
 }
-.capas.cima a h3, .capas.baixas a h3 {
+.capas.cimas a figcaption, .capas.baixas a figcaption {
     color: white;
     background-color: #7cc2ff;
     border-radius: 0.9em;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
     transition-duration: .6s;
     padding: 2%;
-    margin: 8% 0;
+    margin: 8% 2%;
     height: max-content;
 }
-.capas.cima a h3:hover, .capas.baixas a h3:hover {
+.capas.cimas a figcaption:hover, .capas.baixas a figcaption:hover {
     color: white;
     background-color: #ff81b1;
+    border-radius: 0.9em;
     transition-duration: .4s;
 }
-.capas.cima a h3:active, .capas.baixas a h3:active {
+.capas.cimas a figcaption:active, .capas.baixas a figcaption:active {
     background-color: #FFC8DD;
     color: rgb(248, 248, 248);
     transition-duration: .2s;
@@ -273,18 +285,20 @@ fieldset {
     justify-content: center;
     align-items: center;
     gap: 5%;
-    margin: 4%;
+    margin: 4% 5%;
 }
 .iguali {
-    width: 50%;
+    width: 40%;
     height: auto;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.212);
     border-radius: 1em;
 }
-.pé {
+.especial {
     width: 45%;
     height: auto;
+    margin-top: 1em;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.055);
+    position: static;
 }
 .topo {
     width: 6%;
@@ -321,6 +335,9 @@ fieldset {
     height: auto;
     align-items: center;
     font-size: 1.5em;
+}
+#final h2 {
+    margin: 4% auto 3%;
 }
 .table {
     margin: -5px auto 5% auto;
@@ -377,13 +394,15 @@ fieldset {
     margin: 0 0.3em;
     padding: 0;
 }
+#final h4 {
+    margin: 3% auto -4%;
+}
 .list {
-    margin-top: -2%;
     display: flex;
     list-style: none;
     gap: 1em;
     font-size: 1em;
-    margin-right: 4%;
+    margin: 8% 5%;
 }
 .list li a, .list li a h5, .list li h5 {
     color: white;
@@ -408,12 +427,15 @@ fieldset {
     body {
         font-size: 1em;
     }
+    .menu {
+        width: 30%;
+    }
     #cabeçalho {
-        font-size: 1em;
         padding: 3%;
     }
     #cabeçalho h1 {
-        margin: auto 10%;
+        font-size: 1.8em;
+        margin: auto 1% auto 25%;
     }
     .nav {
         font-size: 0.9em;
@@ -435,10 +457,10 @@ fieldset {
         line-height: 2em;
     }
     .coisa {
-        width: 50%;
+        width: 70%;
     }
     .pé {
-        width: 65%;
+        width: 70%;
     }
     #parte-horaria {
         flex-direction: column;
@@ -465,14 +487,15 @@ fieldset {
     .link br {
         display: none;
     }
-    .capas.cima, .capas.baixas {
+    .capas.cimas, .capas.baixas {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
         gap: 3em;
+        margin: auto 5%;
     }
-    .capas.cima a, .capas.baixas a {
+    .capas.cimas a, .capas.baixas a {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -481,17 +504,27 @@ fieldset {
         gap: 0;
         text-decoration: none;
     }
-    .capas.cima a h3, .capas.baixas a h3 {
+    .capas.cimas a:hover, .capas.baixas a:hover {
+        color: white;
+        background-color: #ff81b1;
+        transition-duration: .4s;
+    }
+    .capas.cimas a:active, .capas.baixas a:active {
+        background-color: #FFC8DD;
+        color: rgb(248, 248, 248);
+        transition-duration: .2s;
+    }
+    .capas.cimas a h3, .capas.baixas a h3 {
         color: white;
         background-color: #7cc2ff;
         margin-top: 0;
         margin-bottom: 0;
+        margin: 0;
         transition-duration: .6s;
-        padding: 2%;
-        width: 95%;
+        width: 100%;
         line-height: 1.1em;
     }
-    .capas.cima a h3 {
+    .capas.cimas a h3 {
         border-radius: 0 0 0.9em 0.9em;
         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
     }
@@ -506,9 +539,8 @@ fieldset {
         border-radius: 0 0 1.5em 1.5em ;
     }
     .igual {
-        height: auto;
-        max-height: 100%;
-        width: 280px;
+        height: 100%;
+        width: 105%;
     }
     .imagens {
         flex-direction: column;
@@ -518,32 +550,34 @@ fieldset {
     .iguali {
         width: 80%;
     }
+    .topo {
+        width: 25%;
+        bottom: 5%;
+        right: 2%;
+    }
     .table {
-        margin: 5% 5% 10%;
-        padding: 0;
+        margin: auto;
         display: flex;
+        column-span: all;
+        width: max-content;
     }
     .table thead tr {
-        font-size: 0.8em;
-        margin: auto 0% auto 0;
+        font-size: 1em;
         display: flex;
         flex-direction: column;
         text-align: left;
-        width: 100%;
     }
     .cima {
         display: flex;
-        margin: 0;
-        padding: 0;
+        margin: auto;
+        padding: 5%;
     }
     .la {
-        width: 20px;
-        height: 20px;
-        margin: 0;
-        padding: 0;
+        width: 40px;
+        height: 40px;
     }
     #autorias h4 {
-        margin: 0;
+        margin: 5%;
     }
     .list {
         font-size: 0.6em;
@@ -556,15 +590,16 @@ fieldset {
     body {
         font-size: 1.2em;
     }
+    .menu {
+        width: 25%;
+    }
     #cabeçalho {
         font-size: 1.2em;
         padding: 3%;
     }    
     #cabeçalho h1 {
         margin: auto 8%;
-    }
-    .menu {
-        width: 15%;
+        margin: auto 1% auto 25%;
     }
     .nav {
         font-size: 1.2em;
@@ -586,10 +621,10 @@ fieldset {
         line-height: 2em;
     }
     .coisa {
-        width: 50%;
+        width: 70%;
     }
     .pé {
-        width: 65%;
+        width: 70%;
     }
     #parte-horaria {
         flex-direction: column;
@@ -616,14 +651,16 @@ fieldset {
     .link br {
         display: none;
     }
-    .capas.cima, .capas.baixas {
+    .capas.cimas, .capas.baixas {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
         gap: 3em;
+        margin: auto;
+        margin: auto 5%;
     }
-    .capas.cima a, .capas.baixas a {
+    .capas.cimas a, .capas.baixas a {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -632,16 +669,26 @@ fieldset {
         gap: 0;
         text-decoration: none;
     }
-    .capas.cima a h3, .capas.baixas a h3 {
+    .capas.cimas a:hover, .capas.baixas a:hover {
+        color: white;
+        background-color: #ff81b1;
+        transition-duration: .4s;
+    }
+    .capas.cimas a:active, .capas.baixas a:active {
+        background-color: #FFC8DD;
+        color: rgb(248, 248, 248);
+        transition-duration: .2s;
+    }
+    .capas.cimas a h3, .capas.baixas a h3 {
         color: white;
         background-color: #7cc2ff;
         margin-top: 0;
         margin-bottom: 0;
         transition-duration: .6s;
-        padding: 2%;
-        width: 95%;
+        padding: 3%;
+        width: 100%;
     }
-    .capas.cima a h3 {
+    .capas.cimas a h3 {
         border-radius: 0 0 0.9em 0.9em;
         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
     }
@@ -656,9 +703,8 @@ fieldset {
         border-radius: 0 0 1.5em 1.5em ;
     }
     .igual {
-        height: auto;
-        max-height: 100%;
-        width: 350px;
+        height: 100%;
+        width: 106%;
     }
     .imagens {
         flex-direction: column;
@@ -667,6 +713,11 @@ fieldset {
     }
     .iguali {
         width: 80%;
+    }
+    .topo {
+        width: 22%;
+        bottom: 8%;
+        right: 2%;
     }
     #final {
         font-size: 1em;
@@ -694,14 +745,14 @@ fieldset {
         font-size: 1.3em;
     }
     #cabeçalho {
-        font-size: 1.2em;
         padding: 3%;
     }    
     #cabeçalho h1 {
-        margin: auto 10%;
+        font-size: 2em;
+        margin: auto 1% auto 16%;
     }
     .menu {
-        width: 20%;
+        width: 30%;
     }
     .nav {
         font-size: 1.3em;
@@ -753,14 +804,14 @@ fieldset {
     .link br {
         display: none;
     }
-    .capas.cima, .capas.baixas {
+    .capas.cimas, .capas.baixas {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
         gap: 3em;
     }
-    .capas.cima a, .capas.baixas a {
+    .capas.cimas a, .capas.baixas a {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -769,7 +820,17 @@ fieldset {
         gap: 0;
         text-decoration: none;
     }
-    .capas.cima a h3, .capas.baixas a h3 {
+    .capas.cimas a:hover, .capas.baixas a:hover {
+        color: white;
+        background-color: #ff81b1;
+        transition-duration: .4s;
+    }
+    .capas.cimas a:active, .capas.baixas a:active {
+        background-color: #FFC8DD;
+        color: rgb(248, 248, 248);
+        transition-duration: .2s;
+    }
+    .capas.cimas a h3, .capas.baixas a h3 {
         color: white;
         background-color: #7cc2ff;
         margin-top: 0;
@@ -778,7 +839,7 @@ fieldset {
         padding: 2%;
         width: 96%;
     }
-    .capas.cima a h3 {
+    .capas.cimas a h3 {
         border-radius: 0 0 0.9em 0.9em;
         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
     }
@@ -832,14 +893,14 @@ fieldset {
         font-size: 1.4em;
     }
     #cabeçalho {
-        font-size: 1.3em;
         padding: 3%;
     }    
     #cabeçalho h1 {
-        margin: auto 18%;
+        margin: auto 1% auto 25%;
+        font-size: 1.8em;
     }
     .menu {
-        width: 20%;
+        width: 25%;
     }
     .nav {
         font-size: 1.4em;
@@ -891,14 +952,14 @@ fieldset {
     .link br {
         display: none;
     }
-    .capas.cima, .capas.baixas {
+    .capas.cimas, .capas.baixas {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
         gap: 3em;
     }
-    .capas.cima a, .capas.baixas a {
+    .capas.cimas a, .capas.baixas a {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -907,7 +968,17 @@ fieldset {
         gap: 0;
         text-decoration: none;
     }
-    .capas.cima a h3, .capas.baixas a h3 {
+    .capas.cimas a:hover, .capas.baixas a:hover {
+        color: white;
+        background-color: #ff81b1;
+        transition-duration: .4s;
+    }
+    .capas.cimas a:active, .capas.baixas a:active {
+        background-color: #FFC8DD;
+        color: rgb(248, 248, 248);
+        transition-duration: .2s;
+    }
+    .capas.cimas a h3, .capas.baixas a h3 {
         color: white;
         background-color: #7cc2ff;
         margin-top: 0;
@@ -916,7 +987,7 @@ fieldset {
         padding: 2%;
         width: 95%;
     }
-    .capas.cima a h3 {
+    .capas.cimas a h3 {
         border-radius: 0 0 0.9em 0.9em;
         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
     }
@@ -974,14 +1045,14 @@ fieldset {
         font-size: 1.5em;
     }
     #cabeçalho {
-        font-size: 1.5em;
         padding: 3%;
     }    
     #cabeçalho h1 {
-        margin: auto 20%;
+        font-size: 2.2em;
+        margin: auto 1% auto 25%;
     }
     .menu {
-        width: 20%;
+        width: 25%;
     }
     .nav {
         font-size: 1.5em;
@@ -1036,14 +1107,14 @@ fieldset {
     .link br {
         display: none;
     }
-    .capas.cima, .capas.baixas {
+    .capas.cimas, .capas.baixas {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
         gap: 3em;
     }
-    .capas.cima a, .capas.baixas a {
+    .capas.cimas a, .capas.baixas a {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1052,7 +1123,17 @@ fieldset {
         gap: 0;
         text-decoration: none;
     }
-    .capas.cima a h3, .capas.baixas a h3 {
+    .capas.cimas a:hover, .capas.baixas a:hover {
+        color: white;
+        background-color: #ff81b1;
+        transition-duration: .4s;
+    }
+    .capas.cimas a:active, .capas.baixas a:active {
+        background-color: #FFC8DD;
+        color: rgb(248, 248, 248);
+        transition-duration: .2s;
+    }
+    .capas.cimas a h3, .capas.baixas a h3 {
         color: white;
         background-color: #7cc2ff;
         margin-top: 0;
@@ -1061,7 +1142,7 @@ fieldset {
         padding: 2%;
         width: 95%;
     }
-    .capas.cima a h3 {
+    .capas.cimas a h3 {
         border-radius: 0 0 0.9em 0.9em;
         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
     }

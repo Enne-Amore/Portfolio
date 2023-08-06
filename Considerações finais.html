@@ -7,66 +7,13 @@
     <title>Área final</title>
     <link rel="stylesheet" href="css/cores.css">
     <link rel="shortcut icon" href="Imagens para todas/heart.png" type="image/x-icon">
-    <style>
-        #áreas {
-            height: 1633px;
-        
-        }
-        @media only screen and (max-width: 500px) {
-            #áreas {
-                min-height: 100px;
-                max-height: 580px;
-            }
-        }
-        @media only screen and (min-width: 500px) and (max-width: 650px) {
-            #áreas {
-                min-height: 100px;
-                max-height: 680px;
-            }
-        }
-        @media only screen and (min-width: 650px) and (max-width: 800px) {
-            #áreas {
-                min-height: 100px;
-                max-height: 920px;
-            }
-        }
-        @media only screen and (min-width: 800px) and (max-width: 1100px) {
-            #áreas {
-                min-height: 100px;
-                max-height: 1200px;
-            }
-        }
-        @media only screen and (min-width: 1100px) and (max-width: 1200px) {
-            #áreas {
-                min-height: 100px;
-                max-height: 1350px;
-            }
-        }
-        @media only screen and (min-width: 1200px) and (max-width: 1350px) {
-            #áreas {
-                min-height: 100px;
-                max-height: 1425px;
-            }
-        }
-        @media only screen and (min-width: 1350px) and (max-width: 1550px) {
-            #áreas {
-                min-height: 100px;
-                max-height: 1525px;
-            }
-        }
-        @media only screen and (min-width: 1550px) {
-            #áreas {
-                min-height: 100px;
-                max-height: 1633px;
-            }
-        }
-    </style>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <header>
         <img id="menu" class="menu" onclick="abrirMenu()" src="Imagens para todas/menu.png" alt="Menu de páginas">
         <div onclick="sairDoMenu()" id="cabeçalho">
-            <label for="texto"><h1>Considerações finais</h1></label>
+            <label for="texto"><h1>Conclusões finais</h1></label>
         </div>
         <nav onclick="sairDoMenu()" class="nav">
             <ul>
@@ -87,7 +34,7 @@
     <main onclick="sairDoMenu()" id="conteúdo">
         <section>
             <label for="texto e imagem"></label>
-            <p><img src="Considerações finais/imagens/Importância.png" class="pé" alt="Porque tudo isso importa tanto assim?"></p>
+            <p><img src="Considerações finais/imagens/Importância.png" class="especial" alt="Porque tudo isso importa tanto assim?"></p>
             <p>
                 <article class="parte" id="parte-antihoraria">
                     <div class="retangulo esquerdo">
@@ -151,9 +98,14 @@
                                 <a href="https://github.com/Enne-Amore" rel="external" target="_blank"><img src="Imagens para todas/github.png" alt="" class="la"><h3 class="contato"><abbr title="Enne-Amore">GitHub</abbr></h3></a>
                             </div>
                         </th>
-                        <th colspan="10%">
+                        <th>
                             <div class="cima">
                                 <a href="tel:+5583981448264" target="_blank" rel="external"><img src="Imagens para todas/telefone.png" alt="" class="la"><h3 class="contato"><abbr title="(83) 981448264">Telefone</abbr></h3></a>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="cima">
+                                <a href="https://www.linkedin.com/in/enne-jim-pessoa-b90a18231" target="_blank" rel="external"><img src="Imagens para todas/linkedin.png" alt="" class="la"><h3 class="contato"><abbr title="Enne Jim Pessoa">Linkedin</abbr></h3></a>
                             </div>
                         </th>
                     </tr>
@@ -200,5 +152,6 @@
     </footer>
     <script src="js/menu.js"></script>
     <script src="js/topo.js"></script>
+    <script src="js/aparecer.js"></script>
 </body>
 </html>

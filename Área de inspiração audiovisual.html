@@ -7,65 +7,7 @@
     <title>Área de inspiração audiovisual</title>
     <link rel="stylesheet" href="css/cores.css">
     <link rel="shortcut icon" href="Imagens para todas/video-edition.png" type="image/x-icon">
-    <style>
-        #áreas {
-            height: 2984px;
-        }
-        @media only screen and (max-width: 600px) {
-            #áreas {
-                min-height: 100px;
-                max-height: 950px;
-            }
-        }
-        @media only screen and (min-width: 600px) and (max-width: 620px) {
-            #áreas {
-                min-height: 100px;
-                max-height: 1225px;
-            }
-        }
-        @media only screen and (min-width: 620px) and (max-width: 750px) {
-            #áreas {
-                min-height: 100px;
-                max-height: 1450px;
-            }
-        }
-        @media only screen and (min-width: 750px) and (max-width: 900px) {
-            #áreas {
-                min-height: 100px;
-                max-height: 1661px;
-            }
-        }
-        @media only screen and (min-width: 900px) and (max-width: 1135px) {
-            #áreas {
-                min-height: 100px;
-                max-height: 2230px;
-            }
-        }
-        @media only screen and (min-width: 1135px) and (max-width: 1310px) {
-            #áreas {
-                min-height: 100px;
-                max-height: 2798px;
-            }
-        }
-        @media only screen and (min-width: 1310px) and (max-width: 1520px) {
-            #áreas {
-                min-height: 100px;
-                max-height: 3145px;
-            }
-        }
-        @media only screen and (min-width: 1520px) and (max-width: 1735px) {
-            #áreas {
-                min-height: 100px;
-                max-height: 3311px;
-            }
-        }
-        @media only screen and (min-width: 1735px) {
-            #áreas {
-                min-height: 100px;
-                max-height: 3484px;
-            }
-        }
-    </style>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <header>
@@ -96,7 +38,7 @@
             <fieldset>
                 <h3>
                     <p>
-                        Durante a minha vida de editore, passo anos e anos consumindo e observando edições de vídeos feitas e publicadas em várias plataformas para ter algumas ideias legais a colocar em prática.
+                        Durante a minha vida de editore, passo anos e anos consumindo e observando edições de vídeos feitas e publicadas em várias plataformas para ter algumas ideias legais a colocar em prática. E uso plataformas, como Youtube, Tik Tok e Instagram, para consumir esse tipo de edição audiovisual.
                     </p>
                     <p>
                          Aqui, você verá alguns vídeos que me inspiraram de alguma forma ou de outra &#x1F5A4;
@@ -110,24 +52,64 @@
         <section class="link">
             <label for="imagem, texto e link"></label>
             <img src="Imagens para todas/videos a ver.png" id="videos" class="coisa" alt="Vídeos a ver:">
-            <fieldset>
-                <div class="capas cima">
-                    <a href="gwen.html" rel="next"><img class="igual cima" src="Inspirações minhas de vídeo/capas/gwen.jpg" alt=""><h3>Gwendolyn <br> Tennyson</h3></a>
-                    <a href="scitwi.html" rel="next"><img class="igual cima" src="Inspirações minhas de vídeo/capas/scitwi.jpg" alt=""><h3>Scitwi</h3></a>
-                </div>
-                <div class="capas baixas">
-                    <a href="sciset2.html" rel="next"><h3>Sciset</h3><img src="Inspirações minhas de vídeo/capas/sciset.jpg" alt="" class="igual baixa"></a>
-                    <a href="ladybug.html" rel="next"><h3>Ladybug</h3><img src="Inspirações minhas de vídeo/capas/ladybug.jpg" alt="" class="igual baixa"></a>
-                </div>
-                <div class="capas cima">
-                    <a href="sour_sweet.html" rel="next"><img src="Inspirações minhas de vídeo/capas/sour sweet.jpg" alt="" class="igual cima"><h3>Sour <br> Sweet</h3></a>
-                    <a href="chucky.html" rel="next"><img src="Inspirações minhas de vídeo/capas/chucky.jpg" class="igual cima"><h3>Chucky</h3></a>
-                </div>
-                <div class="capas baixas">
-                    <a href="enibes.html" rel="next"><h3>Ênibes</h3><img class="igual baixa" src="Inspirações minhas de vídeo/capas/ênibes.jpg" alt=""></a>
-                    <a href="rainbow_dash.html" rel="next"><h3>Rainbow <br> Dash</h3><img class="igual baixa" src="Inspirações minhas de vídeo/capas/rainbow dash.jpg" alt=""></a>
-                </div>
-            </fieldset>
+            <section>
+                <figure class="capas cimas">
+                    <a href="gwen.html" rel="next">
+                        <img class="igual cimas" src="Inspirações minhas de vídeo/capas/gwen.jpg" alt="">
+                        <figcaption>
+                            <h3>Gwendolyn <br> Tennyson</h3>
+                        </figcaption>
+                    </a>
+                    <a href="scitwi.html" rel="next">
+                        <img class="igual cimas" src="Inspirações minhas de vídeo/capas/scitwi.jpg" alt="">
+                        <figcaption>
+                            <h3>Scitwi</h3>
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure class="capas baixas">
+                    <a href="sciset2.html" rel="next">
+                        <figcaption>
+                            <h3>Sciset</h3>
+                        </figcaption>
+                        <img src="Inspirações minhas de vídeo/capas/sciset.jpg" alt="" class="igual baixa">
+                    </a>
+                    <a href="ladybug.html" rel="next">
+                        <figcaption>
+                            <h3>Ladybug</h3>
+                        </figcaption>
+                        <img src="Inspirações minhas de vídeo/capas/ladybug.jpg" alt="" class="igual baixa">
+                    </a>
+                </figure>
+                <figure class="capas cimas">
+                    <a href="sour_sweet.html" rel="next">
+                        <img src="Inspirações minhas de vídeo/capas/sour sweet.jpg" alt="" class="igual cimas">
+                        <figcaption>
+                            <h3>Sour <br> Sweet</h3>
+                        </figcaption>
+                    </a>
+                    <a href="chucky.html" rel="next">
+                        <img src="Inspirações minhas de vídeo/capas/chucky.jpg" class="igual cimas">
+                        <figcaption>
+                            <h3>Chucky</h3>
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure class="capas baixas">
+                    <a href="enibes.html" rel="next">
+                        <figcaption>
+                            <h3>Ênibes</h3>
+                        </figcaption>
+                        <img class="igual baixa" src="Inspirações minhas de vídeo/capas/ênibes.jpg" alt="">
+                    </a>
+                    <a href="rainbow_dash.html" rel="next">
+                        <figcaption>
+                            <h3>Rainbow <br> Dash</h3>
+                        </figcaption>
+                        <img class="igual baixa" src="Inspirações minhas de vídeo/capas/rainbow dash.jpg" alt="">
+                    </a>
+                </figure>
+            </section>
         </section>
         <div id="topo">
             <img class="topo" src="Imagens para todas/topo.png" alt="Clique aqui para voltar ao topo da página">
@@ -161,9 +143,14 @@
                                 <a href="https://github.com/Enne-Amore" rel="external" target="_blank"><img src="Imagens para todas/github.png" alt="" class="la"><h3 class="contato"><abbr title="Enne-Amore">GitHub</abbr></h3></a>
                             </div>
                         </th>
-                        <th colspan="10%">
+                        <th>
                             <div class="cima">
                                 <a href="tel:+5583981448264" target="_blank" rel="external"><img src="Imagens para todas/telefone.png" alt="" class="la"><h3 class="contato"><abbr title="(83) 981448264">Telefone</abbr></h3></a>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="cima">
+                                <a href="https://www.linkedin.com/in/enne-jim-pessoa-b90a18231" target="_blank" rel="external"><img src="Imagens para todas/linkedin.png" alt="" class="la"><h3 class="contato"><abbr title="Enne Jim Pessoa">Linkedin</abbr></h3></a>
                             </div>
                         </th>
                     </tr>
@@ -210,5 +197,6 @@
     </footer>
     <script src="js/menu.js"></script>
     <script src="js/topo.js"></script>
+    <script src="js/aparecer.js"></script>
 </body>
 </html>

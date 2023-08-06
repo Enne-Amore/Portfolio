@@ -7,94 +7,7 @@
     <title>Área de inspiração visual</title>
     <link rel="stylesheet" href="css/cores.css">
     <link rel="shortcut icon" href="Imagens para todas/image-editing.png" type="image/x-icon">
-    <style>
-        #áreas {
-            height: 3712px;
-        }
-        @media only screen and (max-width: 500px) {
-            #áreas {
-                min-height: 100px;
-                max-height: 980px;
-            }
-        }
-        @media only screen and (min-width: 500px) and (max-width: 625px) {
-            #áreas {
-                min-height: 100px;
-                max-height: 1101px;
-            }
-        }
-        @media only screen and (min-width: 625px) and (max-width: 750px) {
-            #áreas {
-                min-height: 100px;
-                max-height: 1350px;
-            }
-        }
-        @media only screen and (min-width: 750px) and (max-width: 850px) {
-            #áreas {
-                min-height: 100px;
-                max-height: 1582px;
-            }
-        }
-        @media only screen and (min-width: 850px) and (max-width: 980px) {
-            #áreas {
-                min-height: 100px;
-                max-height: 1812px;
-            }
-        }
-        @media only screen and (min-width: 980px) and (max-width: 1080px) {
-            #áreas {
-                min-height: 100px;
-                max-height: 1990px;
-            }
-        }
-        @media only screen and (min-width: 1080px) and (max-width: 1140px) {
-            #áreas {
-                min-height: 100px;
-                max-height: 2220px;
-            }
-        }
-        @media only screen and (min-width: 1140px) and (max-width: 1250px) {
-            #áreas {
-                min-height: 100px;
-                max-height: 2440px;
-            }
-        }
-        @media only screen and (min-width: 1250px) and (max-width: 1360px) {
-            #áreas {
-                min-height: 100px;
-                max-height: 2848px;
-            }
-        }
-        @media only screen and (min-width: 1360px) and (max-width: 1470px) {
-            #áreas {
-                min-height: 100px;
-                max-height: 3048px;
-            }
-        }
-        @media only screen and (min-width: 1470px) and (max-width: 1580px) {
-            #áreas {
-                min-height: 100px;
-                max-height: 3265px;
-            }
-        }
-        @media only screen and (min-width: 1580px) and (max-width: 1690px) {
-            #áreas {
-                min-height: 100px;
-                max-height: 3453px;
-            }
-        }
-        @media only screen and (min-width: 1690px) and (max-width: 1800px) {
-            #áreas {
-                min-height: 100px;
-                max-height: 3460px;
-            }
-        }
-        @media only screen and (min-width: 1800px) {
-            #áreas {
-                min-height: 100px;
-                max-height: 3712px;
-            }
-        }
+    <script src="https://unpkg.com/scrollreveal"></script>
     </style>
 </head>
 <body>
@@ -131,20 +44,18 @@
         </section>
         <section>
             <img src="Imagens para todas/imagens a ver.png" id="imagens" class="coisa" alt="Imagens a ver:">
-            <fieldset>
-                <div class="imagens">
-                    <img src="Inspirações minhas de imagem/magia.jpg" alt="Não diga 'magia negra', e sim apenas 'magia'!" class="iguali">
-                    <img src="Inspirações minhas de imagem/perdolução.jpg" alt="As desculpas devem estar acompanhadas de mudanças" class="iguali">
-                </div>
-                <div class="imagens">
-                    <img src="Inspirações minhas de imagem/lukadrien.jpg" alt="Lukadrien" class="iguali">
-                    <img src="Inspirações minhas de imagem/julerose.jpg" alt="Julerose" class="iguali">
-                </div>
-                <div class="imagens">
-                    <img src="Inspirações minhas de imagem/personagens.jpg" alt="Personagens não-bináries em animações" class="iguali">
-                    <img src="Inspirações minhas de imagem/ênibes.jpg" alt="Inclusão de não-bináries no símbolo trans" class="iguali">
-                </div>
-            </fieldset>
+            <figure class="imagens">
+                <img src="Inspirações minhas de imagem/magia.jpg" alt="Não diga 'magia negra', e sim apenas 'magia'!" class="iguali">
+                <img src="Inspirações minhas de imagem/perdolução.jpg" alt="As desculpas devem estar acompanhadas de mudanças" class="iguali">
+            </figure>
+            <figure class="imagens">
+                <img src="Inspirações minhas de imagem/lukadrien.jpg" alt="Lukadrien" class="iguali">
+                <img src="Inspirações minhas de imagem/julerose.jpg" alt="Julerose" class="iguali">
+            </figure>
+            <figure class="imagens">
+                <img src="Inspirações minhas de imagem/personagens.jpg" alt="Personagens não-bináries em animações" class="iguali">
+                <img src="Inspirações minhas de imagem/ênibes.jpg" alt="Inclusão de não-bináries no símbolo trans" class="iguali">
+            </figure>
         </section>
         <div id="topo">
             <img class="topo" src="Imagens para todas/topo.png" alt="Clique aqui para voltar ao topo da página">
@@ -178,9 +89,14 @@
                                 <a href="https://github.com/Enne-Amore" rel="external" target="_blank"><img src="Imagens para todas/github.png" alt="" class="la"><h3 class="contato"><abbr title="Enne-Amore">GitHub</abbr></h3></a>
                             </div>
                         </th>
-                        <th colspan="10%">
+                        <th>
                             <div class="cima">
                                 <a href="tel:+5583981448264" target="_blank" rel="external"><img src="Imagens para todas/telefone.png" alt="" class="la"><h3 class="contato"><abbr title="(83) 981448264">Telefone</abbr></h3></a>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="cima">
+                                <a href="https://www.linkedin.com/in/enne-jim-pessoa-b90a18231" target="_blank" rel="external"><img src="Imagens para todas/linkedin.png" alt="" class="la"><h3 class="contato"><abbr title="Enne Jim Pessoa">Linkedin</abbr></h3></a>
                             </div>
                         </th>
                     </tr>
@@ -227,5 +143,6 @@
     </footer>
     <script src="js/menu.js"></script>
     <script src="js/topo.js"></script>
+    <script src="js/aparecer.js"></script>
 </body>
 </html>
