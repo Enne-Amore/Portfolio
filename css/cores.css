@@ -30,7 +30,7 @@ fieldset {
 /* E o seu cabeçalho */
 
 #cabeçalho {
-    padding: 3%;
+    padding: 4%;
     text-align: center;
     background-color: #FFC8DD;
     color: #a479c0;
@@ -93,7 +93,7 @@ fieldset {
 /* O menu de páginas do site */
 
 #areas {
-    height: 2500px;
+    height: 100em;
     width: max-content;
     background-color: rgb(248, 248, 248);
     float: left;
@@ -291,10 +291,10 @@ fieldset {
     font-size: 1.5em;
 }
 #final h2 {
-    margin: 4% auto 3%;
+    margin: 4%;
 }
 .table {
-    margin: -5px auto 5% auto;
+    margin: -0.6em auto 5%;
     text-align: center;
     position: static;
     font-size: 1em;
@@ -302,13 +302,11 @@ fieldset {
     border: 0.3em groove #7cc2ff;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.411);
     width: 80%;
-    padding: 0;
 }
 .cima {
     display: flex;
     justify-content: center;
-    margin: 0;
-    padding: 0;
+    padding: 1%;
 }
 .cima a {
     display: flex;
@@ -317,8 +315,6 @@ fieldset {
     text-decoration: none;
     transition-duration: .6s;
     border-radius: 0.5em;
-    margin: 0;
-    padding: 0;
 }
 .cima a h3:hover {
     background-color: #a479c0;
@@ -337,8 +333,6 @@ fieldset {
     transition-duration: .6s;
     border-radius: 0.5em;
     color: white;
-    margin: 0;
-    padding: 0;
 }
 .la {
     align-items: center;
@@ -346,17 +340,13 @@ fieldset {
     width: 60px;
     height: 60px;
     margin: 0 0.3em;
-    padding: 0;
-}
-#final h4 {
-    margin: 3% auto -4%;
 }
 .list {
     display: flex;
     list-style: none;
     gap: 1em;
     font-size: 1em;
-    margin: 8% 5%;
+    margin: -0% 5% 8%;
 }
 .list li a, .list li a h5, .list li h5 {
     color: white;
@@ -401,10 +391,11 @@ fieldset {
         font-size: 1em;
     }
     .menu {
+        left: 3%;
         width: 25%;
     }
     #cabeçalho {
-        padding: 3%;
+        padding: 4%;
     }
     #cabeçalho h1 {
         font-size: 1.6em;
@@ -419,8 +410,8 @@ fieldset {
         padding: 0;
         margin: auto 0.5em;
     }
-    #áreas {
-        font-size: 1em;
+    #areas {
+        padding: 8% 5%;
     }
     #conteúdo {
         font-size: 1em;
@@ -433,7 +424,7 @@ fieldset {
     .coisa {
         width: 70%;
     }
-    .pé {
+    .especial {
         width: 70%;
     }
     #parte-horaria {
@@ -482,10 +473,10 @@ fieldset {
         width: 100%;
         margin: 0;
     }
-    .capas.cimas a figcaption {
+    .capas.cimas a figcaption, .capas.cimas a figcaption:hover, .capas.cimas a figcaption:active {
         border-radius: 0 0 1.5em 1.5em ;
     }
-    .capas.baixas a figcaption {
+    .capas.baixas a figcaption, .capas.baixas a figcaption:hover, .capas.baixas a figcaption:active {
         border-radius: 1.5em 1.5em 0 0;
     }
     .igual.cimas {
@@ -508,7 +499,10 @@ fieldset {
     }
     .topo {
         width: 20%;
-        right: 2%;
+        right: 4%;
+    }
+    #final h2 {
+        margin: 10% 5% 6%;
     }
     .table {
         margin: auto;
@@ -531,14 +525,12 @@ fieldset {
         width: 40px;
         height: 40px;
     }
-    #autorias h4 {
-        margin: 5%;
-    }
     .list {
-        font-size: 0.6em;
-        padding: 1% 0;
-        margin: 4%;
-        gap: 2%;
+        font-size: 0.55em;
+        margin: 10% 5% 10% 1%;
+    }
+    .list li {
+        width: fit-content;
     }
 }
 @media only screen and (min-width: 600px) and (max-width: 650px) {
@@ -549,7 +541,7 @@ fieldset {
         width: 25%;
     }
     #cabeçalho {
-        padding: 3%;
+        padding: 4%;
     }    
     #cabeçalho h1 {
         font-size: 2em;
@@ -563,8 +555,8 @@ fieldset {
         padding: 0;
         margin: 0 1%;
     }
-    #áreas {
-        font-size: 1em;
+    #areas {
+        padding: 8% 5%;
     }
     #conteúdo {
         font-size: 1em;
@@ -577,7 +569,7 @@ fieldset {
     .coisa {
         width: 70%;
     }
-    .pé {
+    .especial {
         width: 70%;
     }
     #parte-horaria {
@@ -626,10 +618,10 @@ fieldset {
         width: 100%;
         margin: 0;
     }
-    .capas.cimas a figcaption {
+    .capas.cimas a figcaption, .capas.cimas a figcaption:hover, .capas.cimas a figcaption:active {
         border-radius: 0 0 1.5em 1.5em ;
     }
-    .capas.baixas a figcaption {
+    .capas.baixas a figcaption, .capas.baixas a figcaption:hover, .capas.baixas a figcaption:active {
         border-radius: 1.5em 1.5em 0 0;
     }
     .igual.cima {
@@ -651,29 +643,42 @@ fieldset {
         width: 80%;
     }
     .topo {
-        width: 22%;
-        bottom: 8%;
-        right: 2%;
+        width: 20%;
+        right: 4%;
     }
     #final {
-        font-size: 1em;
+        font-size: 1.4em;
     }
-    #autorias h4 {
-        margin: 0;
-    }
-    .list {
-        font-size: 10px;
-        padding: 1% 0;
-        margin: 0 4%;
-        gap: 2%;
+    #final h2 {
+        margin: 10% 5% 6%;
     }
     .table {
-        font-size: 12px;
+        margin: auto;
+        display: flex;
+        column-span: all;
+        width: max-content;
+    }
+    .table thead tr {
+        font-size: 1em;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .cima {
+        display: flex;
+        margin: auto;
+        padding: 5%;
     }
     .la {
-        width: 30px;
-        height: 30px;
-        margin: 0.3em 0.3em;
+        width: 45px;
+        height: 45px;
+    }
+    .list {
+        font-size: 0.74em;
+        margin: 1% 5% 10%
+    }
+    .list li {
+        width: fit-content;
     }
 }
 @media only screen and (min-width: 650px) and (max-width: 750px) {
@@ -681,7 +686,7 @@ fieldset {
         font-size: 1.3em;
     }
     #cabeçalho {
-        padding: 3%;
+        padding: 4%;
     }    
     #cabeçalho h1 {
         font-size: 2em;
@@ -701,6 +706,7 @@ fieldset {
     }
     #areas {
         font-size: 1.3em;
+        padding: 8% 5%;
     }
     #conteúdo {
         font-size: 1em;
@@ -713,7 +719,7 @@ fieldset {
     .coisa {
         width: 50%;
     }
-    .pé {
+    .especial {
         width: 65%;
     }
     #parte-horaria {
@@ -762,10 +768,10 @@ fieldset {
         width: 100%;
         margin: 0;
     }
-    .capas.cimas a figcaption {
+    .capas.cimas a figcaption, .capas.cimas a figcaption:hover, .capas.cimas a figcaption:active {
         border-radius: 0 0 1.5em 1.5em ;
     }
-    .capas.baixas a figcaption {
+    .capas.baixas a figcaption, .capas.baixas a figcaption:hover, .capas.baixas a figcaption:active {
         border-radius: 1.5em 1.5em 0 0;
     }
     .igual.cima {
@@ -788,25 +794,40 @@ fieldset {
         width: 80%;
     }
     #final {
-        font-size: 18px;
+        font-size: 1em;
     }
-    #autorias h4 {
-        margin: 0;
-    }
-    .list {
-        font-size: 11px;
-        padding: 1% 0;
-        margin: 0 4%;
-        gap: 2%;
+    #final h2 {
+        font-size: 2em;
+        margin: 6% 5% 4%;
     }
     .table {
-        font-size: 13px;
+        margin: auto;
+        display: flex;
+        column-span: all;
+        width: max-content;
+    }
+    .table thead tr {
+        font-size: 1em;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .cima {
+        display: flex;
+        margin: auto;
+        padding: 5%;
     }
     .la {
-        width: 30px;
-        height: 30px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        width: 50px;
+        height: 50px;
+    }
+    .list {
+        font-size: 1em;
+        margin: 1% 5% 10%
+    }
+    .topo {
+        width: 20%;
+        right: 4%;
     }
 }
 @media only screen and (min-width: 750px) and (max-width: 1000px) {
@@ -814,7 +835,7 @@ fieldset {
         font-size: 1.4em;
     }
     #cabeçalho {
-        padding: 3%;
+        padding: 4%;
     }    
     #cabeçalho h1 {
         margin: auto 15%;
@@ -834,6 +855,7 @@ fieldset {
     }
     #areas {
         font-size: 1.3em;
+        padding: 8% 5%;
     }
     #conteúdo {
         font-size: 1em;
@@ -846,7 +868,7 @@ fieldset {
     .coisa {
         width: 50%;
     }
-    .pé {
+    .especial {
         width: 65%;
     }
     #parte-horaria {
@@ -895,10 +917,10 @@ fieldset {
         width: 100%;
         margin: 0;
     }
-    .capas.cimas a figcaption {
+    .capas.cimas a figcaption, .capas.cimas a figcaption:hover, .capas.cimas a figcaption:active {
         border-radius: 0 0 1.5em 1.5em ;
     }
-    .capas.baixas a figcaption {
+    .capas.baixas a figcaption, .capas.baixas a figcaption:hover, .capas.baixas a figcaption:active {
         border-radius: 1.5em 1.5em 0 0;
     }
     .igual.cima {
@@ -921,28 +943,43 @@ fieldset {
         width: 80%;
     }
     #final {
-        font-size: 1em;
+        font-size: 1.4em;
     }
-    #autorias h4 {
-        margin: 0;
-    }
-    .list {
-        font-size: 1em;
-        padding: 1% 0;
-        margin: 0 4%;
-        gap: 2%;
+    #final h2 {
+        font-size: 1.4em;
+        margin: 6% 5% 5%;
     }
     .table {
         font-size: 1em;
     }
-    .link div a h3 {
-        font-size: 1em; 
+    .table {
+        margin: auto;
+        display: flex;
+        column-span: all;
+        width: max-content;
+    }
+    .table thead tr {
+        font-size: 1em;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .cima {
+        display: flex;
+        margin: auto;
+        padding: 5%;
     }
     .la {
-        width: 40px;
-        height: 40px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        width: 60px;
+        height: 60px;
+    }
+    .list {
+        font-size: 1em;
+        margin: 1% 5% 10%
+    }
+    .topo {
+        width: 15%;
+        right: 4%;
     }
 }
 
@@ -951,7 +988,7 @@ fieldset {
         font-size: 1.5em;
     }
     #cabeçalho {
-        padding: 3%;
+        padding: 4%;
     }    
     #cabeçalho h1 {
         font-size: 2.2em;
@@ -973,6 +1010,7 @@ fieldset {
     }
     #areas {
         font-size: 1.5em;
+        padding: 8% 5%;
     }
     #conteúdo {
         font-size: 1em;
@@ -985,7 +1023,7 @@ fieldset {
     .coisa {
         width: 50%;
     }
-    .pé {
+    .especial {
         width: 65%;
     }
     #parte-horaria {
@@ -1034,10 +1072,10 @@ fieldset {
         width: 100%;
         margin: 0;
     }
-    .capas.cimas a figcaption {
+    .capas.cimas a figcaption, .capas.cimas a figcaption:hover, .capas.cimas a figcaption:active {
         border-radius: 0 0 1.5em 1.5em ;
     }
-    .capas.baixas a figcaption {
+    .capas.baixas a figcaption, .capas.baixas a figcaption:hover, .capas.baixas a figcaption:active {
         border-radius: 1.5em 1.5em 0 0;
     }
     .igual.cima {
@@ -1062,17 +1100,12 @@ fieldset {
     #final {
         font-size: 1em;
     }
-    .list {
-        font-size: 1em;
+    .link div a h3 {
+        font-size: 1em; 
     }
-    .table {
-        font-size: 1em;
-    }
-    .la {
-        width: 55px;
-        height: 55px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+    .topo {
+        width: 20%;
+        right: 4%;
     }
 }
 @media only screen and (min-width: 1133px) and (max-width: 1215px) {
