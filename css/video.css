@@ -53,11 +53,11 @@ body {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.158);
 }
 .botao:hover {
-    box-shadow: 0px 0px 20px 5px #ff609a;
+    box-shadow: 0px 0px 10px 1px #ff609a;
     transition-duration: .1s;
 }
 .botao:active {
-    box-shadow: 0px 0px 20px 5px #FFC8DD;
+    box-shadow: 0px 0px 10px 1px #FFC8DD;
     transition-duration: .1s;
 }
 

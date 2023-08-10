@@ -1,13 +1,17 @@
 window.sr = ScrollReveal({ reset: true });
 
-sr.reveal('#conteúdo', {duration: 1000});
+sr.reveal('#conteúdo', {duration: 100});
 
-sr.reveal('.coisa', {
-    rotate: {x: 0, y: 80, z: 0},
-    duration: 2000
-});
+sr.reveal('.parte');
 
-sr.reveal('.especial', {
-    rotate: {x: 0, y: 80, z: 0},
-    duration: 2000
-});
+sr.reveal('.txt');
+
+sr.reveal('.capas');
+
+sr.reveal('.video');
+
+sr.reveal('.iguali');
+
+sr.reveal('.coisa');
+
+sr.reveal('.especial');

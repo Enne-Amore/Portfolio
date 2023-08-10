@@ -43,7 +43,6 @@ fieldset {
     align-items: center;
 }
 #cabeçalho h1 {
-    margin: auto 5%;
     width: max-content;
 }
 .menu {
@@ -157,6 +156,7 @@ fieldset {
     width: 30%;
     height: auto;
     margin-top: 0.2em;
+    position: static;
 }
 .parte {
     display: flex;
@@ -191,33 +191,6 @@ fieldset {
 .retangulo.esquerdo h2, .retangulo.esquerdo h3 {
     text-align: right;
 }
-
-
-/* .link div {
-    margin: 2% auto;
-}
-.link div a h3 {
-    font-size: 30px;
-    color: #ff81b1;
-    display: inline-block;
-    vertical-align: top;
-    line-height: 1.3em;
-    margin-top: 4%;
-    transition-duration: .6s;
-    border-radius: 0.9em;
-    padding: 1%;
-}
-.link div a h3:hover {
-    color: white;
-    background-color: #ff609a;
-    transition-duration: .6s;
-}
-.link div a h3:active {
-    background-color: #ff81b1;
-    color: rgb(248, 248, 248);
-    transition-duration: .2s;
-} */
-
 .link section {
     display: flex;
     justify-content: center;
@@ -272,11 +245,11 @@ fieldset {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
 }
 .igual:hover {
-    box-shadow: 0px 0px 30px 5px #FFC8DD;
+    box-shadow: 0px 0px 30px 1px #ff81b1;
     transition-duration: .2s;
 }
 .igual:active {
-    box-shadow: 0px 0px 30px 5px #ff609a;
+    box-shadow: 0px 0px 30px 1px #ff609a;
     transition-duration: .1s;
 }
 
@@ -299,25 +272,6 @@ fieldset {
     margin-top: 1em;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.055);
     position: static;
-}
-.topo {
-    width: 6%;
-    height: auto;
-    right: 1%;
-    bottom: 1%;
-    position: fixed;
-    cursor: pointer;
-    border-radius: 60%;
-    transition-duration: .1s;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.158);
-}
-.topo:hover {
-    box-shadow: 0px 0px 20px 5px #ff609a;
-    transition-duration: .1s;
-}
-.topo:active {
-    box-shadow: 0px 0px 20px 5px #FFC8DD;
-    transition-duration: .1s;
 }
 
 /* O rodapé do site */
@@ -420,6 +374,25 @@ fieldset {
     background-color: #ff609a;
     transition-duration: .2s;
 }
+.topo {
+    width: 6%;
+    height: auto;
+    right: 1%;
+    bottom: 5%;
+    position: fixed;
+    cursor: pointer;
+    border-radius: 60%;
+    transition-duration: .1s;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.158);
+}
+.topo:hover {
+    box-shadow: 0px 0px 15px 1px #ff609a;
+    transition-duration: .1s;
+}
+.topo:active {
+    box-shadow: 0px 0px 15px 1px #FFC8DD;
+    transition-duration: .1s;
+}
 
 /* A responsividade do site */
 
@@ -428,14 +401,15 @@ fieldset {
         font-size: 1em;
     }
     .menu {
-        width: 30%;
+        width: 25%;
     }
     #cabeçalho {
         padding: 3%;
     }
     #cabeçalho h1 {
-        font-size: 1.8em;
-        margin: auto 1% auto 25%;
+        font-size: 1.6em;
+        margin: auto 20%;
+        width: min-content;
     }
     .nav {
         font-size: 0.9em;
@@ -493,7 +467,7 @@ fieldset {
         flex-direction: column;
         align-items: center;
         gap: 3em;
-        margin: auto 5%;
+        margin: auto 15%;
     }
     .capas.cimas a, .capas.baixas a {
         display: flex;
@@ -504,35 +478,17 @@ fieldset {
         gap: 0;
         text-decoration: none;
     }
-    .capas.cimas a:hover, .capas.baixas a:hover {
-        color: white;
-        background-color: #ff81b1;
-        transition-duration: .4s;
-    }
-    .capas.cimas a:active, .capas.baixas a:active {
-        background-color: #FFC8DD;
-        color: rgb(248, 248, 248);
-        transition-duration: .2s;
-    }
-    .capas.cimas a h3, .capas.baixas a h3 {
-        color: white;
-        background-color: #7cc2ff;
-        margin-top: 0;
-        margin-bottom: 0;
-        margin: 0;
-        transition-duration: .6s;
+    .capas.cimas a figcaption, .capas.baixas a figcaption {
         width: 100%;
-        line-height: 1.1em;
+        margin: 0;
     }
-    .capas.cimas a h3 {
-        border-radius: 0 0 0.9em 0.9em;
-        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
+    .capas.cimas a figcaption {
+        border-radius: 0 0 1.5em 1.5em ;
     }
-    .capas.baixas a h3 {
-        border-radius: 0.9em 0.9em 0 0;
-        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
+    .capas.baixas a figcaption {
+        border-radius: 1.5em 1.5em 0 0;
     }
-    .igual.cima {
+    .igual.cimas {
         border-radius: 1.5em 1.5em 0 0;
     }
     .igual.baixa {
@@ -540,7 +496,7 @@ fieldset {
     }
     .igual {
         height: 100%;
-        width: 105%;
+        width: 104%;
     }
     .imagens {
         flex-direction: column;
@@ -551,8 +507,7 @@ fieldset {
         width: 80%;
     }
     .topo {
-        width: 25%;
-        bottom: 5%;
+        width: 20%;
         right: 2%;
     }
     .table {
@@ -582,7 +537,7 @@ fieldset {
     .list {
         font-size: 0.6em;
         padding: 1% 0;
-        margin: 0 4%;
+        margin: 4%;
         gap: 2%;
     }
 }
@@ -594,12 +549,11 @@ fieldset {
         width: 25%;
     }
     #cabeçalho {
-        font-size: 1.2em;
         padding: 3%;
     }    
     #cabeçalho h1 {
-        margin: auto 8%;
-        margin: auto 1% auto 25%;
+        font-size: 2em;
+        margin: auto 15%;
     }
     .nav {
         font-size: 1.2em;
@@ -657,8 +611,7 @@ fieldset {
         flex-direction: column;
         align-items: center;
         gap: 3em;
-        margin: auto;
-        margin: auto 5%;
+        margin: auto 15%;
     }
     .capas.cimas a, .capas.baixas a {
         display: flex;
@@ -669,32 +622,15 @@ fieldset {
         gap: 0;
         text-decoration: none;
     }
-    .capas.cimas a:hover, .capas.baixas a:hover {
-        color: white;
-        background-color: #ff81b1;
-        transition-duration: .4s;
-    }
-    .capas.cimas a:active, .capas.baixas a:active {
-        background-color: #FFC8DD;
-        color: rgb(248, 248, 248);
-        transition-duration: .2s;
-    }
-    .capas.cimas a h3, .capas.baixas a h3 {
-        color: white;
-        background-color: #7cc2ff;
-        margin-top: 0;
-        margin-bottom: 0;
-        transition-duration: .6s;
-        padding: 3%;
+    .capas.cimas a figcaption, .capas.baixas a figcaption {
         width: 100%;
+        margin: 0;
     }
-    .capas.cimas a h3 {
-        border-radius: 0 0 0.9em 0.9em;
-        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
+    .capas.cimas a figcaption {
+        border-radius: 0 0 1.5em 1.5em ;
     }
-    .capas.baixas a h3 {
-        border-radius: 0.9em 0.9em 0 0;
-        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
+    .capas.baixas a figcaption {
+        border-radius: 1.5em 1.5em 0 0;
     }
     .igual.cima {
         border-radius: 1.5em 1.5em 0 0;
@@ -749,10 +685,11 @@ fieldset {
     }    
     #cabeçalho h1 {
         font-size: 2em;
-        margin: auto 1% auto 16%;
+        margin: auto 16%;
+        width: min-content;
     }
     .menu {
-        width: 30%;
+        width: 25%;
     }
     .nav {
         font-size: 1.3em;
@@ -810,6 +747,7 @@ fieldset {
         flex-direction: column;
         align-items: center;
         gap: 3em;
+        margin: auto 15%;
     }
     .capas.cimas a, .capas.baixas a {
         display: flex;
@@ -820,32 +758,15 @@ fieldset {
         gap: 0;
         text-decoration: none;
     }
-    .capas.cimas a:hover, .capas.baixas a:hover {
-        color: white;
-        background-color: #ff81b1;
-        transition-duration: .4s;
+    .capas.cimas a figcaption, .capas.baixas a figcaption {
+        width: 100%;
+        margin: 0;
     }
-    .capas.cimas a:active, .capas.baixas a:active {
-        background-color: #FFC8DD;
-        color: rgb(248, 248, 248);
-        transition-duration: .2s;
+    .capas.cimas a figcaption {
+        border-radius: 0 0 1.5em 1.5em ;
     }
-    .capas.cimas a h3, .capas.baixas a h3 {
-        color: white;
-        background-color: #7cc2ff;
-        margin-top: 0;
-        margin-bottom: 0;
-        transition-duration: .6s;
-        padding: 2%;
-        width: 96%;
-    }
-    .capas.cimas a h3 {
-        border-radius: 0 0 0.9em 0.9em;
-        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
-    }
-    .capas.baixas a h3 {
-        border-radius: 0.9em 0.9em 0 0;
-        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
+    .capas.baixas a figcaption {
+        border-radius: 1.5em 1.5em 0 0;
     }
     .igual.cima {
         border-radius: 1.5em 1.5em 0 0;
@@ -896,8 +817,9 @@ fieldset {
         padding: 3%;
     }    
     #cabeçalho h1 {
-        margin: auto 1% auto 25%;
-        font-size: 1.8em;
+        margin: auto 15%;
+        font-size: 2em;
+        width: min-content;
     }
     .menu {
         width: 25%;
@@ -958,6 +880,7 @@ fieldset {
         flex-direction: column;
         align-items: center;
         gap: 3em;
+        margin: auto 15%;
     }
     .capas.cimas a, .capas.baixas a {
         display: flex;
@@ -968,32 +891,15 @@ fieldset {
         gap: 0;
         text-decoration: none;
     }
-    .capas.cimas a:hover, .capas.baixas a:hover {
-        color: white;
-        background-color: #ff81b1;
-        transition-duration: .4s;
+    .capas.cimas a figcaption, .capas.baixas a figcaption {
+        width: 100%;
+        margin: 0;
     }
-    .capas.cimas a:active, .capas.baixas a:active {
-        background-color: #FFC8DD;
-        color: rgb(248, 248, 248);
-        transition-duration: .2s;
+    .capas.cimas a figcaption {
+        border-radius: 0 0 1.5em 1.5em ;
     }
-    .capas.cimas a h3, .capas.baixas a h3 {
-        color: white;
-        background-color: #7cc2ff;
-        margin-top: 0;
-        margin-bottom: 0;
-        transition-duration: .6s;
-        padding: 2%;
-        width: 95%;
-    }
-    .capas.cimas a h3 {
-        border-radius: 0 0 0.9em 0.9em;
-        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
-    }
-    .capas.baixas a h3 {
-        border-radius: 0.9em 0.9em 0 0;
-        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
+    .capas.baixas a figcaption {
+        border-radius: 1.5em 1.5em 0 0;
     }
     .igual.cima {
         border-radius: 1.5em 1.5em 0 0;
@@ -1113,6 +1019,7 @@ fieldset {
         flex-direction: column;
         align-items: center;
         gap: 3em;
+        margin: auto 15%;
     }
     .capas.cimas a, .capas.baixas a {
         display: flex;
@@ -1123,32 +1030,15 @@ fieldset {
         gap: 0;
         text-decoration: none;
     }
-    .capas.cimas a:hover, .capas.baixas a:hover {
-        color: white;
-        background-color: #ff81b1;
-        transition-duration: .4s;
+    .capas.cimas a figcaption, .capas.baixas a figcaption {
+        width: 100%;
+        margin: 0;
     }
-    .capas.cimas a:active, .capas.baixas a:active {
-        background-color: #FFC8DD;
-        color: rgb(248, 248, 248);
-        transition-duration: .2s;
+    .capas.cimas a figcaption {
+        border-radius: 0 0 1.5em 1.5em ;
     }
-    .capas.cimas a h3, .capas.baixas a h3 {
-        color: white;
-        background-color: #7cc2ff;
-        margin-top: 0;
-        margin-bottom: 0;
-        transition-duration: .6s;
-        padding: 2%;
-        width: 95%;
-    }
-    .capas.cimas a h3 {
-        border-radius: 0 0 0.9em 0.9em;
-        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
-    }
-    .capas.baixas a h3 {
-        border-radius: 0.9em 0.9em 0 0;
-        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
+    .capas.baixas a figcaption {
+        border-radius: 1.5em 1.5em 0 0;
     }
     .igual.cima {
         border-radius: 1.5em 1.5em 0 0;
