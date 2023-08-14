@@ -6,12 +6,14 @@ sr.reveal('.parte');
 
 sr.reveal('.txt');
 
-sr.reveal('.capas');
-
-sr.reveal('.video');
+if(window.innerWidth < 1133) {
+    sr.reveal('.video');
+} else {
+    sr.reveal('.capas');
+}
 
 sr.reveal('.iguali');
 
-sr.reveal('.coisa');
+sr.reveal('.secao');
 
 sr.reveal('.especial');
