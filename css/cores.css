@@ -336,9 +336,8 @@ fieldset {
     display: flex;
     list-style: none;
     gap: 1em;
-    font-size: 1em;
-    margin: -0% 5% 8%;
-    padding: 1%;
+    margin: 0% auto 8%;
+    padding: 0 5%;
 }
 .list li a, .list li a h5, .list li h5 {
     color: white;
@@ -441,6 +440,7 @@ fieldset {
         flex-direction: column;
         gap: 3em;
         font-size: 1.8em;
+        margin-bottom: 15%;
     }
     .link br {
         display: none;
@@ -465,6 +465,7 @@ fieldset {
     .capas.cimas a figcaption, .capas.baixas a figcaption {
         width: 100%;
         margin: 0;
+        padding: 5%;
     }
     .capas.cimas a figcaption, .capas.cimas a figcaption:hover, .capas.cimas a figcaption:active {
         border-radius: 0 0 1.5em 1.5em ;
@@ -480,7 +481,7 @@ fieldset {
     }
     .igual {
         height: 100%;
-        width: 104%;
+        width: 110%;
     }
     .imagens {
         flex-direction: column;
@@ -494,17 +495,20 @@ fieldset {
         width: 20%;
         right: 4%;
     }
+    #final {
+        font-size: 1.8em;
+    }
     #final h2 {
-        margin: 10% 5% 6%;
+        padding: 8% 4%;
     }
     .table {
-        margin: auto;
+        margin: -2% auto;
+        margin-bottom: 5%;
         display: flex;
         column-span: all;
         width: max-content;
     }
     .table thead tr {
-        font-size: 1em;
         display: flex;
         flex-direction: column;
         text-align: left;
@@ -515,15 +519,12 @@ fieldset {
         padding: 5%;
     }
     .la {
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
     }
     .list {
-        font-size: 0.55em;
-        margin: 10% 5% 10% 1%;
-    }
-    .list li {
-        width: fit-content;
+        font-size: 0.4em;
+        padding: 1%;
     }
 }
 @media only screen and (min-width: 600px) and (max-width: 650px) {
@@ -586,6 +587,7 @@ fieldset {
         flex-direction: column;
         gap: 3em;
         font-size: 1.4em;
+        margin-bottom: 15%;
     }
     .link br {
         display: none;
@@ -610,6 +612,7 @@ fieldset {
     .capas.cimas a figcaption, .capas.baixas a figcaption {
         width: 100%;
         margin: 0;
+        padding: 5%;
     }
     .capas.cimas a figcaption, .capas.cimas a figcaption:hover, .capas.cimas a figcaption:active {
         border-radius: 0 0 1.5em 1.5em ;
@@ -625,7 +628,7 @@ fieldset {
     }
     .igual {
         height: 100%;
-        width: 104%;
+        width: 110%;
     }
     .imagens {
         flex-direction: column;
@@ -640,19 +643,19 @@ fieldset {
         right: 4%;
     }
     #final {
-        font-size: 1.4em;
+        font-size: 1.8em;
     }
     #final h2 {
-        margin: 10% 5% 6%;
+        padding: 8% 4%;
     }
     .table {
-        margin: auto;
+        margin: -2% auto;
+        margin-bottom: 5%;
         display: flex;
         column-span: all;
         width: max-content;
     }
     .table thead tr {
-        font-size: 1em;
         display: flex;
         flex-direction: column;
         text-align: left;
@@ -663,15 +666,11 @@ fieldset {
         padding: 5%;
     }
     .la {
-        width: 45px;
-        height: 45px;
+        width: 60px;
+        height: 60px;
     }
     .list {
-        font-size: 0.74em;
-        margin: 1% 5% 10%
-    }
-    .list li {
-        width: fit-content;
+        font-size: 0.5em;
     }
 }
 @media only screen and (min-width: 650px) and (max-width: 750px) {
@@ -736,6 +735,7 @@ fieldset {
         flex-direction: column;
         gap: 3em;
         font-size: 1.2em;
+        margin-bottom: 15%;
     }
     .link br {
         display: none;
@@ -787,20 +787,19 @@ fieldset {
         width: 80%;
     }
     #final {
-        font-size: 1em;
+        font-size: 1.8em;
     }
     #final h2 {
-        font-size: 2em;
-        margin: 6% 5% 4%;
+        padding: 6% 4%;
     }
     .table {
-        margin: auto;
+        margin: -2% auto;
+        margin-bottom: 5%;
         display: flex;
         column-span: all;
         width: max-content;
     }
     .table thead tr {
-        font-size: 1em;
         display: flex;
         flex-direction: column;
         text-align: left;
@@ -811,12 +810,11 @@ fieldset {
         padding: 5%;
     }
     .la {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
     }
     .list {
-        font-size: 1em;
-        margin: 1% 5% 10%
+        font-size: 0.5em;
     }
     .topo {
         width: 20%;
@@ -885,6 +883,7 @@ fieldset {
         flex-direction: column;
         gap: 3em;
         font-size: 1.2em;
+        margin-bottom: 10%;
     }
     .link br {
         display: none;
@@ -936,23 +935,19 @@ fieldset {
         width: 80%;
     }
     #final {
-        font-size: 1.4em;
+        font-size: 2em;
     }
     #final h2 {
-        font-size: 1.4em;
-        margin: 6% 5% 5%;
+        padding: 6% 0;
     }
     .table {
-        font-size: 1em;
-    }
-    .table {
-        margin: auto;
+        margin: -2% auto;
+        margin-bottom: 5%;
         display: flex;
         column-span: all;
         width: max-content;
     }
     .table thead tr {
-        font-size: 1em;
         display: flex;
         flex-direction: column;
         text-align: left;
@@ -967,8 +962,7 @@ fieldset {
         height: 60px;
     }
     .list {
-        font-size: 1em;
-        margin: 1% 5% 10%
+        font-size: 0.6em;
     }
     .topo {
         width: 15%;
@@ -1041,6 +1035,7 @@ fieldset {
         flex-direction: column;
         gap: 3em;
         font-size: 1.3em;
+        margin-bottom: 10%;
     }
     .link br {
         display: none;
@@ -1091,10 +1086,31 @@ fieldset {
         width: 80%;
     }
     #final {
-        font-size: 1em;
+        font-size: 2em;
     }
-    .link div a h3 {
-        font-size: 1em; 
+    .table {
+        margin: -2% auto;
+        margin-bottom: 5%;
+        display: flex;
+        column-span: all;
+        width: max-content;
+    }
+    .table thead tr {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .cima {
+        display: flex;
+        margin: auto;
+        padding: 5%;
+    }
+    .la {
+        width: 60px;
+        height: 60px;
+    }
+    .list {
+        font-size: 0.7em;
     }
     .topo {
         width: 20%;
@@ -1120,7 +1136,7 @@ fieldset {
         font-size: 1em;
     }
     .la {
-        margin: 0.3em 0.3em;
+        margin: 0.3em;
     }
     .list {
         font-size: 1em;
@@ -1148,7 +1164,7 @@ fieldset {
         max-height: 300px;
     }
     .la {
-        margin: 0.3em 0.3em;
+        margin: 0.3em;
     }
 }
 @media only screen and (min-width: 1350px) and (max-width: 1500px) {
@@ -1170,7 +1186,7 @@ fieldset {
         max-height: 350px;
     }
     .la {
-        margin: 0.3em 0.3em;
+        margin: 0.3em;
     }
 }
 @media only screen and (min-width: 1500px) {
@@ -1183,6 +1199,6 @@ fieldset {
         max-height: 400px;
     }
     .la {
-        margin: 0.3em 0.3em;
+        margin: 0.3em;
     }
 }
