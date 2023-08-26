@@ -16,9 +16,6 @@ body {
 html {
     scroll-behavior: smooth;
 }
-fieldset {
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.411);
-}
 * {
     margin: 0;
     padding: 0;
@@ -145,6 +142,7 @@ fieldset {
     line-height: 1.7em;
     text-indent: 5%;
     text-align: justify;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.411);
 }
 .secao img {
     width: 30%;
@@ -156,7 +154,7 @@ fieldset {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5% 1%;
+    margin: 5%;
     gap: 4%;
 }
 .circulo {
@@ -179,10 +177,10 @@ fieldset {
     width: auto;
     height: auto;
 }
-.retangulo.direito h2, .retangulo.direito p {
+.retangulo.direito h2, .retangulo.direito h3 {
     text-align: left;
 }
-.retangulo.esquerdo h2, .retangulo.esquerdo p {
+.retangulo.esquerdo h2, .retangulo.esquerdo h3 {
     text-align: right;
 }
 .link section {
@@ -279,78 +277,93 @@ fieldset {
     height: max-content;
     align-items: center;
     font-size: 1.5em;
-    padding-bottom: 1px;
+    padding-bottom: 4%;
 }
 #final h2 {
     padding: 4%;
 }
-.table {
+#final #contatos .table {
     margin: -0.6em auto 5%;
     text-align: center;
     position: static;
-    font-size: 1em;
     align-items: center;
     border: 0.3em groove #7cc2ff;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.411);
     width: 80%;
 }
-.cima {
+#final #contatos .cima {
     display: flex;
     justify-content: center;
     padding: 1%;
 }
-.cima a {
+#final #contatos .cima a {
     display: flex;
     align-items: center;
+    gap: 3%;
     color: white;
     text-decoration: none;
     transition-duration: .6s;
     border-radius: 0.5em;
+    padding: 2%;
 }
-.cima a h3:hover {
+#final #contatos .cima a h3:hover {
     background-color: #a479c0;
     color: white;
     transition-duration: .2s;
 }
-.cima a h3:active {
+#final #contatos .cima a h3:active {
     color: rgb(248, 248, 248);
     background-color: #ff609a;
     transition-duration: .2s;
 }
-.contato {
+#final #contatos .contato {
     display: flex;
     align-items: center;
     justify-content: center;
     transition-duration: .6s;
     border-radius: 0.5em;
     color: white;
+    padding: 3%;
+    margin: 0 -5%;
 }
-.la {
+#final #contatos .la {
     align-items: center;
     display: flex;
     width: 60px;
     height: 60px;
     margin: 0 0.3em;
 }
-.list {
+#final #autorias {
     display: flex;
-    list-style: none;
-    gap: 1em;
-    margin: 0% auto 8%;
-    padding: 0 5%;
+    flex-direction: column;
+    font-size: 0.9em;
 }
-.list li a, .list li a h5, .list li h5 {
+#final #autorias .list {
+    list-style: none;
+    columns: 4;
+    gap: 1.5em;
+    padding: 0 8%;
+}
+#final #autorias .list li {
+    margin-bottom: 30%;
+    text-align: start;
+    color: white;
+}
+#final #autorias .list li a {
     color: white;
     text-decoration: none;
     transition-duration: .6s;
-    border-radius: 0.8em;
+    border-radius: 0.4em;
+    display: block;
+    width: fit-content;
+    padding: 1%;
 }
-.list li a h5:hover, .list li h5 a:hover {
+#final #autorias .list li a:hover {
     background-color: #a479c0;
     color: white;
     transition-duration: .2s;
 }
-.list li a h5:active, .list li h5 a:active  {
+#final #autorias .list li a:active  {
     color: rgb(248, 248, 248);
     background-color: #ff609a;
     transition-duration: .2s;
@@ -409,7 +422,7 @@ fieldset {
     }
     #conteúdo fieldset {
         margin: auto 1% 15%;
-        font-size: 1em;
+        font-size: 1.5em;
         line-height: 1.8em;
     }
     .secao img {
@@ -428,19 +441,17 @@ fieldset {
         border-radius: 10em 10em 0 0;
         width: 50%;
     }
-    .retangulo.direito h2, .retangulo.direito p {
+    .retangulo.direito h2, .retangulo.direito h3 {
         text-align: center;
     }
-    .retangulo.esquerdo h2, .retangulo.esquerdo p {
+    .retangulo.esquerdo h2, .retangulo.esquerdo h3 {
         text-align: center;
     }
-    .link section {
+    .link fieldset {
         display: flex;
         justify-content: center;
         flex-direction: column;
         gap: 3em;
-        font-size: 1.8em;
-        margin-bottom: 15%;
     }
     .link br {
         display: none;
@@ -465,7 +476,6 @@ fieldset {
     .capas.cimas a figcaption, .capas.baixas a figcaption {
         width: 100%;
         margin: 0;
-        padding: 5%;
     }
     .capas.cimas a figcaption, .capas.cimas a figcaption:hover, .capas.cimas a figcaption:active {
         border-radius: 0 0 1.5em 1.5em ;
@@ -481,7 +491,7 @@ fieldset {
     }
     .igual {
         height: 100%;
-        width: 110%;
+        width: 104%;
     }
     .imagens {
         flex-direction: column;
@@ -495,20 +505,17 @@ fieldset {
         width: 20%;
         right: 4%;
     }
-    #final {
-        font-size: 1.8em;
-    }
     #final h2 {
-        padding: 8% 4%;
+        margin: 10% 5% 6%;
     }
     .table {
-        margin: -2% auto;
-        margin-bottom: 5%;
+        margin: auto;
         display: flex;
         column-span: all;
         width: max-content;
     }
     .table thead tr {
+        font-size: 1em;
         display: flex;
         flex-direction: column;
         text-align: left;
@@ -519,12 +526,15 @@ fieldset {
         padding: 5%;
     }
     .la {
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        height: 40px;
     }
     .list {
-        font-size: 0.4em;
-        padding: 1%;
+        font-size: 0.55em;
+        margin: 10% 5% 10% 1%;
+    }
+    .list li {
+        width: fit-content;
     }
 }
 @media only screen and (min-width: 600px) and (max-width: 650px) {
@@ -553,11 +563,12 @@ fieldset {
         padding: 8% 5%;
     }
     #conteúdo {
-        font-size: 1.4em;
+        font-size: 1em;
     }
     #conteúdo fieldset {
         margin: auto 1% 15%;
-        font-size: 1em;
+        font-size: 1.5em;
+        line-height: 2em;
     }
     .secao img {
         width: 70%;
@@ -575,19 +586,17 @@ fieldset {
         border-radius: 10em 10em 0 0;
         width: 50%;
     }
-    .retangulo.direito h2, .retangulo.direito p {
+    .retangulo.direito h2, .retangulo.direito h3 {
         text-align: center;
     }
-    .retangulo.esquerdo h2, .retangulo.esquerdo p {
+    .retangulo.esquerdo h2, .retangulo.esquerdo h3 {
         text-align: center;
     }
-    .link section {
+    .link fieldset {
         display: flex;
         justify-content: center;
         flex-direction: column;
         gap: 3em;
-        font-size: 1.4em;
-        margin-bottom: 15%;
     }
     .link br {
         display: none;
@@ -612,7 +621,6 @@ fieldset {
     .capas.cimas a figcaption, .capas.baixas a figcaption {
         width: 100%;
         margin: 0;
-        padding: 5%;
     }
     .capas.cimas a figcaption, .capas.cimas a figcaption:hover, .capas.cimas a figcaption:active {
         border-radius: 0 0 1.5em 1.5em ;
@@ -620,7 +628,7 @@ fieldset {
     .capas.baixas a figcaption, .capas.baixas a figcaption:hover, .capas.baixas a figcaption:active {
         border-radius: 1.5em 1.5em 0 0;
     }
-    .igual.cimas {
+    .igual.cima {
         border-radius: 1.5em 1.5em 0 0;
     }
     .igual.baixa {
@@ -628,7 +636,7 @@ fieldset {
     }
     .igual {
         height: 100%;
-        width: 110%;
+        width: 106%;
     }
     .imagens {
         flex-direction: column;
@@ -643,19 +651,19 @@ fieldset {
         right: 4%;
     }
     #final {
-        font-size: 1.8em;
+        font-size: 1.4em;
     }
     #final h2 {
-        padding: 8% 4%;
+        margin: 10% 5% 6%;
     }
     .table {
-        margin: -2% auto;
-        margin-bottom: 5%;
+        margin: auto;
         display: flex;
         column-span: all;
         width: max-content;
     }
     .table thead tr {
+        font-size: 1em;
         display: flex;
         flex-direction: column;
         text-align: left;
@@ -666,11 +674,15 @@ fieldset {
         padding: 5%;
     }
     .la {
-        width: 60px;
-        height: 60px;
+        width: 45px;
+        height: 45px;
     }
     .list {
-        font-size: 0.5em;
+        font-size: 0.74em;
+        margin: 1% 5% 10%
+    }
+    .list li {
+        width: fit-content;
     }
 }
 @media only screen and (min-width: 650px) and (max-width: 750px) {
@@ -701,11 +713,12 @@ fieldset {
         padding: 8% 5%;
     }
     #conteúdo {
-        font-size: 1.4em;
+        font-size: 1em;
     }
     #conteúdo fieldset {
         margin: auto 1% 15%;
-        font-size: 1em;
+        font-size: 1.5em;
+        line-height: 2em;
     }
     .secao img {
         width: 50%;
@@ -723,19 +736,17 @@ fieldset {
         border-radius: 10em 10em 0 0;
         width: 50%;
     }
-    .retangulo.direito h2, .retangulo.direito p {
+    .retangulo.direito h2, .retangulo.direito h3 {
         text-align: center;
     }
-    .retangulo.esquerdo h2, .retangulo.esquerdo p {
+    .retangulo.esquerdo h2, .retangulo.esquerdo h3 {
         text-align: center;
     }
-    .link section {
+    .link fieldset {
         display: flex;
         justify-content: center;
         flex-direction: column;
         gap: 3em;
-        font-size: 1.2em;
-        margin-bottom: 15%;
     }
     .link br {
         display: none;
@@ -760,7 +771,6 @@ fieldset {
     .capas.cimas a figcaption, .capas.baixas a figcaption {
         width: 100%;
         margin: 0;
-        padding: 5%;
     }
     .capas.cimas a figcaption, .capas.cimas a figcaption:hover, .capas.cimas a figcaption:active {
         border-radius: 0 0 1.5em 1.5em ;
@@ -768,15 +778,16 @@ fieldset {
     .capas.baixas a figcaption, .capas.baixas a figcaption:hover, .capas.baixas a figcaption:active {
         border-radius: 1.5em 1.5em 0 0;
     }
-    .igual.cimas {
+    .igual.cima {
         border-radius: 1.5em 1.5em 0 0;
     }
     .igual.baixa {
         border-radius: 0 0 1.5em 1.5em ;
     }
     .igual {
-        max-height: 15em;
-        width: 110%;
+        height: auto;
+        max-height: 100%;
+        width: 450px;
     }
     .imagens {
         flex-direction: column;
@@ -787,19 +798,20 @@ fieldset {
         width: 80%;
     }
     #final {
-        font-size: 1.8em;
+        font-size: 1em;
     }
     #final h2 {
-        padding: 6% 4%;
+        font-size: 2em;
+        margin: 6% 5% 4%;
     }
     .table {
-        margin: -2% auto;
-        margin-bottom: 5%;
+        margin: auto;
         display: flex;
         column-span: all;
         width: max-content;
     }
     .table thead tr {
+        font-size: 1em;
         display: flex;
         flex-direction: column;
         text-align: left;
@@ -810,11 +822,12 @@ fieldset {
         padding: 5%;
     }
     .la {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
     }
     .list {
-        font-size: 0.5em;
+        font-size: 1em;
+        margin: 1% 5% 10%
     }
     .topo {
         width: 20%;
@@ -849,11 +862,12 @@ fieldset {
         padding: 8% 5%;
     }
     #conteúdo {
-        font-size: 1.5em;
+        font-size: 1em;
     }
     #conteúdo fieldset {
         margin: auto 1% 15%;
-        font-size: 1em;
+        font-size: 1.5em;
+        line-height: 2em;
     }
     .secao img {
         width: 50%;
@@ -871,19 +885,17 @@ fieldset {
         border-radius: 10em 10em 0 0;
         width: 50%;
     }
-    .retangulo.direito h2, .retangulo.direito p {
+    .retangulo.direito h2, .retangulo.direito h3 {
         text-align: center;
     }
-    .retangulo.esquerdo h2, .retangulo.esquerdo p {
+    .retangulo.esquerdo h2, .retangulo.esquerdo h3 {
         text-align: center;
     }
-    .link section {
+    .link fieldset {
         display: flex;
         justify-content: center;
         flex-direction: column;
         gap: 3em;
-        font-size: 1.2em;
-        margin-bottom: 10%;
     }
     .link br {
         display: none;
@@ -908,7 +920,6 @@ fieldset {
     .capas.cimas a figcaption, .capas.baixas a figcaption {
         width: 100%;
         margin: 0;
-        padding: 5%;
     }
     .capas.cimas a figcaption, .capas.cimas a figcaption:hover, .capas.cimas a figcaption:active {
         border-radius: 0 0 1.5em 1.5em ;
@@ -916,15 +927,16 @@ fieldset {
     .capas.baixas a figcaption, .capas.baixas a figcaption:hover, .capas.baixas a figcaption:active {
         border-radius: 1.5em 1.5em 0 0;
     }
-    .igual.cimas {
+    .igual.cima {
         border-radius: 1.5em 1.5em 0 0;
     }
     .igual.baixa {
         border-radius: 0 0 1.5em 1.5em ;
     }
     .igual {
-        max-height: 15em;
-        width: 110%;
+        height: auto;
+        max-height: 100%;
+        width: 480px;
     }
     .imagens {
         flex-direction: column;
@@ -935,19 +947,23 @@ fieldset {
         width: 80%;
     }
     #final {
-        font-size: 2em;
+        font-size: 1.4em;
     }
     #final h2 {
-        padding: 6% 0;
+        font-size: 1.4em;
+        margin: 6% 5% 5%;
     }
     .table {
-        margin: -2% auto;
-        margin-bottom: 5%;
+        font-size: 1em;
+    }
+    .table {
+        margin: auto;
         display: flex;
         column-span: all;
         width: max-content;
     }
     .table thead tr {
+        font-size: 1em;
         display: flex;
         flex-direction: column;
         text-align: left;
@@ -962,7 +978,8 @@ fieldset {
         height: 60px;
     }
     .list {
-        font-size: 0.6em;
+        font-size: 1em;
+        margin: 1% 5% 10%
     }
     .topo {
         width: 15%;
@@ -1001,11 +1018,12 @@ fieldset {
         padding: 8% 5%;
     }
     #conteúdo {
-        font-size: 1.5em;
+        font-size: 1em;
     }
     #conteúdo fieldset {
         margin: auto 1% 15%;
-        font-size: 1em;
+        font-size: 1.5em;
+        line-height: 2em;
     }
     .secao img {
         width: 50%;
@@ -1021,21 +1039,19 @@ fieldset {
     }
     .circulo {
         border-radius: 10em 10em 0 0;
-        width: 40%;
+        width: 50%;
     }
-    .retangulo.direito h2, .retangulo.direito p {
+    .retangulo.direito h2, .retangulo.direito h3 {
         text-align: center;
     }
-    .retangulo.esquerdo h2, .retangulo.esquerdo p {
+    .retangulo.esquerdo h2, .retangulo.esquerdo h3 {
         text-align: center;
     }
-    .link section {
+    .link fieldset {
         display: flex;
         justify-content: center;
         flex-direction: column;
         gap: 3em;
-        font-size: 1.3em;
-        margin-bottom: 10%;
     }
     .link br {
         display: none;
@@ -1067,15 +1083,16 @@ fieldset {
     .capas.baixas a figcaption, .capas.baixas a figcaption:hover, .capas.baixas a figcaption:active {
         border-radius: 1.5em 1.5em 0 0;
     }
-    .igual.cimas {
+    .igual.cima {
         border-radius: 1.5em 1.5em 0 0;
     }
     .igual.baixa {
         border-radius: 0 0 1.5em 1.5em ;
     }
     .igual {
-        max-height: 15em;
-        width: 104%;
+        height: auto;
+        max-height: 100%;
+        width: 600px;
     }
     .imagens {
         flex-direction: column;
@@ -1086,31 +1103,10 @@ fieldset {
         width: 80%;
     }
     #final {
-        font-size: 2em;
+        font-size: 1em;
     }
-    .table {
-        margin: -2% auto;
-        margin-bottom: 5%;
-        display: flex;
-        column-span: all;
-        width: max-content;
-    }
-    .table thead tr {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-    }
-    .cima {
-        display: flex;
-        margin: auto;
-        padding: 5%;
-    }
-    .la {
-        width: 60px;
-        height: 60px;
-    }
-    .list {
-        font-size: 0.7em;
+    .link div a h3 {
+        font-size: 1em; 
     }
     .topo {
         width: 20%;
@@ -1136,7 +1132,7 @@ fieldset {
         font-size: 1em;
     }
     .la {
-        margin: 0.3em;
+        margin: 0.3em 0.3em;
     }
     .list {
         font-size: 1em;
@@ -1155,16 +1151,13 @@ fieldset {
     #conteúdo {
         font-size: 1em;
     }
-    .parte {
-        margin: 5% 15%;
-    }
     .igual {
         width: auto;
         min-height: 50px;
         max-height: 300px;
     }
     .la {
-        margin: 0.3em;
+        margin: 0.3em 0.3em;
     }
 }
 @media only screen and (min-width: 1350px) and (max-width: 1500px) {
@@ -1177,28 +1170,22 @@ fieldset {
     .nav ul li h2 {
         font-size: 2em;
     }
-    .parte {
-        margin: 5% 15%;
-    }
     .igual {
         width: auto;
         min-height: 50px;
         max-height: 350px;
     }
     .la {
-        margin: 0.3em;
+        margin: 0.3em 0.3em;
     }
 }
 @media only screen and (min-width: 1500px) {
-    .parte {
-        margin: 5% 15%;
-    }
     .igual {
         width: auto;
         min-height: 50px;
         max-height: 400px;
     }
     .la {
-        margin: 0.3em;
+        margin: 0.3em 0.3em;
     }
 }

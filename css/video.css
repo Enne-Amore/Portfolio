@@ -11,6 +11,17 @@ body {
     font-size: 1.8em;
     font-family: 'inclusao';
     text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+body#meus-videos{
+    background-image: url(../Imagens\ para\ todas/fundo\ colorido\ claro.jpg);
+    background-position: center;
+}
+body#inspiracoes-audiovisuais {
+    background-image: url(../Imagens\ para\ todas/céu\ rosa.jpg);
+    background-position: bottom;
 }
 
 /* O corpo do site */

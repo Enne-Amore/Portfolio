@@ -26,7 +26,8 @@ icone de telefone: <a href="https://www.flaticon.com/free-icons/telephone" title
 
 imagem de conhecimento: Foto de <a href="https://unsplash.com/@nejc_soklic?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nejc Soklič</a> na <a href="https://unsplash.com/pt-br/fotografias/wO42Rmamef8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
+ícone do github: <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Laisa Islam Ani - Flaticon</a>
 
 Imagens criadas por IA: https://www.bing.com/images/create?FORM=GENILP
 
-  
+Ícone do Linkedin: <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Freepik - Flaticon</a>
