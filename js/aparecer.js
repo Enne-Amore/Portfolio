@@ -1,6 +1,6 @@
 window.sr = ScrollReveal({ reset: true });
 
-sr.reveal('#conteúdo', {duration: 100});
+sr.reveal('#conteudo', {duration: 100});
 
 sr.reveal('.parte');
 

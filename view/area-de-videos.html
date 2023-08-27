@@ -10,14 +10,14 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-    <header>
+    <header id="cabecalho">
         <img id="menu" class="menu" onclick="abrirMenu()" src="../Imagens para todas/menu.png" alt="Menu de páginas">
-        <div onclick="sairDoMenu()" id="cabeçalho">
-            <label for="texto"><h1>Vídeos editados meus</h1></label>
+        <div onclick="sairDoMenu()" id="titulo">
+            <label for="texto"><h1>Meus vídeos editados</h1></label>
         </div>
         <nav onclick="sairDoMenu()" class="nav">
             <ul>
-                <a href="#conteúdo"><li><h3>Sobre</h3></li></a>
+                <a href="#conteudo"><li><h3>Sobre</h3></li></a>
                 <a href="#videos"><li><h3>Vídeos</h3></li></a>
                 <a href="#contatos"><li><h3>Contatos</h3></li></a>
                 <a href="#autorias"><h3>Autorias</h3></a>
@@ -32,7 +32,7 @@
             <a href="conclusoes-finais.html"><h3>Conclusões finais</h3></a>
         </nav>
     </header>
-    <main onclick="sairDoMenu()" id="conteúdo">
+    <main onclick="sairDoMenu()" id="conteudo">
         <section>
             <p>
                 <label for="imagem e texto"></label>
@@ -52,7 +52,7 @@
                 </fieldset>
             </p>
         </section>
-        <section class="link">
+        <section class="videos-a-ver">
             <label for="imagem, texto e link"></label>
             <figure class="secao">
                 <img src="../Imagens para todas/videos a ver.png" id="videos" alt="Vídeos a ver:">

@@ -10,14 +10,14 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-    <header>
+    <header id="cabecalho">
         <img id="menu" class="menu" onclick="abrirMenu()" src="../Imagens para todas/menu.png" alt="Menu de páginas">
-        <div onclick="sairDoMenu()" id="cabeçalho">
+        <div onclick="sairDoMenu()" id="titulo">
             <label for="texto"><h1>Inspirações audiovisuais</h1></label>
         </div>
         <nav onclick="sairDoMenu()" class="nav">
             <ul>
-                <a href="#conteúdo"><li><h3>Sobre</h3></li></a>
+                <a href="#conteudo"><li><h3>Sobre</h3></li></a>
                 <a href="#videos"><li><h3>Vídeos</h3></li></a>
                 <a href="#contatos"><li><h3>Contatos</h3></li></a>
                 <a href="#autorias"><li><h3>Autorias</h3></li></a>
@@ -32,7 +32,7 @@
             <a href="conclusoes-finais.html"><h3>Conclusões finais</h3></a>
         </nav>
     </header>
-    <main onclick="sairDoMenu()" id="conteúdo">
+    <main onclick="sairDoMenu()" id="conteudo">
         <section>
             <label for="imagem e texto"></label>
             <figure class="secao">
@@ -50,20 +50,20 @@
                 </p>
             </fieldset>
         </section>
-        <section class="link">
+        <section class="videos-a-ver">
             <label for="imagem, texto e link"></label>
             <figure class="secao">
                 <img src="../Imagens para todas/videos a ver.png" id="videos" class="coisa" alt="Vídeos a ver:">
             </figure>
             <section>
                 <figure class="capas cimas">
-                    <a href="gwen.html" rel="next">
+                    <a href="gwen.html" rel="next" class="video">
                         <img class="igual cimas" src="../Inspirações minhas de vídeo/capas/gwen.jpg" alt="">
                         <figcaption>
                             <h3>Gwendolyn <br> Tennyson</h3>
                         </figcaption>
                     </a>
-                    <a href="scitwi.html" rel="next">
+                    <a href="scitwi.html" rel="next" class="video">
                         <img class="igual cimas" src="../Inspirações minhas de vídeo/capas/scitwi.jpg" alt="">
                         <figcaption>
                             <h3>Scitwi</h3>
@@ -71,13 +71,13 @@
                     </a>
                 </figure>
                 <figure class="capas baixas">
-                    <a href="sciset2.html" rel="next">
+                    <a href="sciset2.html" rel="next" class="video">
                         <figcaption>
                             <h3>Sciset</h3>
                         </figcaption>
                         <img src="../Inspirações minhas de vídeo/capas/sciset.jpg" alt="" class="igual baixa">
                     </a>
-                    <a href="ladybug.html" rel="next">
+                    <a href="ladybug.html" rel="next" class="video">
                         <figcaption>
                             <h3>Ladybug</h3>
                         </figcaption>
@@ -85,13 +85,13 @@
                     </a>
                 </figure>
                 <figure class="capas cimas">
-                    <a href="sour_sweet.html" rel="next">
+                    <a href="sour_sweet.html" rel="next" class="video">
                         <img src="../Inspirações minhas de vídeo/capas/sour sweet.jpg" alt="" class="igual cimas">
                         <figcaption>
                             <h3>Sour <br> Sweet</h3>
                         </figcaption>
                     </a>
-                    <a href="chucky.html" rel="next">
+                    <a href="chucky.html" rel="next" class="video">
                         <img src="../Inspirações minhas de vídeo/capas/chucky.jpg" class="igual cimas">
                         <figcaption>
                             <h3>Chucky</h3>
@@ -99,13 +99,13 @@
                     </a>
                 </figure>
                 <figure class="capas baixas">
-                    <a href="enibes.html" rel="next">
+                    <a href="enibes.html" rel="next" class="video">
                         <figcaption>
                             <h3>Ênibes</h3>
                         </figcaption>
                         <img class="igual baixa" src="../Inspirações minhas de vídeo/capas/ênibes.jpg" alt="">
                     </a>
-                    <a href="rainbow_dash.html" rel="next">
+                    <a href="rainbow_dash.html" rel="next" class="video">
                         <figcaption>
                             <h3>Rainbow <br> Dash</h3>
                         </figcaption>

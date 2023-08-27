@@ -24,7 +24,7 @@ html {
 /* O corpo do site */
 /* E o seu cabeçalho */
 
-#cabeçalho {
+#cabecalho #titulo {
     padding: 4%;
     background-color: #FFC8DD;
     color: #a479c0;
@@ -36,10 +36,10 @@ html {
     justify-content: center;
     align-items: center;
 }
-#cabeçalho h1 {
+#cabecalho #titulo h1 {
     width: max-content;
 }
-.menu {
+#cabecalho .menu {
     position: absolute;
     width: 13%;
     height: auto;
@@ -49,18 +49,19 @@ html {
     border-radius: 50% 50% 100% 100%;
     transition-duration: .6s;
 }
-.nav {
+#cabecalho .nav {
     background-color: rgb(248, 248, 248);
 }
-.nav ul {
+#cabecalho .nav ul {
     font-size: 1.1em;
     list-style: none;
     display: flex;
-    gap: 0%;
-    margin: 0 auto;
-    width: auto;
+    justify-content: center;
+    gap: 10vw;
+    margin: auto;
+    width: max-content;
 }
-.nav ul a {
+#cabecalho .nav ul a {
     margin: auto;
     padding: 2.5% 0;
     font-size: 1em;
@@ -70,14 +71,14 @@ html {
     transition-duration: .6s;
     width: auto;
 }
-.nav ul a:hover {
+#cabecalho .nav ul a:hover {
     background-color: #698bac;
     color: white;
     margin: 0% auto;
     padding: 2.5% 3%;
     transition-duration: .6s;
 }
-.nav ul a:active {
+#cabecalho .nav ul a:active {
     background-color: #7cc2ff;
     color: rgb(248, 248, 248);
     transition-duration: .2s;
@@ -130,34 +131,34 @@ html {
 
 /* O conteúdo do site */
 
-#conteúdo {
+#conteudo {
     color: #ff609a;
     letter-spacing: 1px;
     text-transform: none;
     font-size: 1.2em;
 }
-#conteúdo fieldset {
-    margin: auto 5% 5%;
-    padding: 2%;
-    line-height: 1.7em;
-    text-indent: 5%;
-    text-align: justify;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.411);
-}
-.secao img {
+#conteudo .secao img {
     width: 30%;
     height: auto;
     margin-top: 0.2em;
     position: static;
 }
-.parte {
+#conteudo .txt {
+    margin: auto 10% 5%;
+    padding: 2%;
+    line-height: 1.7em;
+    text-indent: 5%;
+    text-align: justify;
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.199);
+}
+#conteudo .parte {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 5%;
     gap: 4%;
 }
-.circulo {
+#conteudo .parte .circulo {
     width: 30%;
     height: auto;
     background-color: rgb(248, 248, 248);
@@ -166,37 +167,37 @@ html {
     padding: 0;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.116);
 }
-.retangulo {
+#conteudo .parte .retangulo {
     color: #ff81b1;
     background-color: rgb(248, 248, 248);
     border-radius: 1em;
     padding: 1% 2%;
 }
-.retangulo h2, .retangulo h3 {
+#conteudo .parte .retangulo h2, #conteudo .parte .retangulo p {
     margin: 2% 0;
     width: auto;
     height: auto;
 }
-.retangulo.direito h2, .retangulo.direito h3 {
+#conteudo .parte .retangulo.direito h2, #conteudo .parte .retangulo.direito p {
     text-align: left;
 }
-.retangulo.esquerdo h2, .retangulo.esquerdo h3 {
+#conteudo .parte .retangulo.esquerdo h2, #conteudo .parte .retangulo.esquerdo p {
     text-align: right;
 }
-.link section {
+#conteudo .videos-a-ver section {
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 1.5em;
     margin: 5% auto;
 }
-.capas {
+#conteudo .videos-a-ver .capas {
     display: flex;
     justify-content: center;
     flex-direction: row;
     gap: 2em;
 }
-.capas.cimas a, .capas.baixas a {
+#conteudo .videos-a-ver .capas.cimas a, #conteudo .videos-a-ver .capas.baixas a {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -206,7 +207,7 @@ html {
     text-decoration: none;
     border-radius: 2em;
 }
-.capas.cimas a figcaption, .capas.baixas a figcaption {
+#conteudo .videos-a-ver .capas.cimas a figcaption, #conteudo .videos-a-ver .capas.baixas a figcaption {
     color: white;
     background-color: #7cc2ff;
     border-radius: 0.9em;
@@ -216,53 +217,71 @@ html {
     margin: 8% 2%;
     height: max-content;
 }
-.capas.cimas a figcaption:hover, .capas.baixas a figcaption:hover {
+#conteudo .videos-a-ver .capas.cimas a figcaption:hover, #conteudo .videos-a-ver .capas.baixas a figcaption:hover {
     color: white;
     background-color: #ff81b1;
     border-radius: 0.9em;
     transition-duration: .4s;
 }
-.capas.cimas a figcaption:active, .capas.baixas a figcaption:active {
+#conteudo .videos-a-ver .capas.cimas a figcaption:active, #conteudo .videos-a-ver .capas.baixas a figcaption:active {
     background-color: #FFC8DD;
     color: rgb(248, 248, 248);
     transition-duration: .2s;
 }
-.igual {
+#conteudo .videos-a-ver .capas .igual {
     width: auto;
-    min-height: 50px;
-    max-height: 450px;
+    max-height: 400px;
     border-radius: 1.5em;
     transition-duration: .6s;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
 }
-.igual:hover {
+#conteudo .videos-a-ver .capas .igual:hover {
     box-shadow: 0px 0px 30px 1px #ff81b1;
     transition-duration: .2s;
 }
-.igual:active {
+#conteudo .videos-a-ver .capas .igual:active {
     box-shadow: 0px 0px 30px 1px #ff609a;
     transition-duration: .1s;
 }
 
-.imagens {
+#conteudo .imagens {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5%;
     margin: 4% 5%;
 }
-.iguali {
+#conteudo .imagens .iguali {
     width: 40%;
     height: auto;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.212);
     border-radius: 1em;
 }
-.especial img {
+#conteudo .especial img {
     width: 45%;
     height: auto;
     margin-top: 1em;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.055);
     position: static;
+}
+#conteudo .topo {
+    width: 6%;
+    height: auto;
+    right: 1%;
+    bottom: 5%;
+    position: fixed;
+    cursor: pointer;
+    border-radius: 60%;
+    transition-duration: .1s;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.158);
+}
+#conteudo .topo:hover {
+    box-shadow: 0px 0px 15px 1px #ff609a;
+    transition-duration: .1s;
+}
+#conteudo .topo:active {
+    box-shadow: 0px 0px 15px 1px #FFC8DD;
+    transition-duration: .1s;
 }
 
 /* O rodapé do site */
@@ -368,59 +387,39 @@ html {
     background-color: #ff609a;
     transition-duration: .2s;
 }
-.topo {
-    width: 6%;
-    height: auto;
-    right: 1%;
-    bottom: 5%;
-    position: fixed;
-    cursor: pointer;
-    border-radius: 60%;
-    transition-duration: .1s;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.158);
-}
-.topo:hover {
-    box-shadow: 0px 0px 15px 1px #ff609a;
-    transition-duration: .1s;
-}
-.topo:active {
-    box-shadow: 0px 0px 15px 1px #FFC8DD;
-    transition-duration: .1s;
-}
 
 /* A responsividade do site */
 
 @media only screen and (max-width: 600px) {
     body {
-        font-size: 1em;
+        font-size: 5vw;
     }
-    .menu {
+    #cabecalho .menu {
         left: 3%;
         width: 25%;
     }
-    #cabeçalho {
+    #cabecalho #titulo {
         padding: 4%;
     }
-    #cabeçalho h1 {
-        font-size: 1.6em;
+    #cabecalho #titulo h1 {
+        font-size: 10vw;
         margin: auto 20%;
         width: min-content;
     }
     .nav {
-        font-size: 0.9em;
+        font-size: 3vw;
     }
     .nav ul {
-        gap: 0;
-        padding: 0;
-        margin: auto 0.5em;
+        gap: 0vw;
+        width: auto;
     }
     #areas {
         padding: 8% 5%;
     }
-    #conteúdo {
+    #conteudo {
         font-size: 1em;
     }
-    #conteúdo fieldset {
+    #conteudo .txt {
         margin: auto 1% 15%;
         font-size: 1.5em;
         line-height: 1.8em;
@@ -447,13 +446,13 @@ html {
     .retangulo.esquerdo h2, .retangulo.esquerdo h3 {
         text-align: center;
     }
-    .link fieldset {
+    .videos-a-ver fieldset {
         display: flex;
         justify-content: center;
         flex-direction: column;
         gap: 3em;
     }
-    .link br {
+    .videos-a-ver br {
         display: none;
     }
     .capas.cimas, .capas.baixas {
@@ -512,7 +511,7 @@ html {
         margin: auto;
         display: flex;
         column-span: all;
-        width: max-content;
+        width: auto;
     }
     .table thead tr {
         font-size: 1em;
@@ -520,34 +519,35 @@ html {
         flex-direction: column;
         text-align: left;
     }
+    .table thead tr th {
+        width: auto;
+    }
     .cima {
         display: flex;
-        margin: auto;
-        padding: 5%;
     }
     .la {
-        width: 40px;
+        width: auto;
         height: 40px;
     }
     .list {
         font-size: 0.55em;
-        margin: 10% 5% 10% 1%;
+        margin: 0% 5% 10% 1%;
     }
     .list li {
         width: fit-content;
     }
 }
-@media only screen and (min-width: 600px) and (max-width: 650px) {
+@media only screen and (min-width: 600px) and (max-width: 768px) {
     body {
         font-size: 1.2em;
     }
     .menu {
         width: 25%;
     }
-    #cabeçalho {
+    #cabecalho #titulo {
         padding: 4%;
     }    
-    #cabeçalho h1 {
+    #cabecalho #titulo h1 {
         font-size: 2em;
         margin: auto 15%;
     }
@@ -562,10 +562,10 @@ html {
     #areas {
         padding: 8% 5%;
     }
-    #conteúdo {
+    #conteudo {
         font-size: 1em;
     }
-    #conteúdo fieldset {
+    #conteudo .txt {
         margin: auto 1% 15%;
         font-size: 1.5em;
         line-height: 2em;
@@ -592,13 +592,13 @@ html {
     .retangulo.esquerdo h2, .retangulo.esquerdo h3 {
         text-align: center;
     }
-    .link fieldset {
+    .videos-a-ver fieldset {
         display: flex;
         justify-content: center;
         flex-direction: column;
         gap: 3em;
     }
-    .link br {
+    .videos-a-ver br {
         display: none;
     }
     .capas.cimas, .capas.baixas {
@@ -685,14 +685,14 @@ html {
         width: fit-content;
     }
 }
-@media only screen and (min-width: 650px) and (max-width: 750px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
     body {
         font-size: 1.3em;
     }
-    #cabeçalho {
+    #cabecalho #titulo {
         padding: 4%;
     }    
-    #cabeçalho h1 {
+    #cabecalho #titulo h1 {
         font-size: 2em;
         margin: auto 16%;
         width: min-content;
@@ -712,10 +712,10 @@ html {
         font-size: 1.3em;
         padding: 8% 5%;
     }
-    #conteúdo {
+    #conteudo {
         font-size: 1em;
     }
-    #conteúdo fieldset {
+    #conteudo .txt {
         margin: auto 1% 15%;
         font-size: 1.5em;
         line-height: 2em;
@@ -742,13 +742,13 @@ html {
     .retangulo.esquerdo h2, .retangulo.esquerdo h3 {
         text-align: center;
     }
-    .link fieldset {
+    .videos-a-ver fieldset {
         display: flex;
         justify-content: center;
         flex-direction: column;
         gap: 3em;
     }
-    .link br {
+    .videos-a-ver br {
         display: none;
     }
     .capas.cimas, .capas.baixas {
@@ -834,14 +834,14 @@ html {
         right: 4%;
     }
 }
-@media only screen and (min-width: 750px) and (max-width: 1000px) {
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
     body {
         font-size: 1.4em;
     }
-    #cabeçalho {
+    #cabecalho #titulo {
         padding: 4%;
     }    
-    #cabeçalho h1 {
+    #cabecalho #titulo h1 {
         margin: auto 15%;
         font-size: 2em;
         width: min-content;
@@ -861,10 +861,10 @@ html {
         font-size: 1.3em;
         padding: 8% 5%;
     }
-    #conteúdo {
+    #conteudo {
         font-size: 1em;
     }
-    #conteúdo fieldset {
+    #conteudo .txt {
         margin: auto 1% 15%;
         font-size: 1.5em;
         line-height: 2em;
@@ -891,13 +891,13 @@ html {
     .retangulo.esquerdo h2, .retangulo.esquerdo h3 {
         text-align: center;
     }
-    .link fieldset {
+    .videos-a-ver fieldset {
         display: flex;
         justify-content: center;
         flex-direction: column;
         gap: 3em;
     }
-    .link br {
+    .videos-a-ver br {
         display: none;
     }
     .capas.cimas, .capas.baixas {
@@ -984,208 +984,5 @@ html {
     .topo {
         width: 15%;
         right: 4%;
-    }
-}
-
-@media only screen and (min-width: 1000px) and (max-width: 1133px) {
-    body {
-        font-size: 1.5em;
-    }
-    #cabeçalho {
-        padding: 4%;
-    }    
-    #cabeçalho h1 {
-        font-size: 2.5em;
-        margin: auto 1% auto 15%;
-        width: min-content;
-    }
-    .menu {
-        width: 25%;
-    }
-    .nav {
-        font-size: 1.5em;
-    }
-    .nav ul {
-        margin: 0 3%;
-        gap: 0%;
-        padding: 0;
-    }
-    .nav ul li h2 {
-        font-size: 2em;
-    }
-    #areas {
-        font-size: 1.5em;
-        padding: 8% 5%;
-    }
-    #conteúdo {
-        font-size: 1em;
-    }
-    #conteúdo fieldset {
-        margin: auto 1% 15%;
-        font-size: 1.5em;
-        line-height: 2em;
-    }
-    .secao img {
-        width: 50%;
-    }
-    .especial img {
-        width: 65%;
-    }
-    #parte-horaria {
-        flex-direction: column;
-    }
-    #parte-antihoraria {
-        flex-direction: column-reverse;
-    }
-    .circulo {
-        border-radius: 10em 10em 0 0;
-        width: 50%;
-    }
-    .retangulo.direito h2, .retangulo.direito h3 {
-        text-align: center;
-    }
-    .retangulo.esquerdo h2, .retangulo.esquerdo h3 {
-        text-align: center;
-    }
-    .link fieldset {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        gap: 3em;
-    }
-    .link br {
-        display: none;
-    }
-    .capas.cimas, .capas.baixas {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        gap: 3em;
-        margin: auto 15%;
-    }
-    .capas.cimas a, .capas.baixas a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        align-self: center;
-        gap: 0;
-        text-decoration: none;
-    }
-    .capas.cimas a figcaption, .capas.baixas a figcaption {
-        width: 100%;
-        margin: 0;
-    }
-    .capas.cimas a figcaption, .capas.cimas a figcaption:hover, .capas.cimas a figcaption:active {
-        border-radius: 0 0 1.5em 1.5em ;
-    }
-    .capas.baixas a figcaption, .capas.baixas a figcaption:hover, .capas.baixas a figcaption:active {
-        border-radius: 1.5em 1.5em 0 0;
-    }
-    .igual.cima {
-        border-radius: 1.5em 1.5em 0 0;
-    }
-    .igual.baixa {
-        border-radius: 0 0 1.5em 1.5em ;
-    }
-    .igual {
-        height: auto;
-        max-height: 100%;
-        width: 600px;
-    }
-    .imagens {
-        flex-direction: column;
-        margin: 9% auto;
-        gap: 2.5em;
-    }
-    .iguali {
-        width: 80%;
-    }
-    #final {
-        font-size: 1em;
-    }
-    .link div a h3 {
-        font-size: 1em; 
-    }
-    .topo {
-        width: 20%;
-        right: 4%;
-    }
-}
-@media only screen and (min-width: 1133px) and (max-width: 1215px) {
-    .nav {
-        font-size: 1em;
-    }
-    .nav ul {
-        margin: 0 10%;
-    }
-    #conteúdo {
-        font-size: 1em;
-    }
-    .igual {
-        width: auto;
-        min-height: 50px;
-        max-height: 300px;
-    }
-    #areas {
-        font-size: 1em;
-    }
-    .la {
-        margin: 0.3em 0.3em;
-    }
-    .list {
-        font-size: 1em;
-    }
-}
-@media only screen and (min-width: 1215px) and (max-width: 1350px) {
-    .nav {
-        font-size: 1em;
-    }
-    .nav ul {
-        margin: 0 8%;
-    }
-    .nav ul li h2 {
-        font-size: 2em;
-    }
-    #conteúdo {
-        font-size: 1em;
-    }
-    .igual {
-        width: auto;
-        min-height: 50px;
-        max-height: 300px;
-    }
-    .la {
-        margin: 0.3em 0.3em;
-    }
-}
-@media only screen and (min-width: 1350px) and (max-width: 1500px) {
-    .nav {
-        font-size: 1.1em;
-    }
-    .nav ul {
-        margin: 0 8%;
-    }
-    .nav ul li h2 {
-        font-size: 2em;
-    }
-    .igual {
-        width: auto;
-        min-height: 50px;
-        max-height: 350px;
-    }
-    .la {
-        margin: 0.3em 0.3em;
-    }
-}
-@media only screen and (min-width: 1500px) {
-    .igual {
-        width: auto;
-        min-height: 50px;
-        max-height: 400px;
-    }
-    .la {
-        margin: 0.3em 0.3em;
     }
 }

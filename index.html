@@ -10,14 +10,14 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-    <header>
+    <header id="cabecalho">
         <img id="menu" class="menu" onclick="abrirMenu()" src="Imagens para todas/menu.png" alt="Menu de páginas">
-        <div onclick="sairDoMenu()" id="cabeçalho">
+        <div onclick="sairDoMenu()" id="titulo">
             <label for="texto"><h1>Área Principal</h1></label>
         </div>
         <nav onclick="sairDoMenu()" class="nav">
             <ul>
-                <a href="#conteúdo"><li><h3>Biografia</h3></li></a>
+                <a href="#conteudo"><li><h3>Biografia</h3></li></a>
                 <a href="#sobre"><li><h3>Sobre</h3></li></a>
                 <a href="#contatos"><li><h3>Contatos</h3></li></a>
                 <a href="#autorias"><li><h3>Autorias</h3></li></a>
@@ -32,60 +32,54 @@
             <a href="view/conclusoes-finais.html"><h3>Conclusões finais</h3></a>
         </nav>
     </header>
-    <main id="conteúdo" onclick="sairDoMenu()">
+    <main id="conteudo" onclick="sairDoMenu()">
         <label for="texto e imagem"></label>
         <section>
             <figure class="especial">
                 <img src="Área principal/imagens/Biografia.png" alt="Minha Biografia">
             </figure>
-            <p>
-                <article class="parte" id="parte-horaria">
-                    <img class="circulo" src="Área principal/imagens/Euzinhe.jpg" alt="Euzinhe ao lado esquerdo">
-                    <div class="retangulo direito">
-                        <h2>
-                            ɞ Minha identidade ɞ
-                            <h3>
-                                Nome: Enne Jim Pessoa <br>
-                                Pronome: elu <br>
-                                Identidade de gênero: não-binária <br>
-                                Identidade étnica: negra e branca <br>
-                                Data de nascimento: 30/12/2004
-                            </h3>
-                        </h2>
-                    </div>
-                </article>
-            </p>
-            <p>
-                <article class="parte" id="parte-antihoraria">
-                    <div class="retangulo esquerdo">
-                        <h2>
-                            ʚ Jornada de estudo ʚ
-                            <h3>
-                                Ensino médio concluído &#x1F49F; <br>
-                                1º período de Ciência da &#x1F49F; <br> Computação concluído &ensp; &ensp; <br>
-                                Quero cursar Sistemas Para &#x1F49F; <br> Internet futuramente &ensp; &ensp;
-                            </h3>
-                        </h2>
-                    </div>
-                    <img class="circulo" src="Área principal/imagens/conhecimento.jpg" alt="Imagem ao lado direito representando conhecimento">
-                </article>
-            </p>
-            <p>
-                <article class="parte" id="parte-horaria">
-                    <img class="circulo" src="Área principal/imagens/design.jpg" alt="Imagem representando design digital ao lado esquerdo">
-                    <div class="retangulo direito">
-                        <h2>
-                            ɞ Áreas que amo atuar ɞ
-                            <h3>
-                                &#x1F49F; Design digital <br>
-                                &#x1F49F; Criação de imagem <br>
-                                &#x1F49F; Edição de vídeo e de foto <br>
-                                &#x1F49F; Desenvolvimento web <br>
-                            </h3>
-                        </h2>
-                    </div>
-                </article>
-            </p>
+            <article class="parte" id="parte-horaria">
+                <img class="circulo" src="Área principal/imagens/Euzinhe.jpg" alt="Euzinhe ao lado esquerdo">
+                <div class="retangulo direito">
+                    <h2>
+                        ɞ Minha identidade ɞ
+                    </h2>
+                    <p>
+                        Nome: Enne Jim Pessoa <br>
+                        Pronome: elu <br>
+                        Identidade de gênero: não-binária <br>
+                        Identidade étnica: negra e branca <br>
+                        Data de nascimento: 30/12/2004
+                    </p>
+                </div>
+            </article>
+            <article class="parte" id="parte-antihoraria">
+                <div class="retangulo esquerdo">
+                    <h2>
+                        ʚ Jornada de estudo ʚ
+                    </h2>
+                    <p>
+                        Ensino médio concluído &#x1F49F; <br>
+                        1º período de Ciência da &#x1F49F; <br> Computação concluído &ensp; &ensp; <br>
+                        Quero cursar Sistemas Para &#x1F49F; <br> Internet futuramente &ensp; &ensp;
+                    </p>
+                </div>
+                <img class="circulo" src="Área principal/imagens/conhecimento.jpg" alt="Imagem ao lado direito representando conhecimento">
+            </article>
+            <article class="parte" id="parte-horaria">
+                <img class="circulo" src="Área principal/imagens/design.jpg" alt="Imagem representando design digital ao lado esquerdo">
+                <div class="retangulo direito">
+                    <h2>
+                        ɞ Áreas que amo atuar ɞ
+                    </h2>
+                    <p>
+                        &#x1F49F; Design digital <br>
+                        &#x1F49F; Criação de imagem <br>
+                        &#x1F49F; Edição de vídeo e de foto <br>
+                        &#x1F49F; Desenvolvimento web <br>
+                    </p>
+                </div>
+            </article>
         </section>
         <section>
             <figure class="secao">
