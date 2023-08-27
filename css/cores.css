@@ -406,10 +406,10 @@ html {
         margin: auto 20%;
         width: min-content;
     }
-    .nav {
+    #cabecalho .nav {
         font-size: 3vw;
     }
-    .nav ul {
+    #cabecalho .nav ul {
         gap: 0vw;
         width: auto;
     }
@@ -417,123 +417,116 @@ html {
         padding: 8% 5%;
     }
     #conteudo {
-        font-size: 1em;
+        font-size: 5vw;
     }
     #conteudo .txt {
-        margin: auto 1% 15%;
+        margin: auto 2% 15%;
+        padding: 2% 5%;
         font-size: 1.5em;
         line-height: 1.8em;
     }
-    .secao img {
+    #conteudo .secao img {
         width: 70%;
     }
-    .especial img {
+    #conteudo .especial img {
         width: 70%;
     }
-    #parte-horaria {
+    #conteudo #parte-horaria {
         flex-direction: column;
     }
-    #parte-antihoraria {
+    #conteudo #parte-antihoraria {
         flex-direction: column-reverse;
     }
-    .circulo {
+    #conteudo .parte .circulo {
         border-radius: 10em 10em 0 0;
         width: 50%;
     }
-    .retangulo.direito h2, .retangulo.direito h3 {
+    #conteudo .parte .retangulo.direito h2, #conteudo .parte .retangulo.direito p {
         text-align: center;
     }
-    .retangulo.esquerdo h2, .retangulo.esquerdo h3 {
+    #conteudo .parte .retangulo.esquerdo h2, #conteudo .parte .retangulo.esquerdo p {
         text-align: center;
     }
-    .videos-a-ver fieldset {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+    #conteudo .videos-a-ver section {
+        font-size: 7vw;
         gap: 3em;
     }
-    .videos-a-ver br {
+    #conteudo .videos-a-ver br {
         display: none;
     }
-    .capas.cimas, .capas.baixas {
-        display: flex;
-        justify-content: center;
+    #conteudo .videos-a-ver .capas.cimas, #conteudo .videos-a-ver .capas.baixas {
         flex-direction: column;
         align-items: center;
         gap: 3em;
         margin: auto 15%;
     }
-    .capas.cimas a, .capas.baixas a {
-        display: flex;
-        justify-content: center;
+    #conteudo .videos-a-ver .capas.cimas a, #conteudo .videos-a-ver .capas.baixas a {
         align-items: center;
         flex-direction: column;
-        align-self: center;
         gap: 0;
-        text-decoration: none;
     }
-    .capas.cimas a figcaption, .capas.baixas a figcaption {
+    #conteudo .videos-a-ver .capas.cimas a figcaption, #conteudo .videos-a-ver .capas.baixas a figcaption {
         width: 100%;
         margin: 0;
     }
-    .capas.cimas a figcaption, .capas.cimas a figcaption:hover, .capas.cimas a figcaption:active {
+    #conteudo .videos-a-ver .capas.cimas a figcaption, #conteudo .videos-a-ver .capas.cimas a figcaption:hover, #conteudo .videos-a-ver .capas.cimas a figcaption:active {
         border-radius: 0 0 1.5em 1.5em ;
     }
-    .capas.baixas a figcaption, .capas.baixas a figcaption:hover, .capas.baixas a figcaption:active {
+    #conteudo .videos-a-ver .capas.baixas a figcaption, #conteudo .videos-a-ver .capas.baixas a figcaption:hover, #conteudo .videos-a-ver .capas.baixas a figcaption:active {
         border-radius: 1.5em 1.5em 0 0;
     }
-    .igual.cimas {
+    #conteudo .videos-a-ver .igual.cimas {
         border-radius: 1.5em 1.5em 0 0;
     }
-    .igual.baixa {
+    #conteudo .videos-a-ver .igual.baixa {
         border-radius: 0 0 1.5em 1.5em ;
     }
-    .igual {
+    #conteudo .videos-a-ver .capas .igual {
         height: 100%;
-        width: 104%;
+        width: 105%;
     }
-    .imagens {
+    #conteudo .imagens {
         flex-direction: column;
         margin: 5% auto;
         gap: 1em;
     }
-    .iguali {
+    #conteudo .imagens .iguali {
         width: 80%;
     }
-    .topo {
+    #conteudo .topo {
         width: 20%;
         right: 4%;
     }
     #final h2 {
         margin: 10% 5% 6%;
     }
-    .table {
+    #final #contatos .table {
         margin: auto;
         display: flex;
         column-span: all;
         width: auto;
     }
-    .table thead tr {
+    #final #contatos .table thead tr {
         font-size: 1em;
         display: flex;
         flex-direction: column;
         text-align: left;
     }
-    .table thead tr th {
+    #final #contatos .table thead tr th {
         width: auto;
     }
-    .cima {
+    #final #contatos .cima {
         display: flex;
     }
-    .la {
+    #final #contatos .la {
         width: auto;
         height: 40px;
     }
-    .list {
+    #final #autorias .list {
         font-size: 0.55em;
         margin: 0% 5% 10% 1%;
     }
-    .list li {
+    #final #autorias .list li {
         width: fit-content;
     }
 }
@@ -592,7 +585,7 @@ html {
     .retangulo.esquerdo h2, .retangulo.esquerdo h3 {
         text-align: center;
     }
-    .videos-a-ver fieldset {
+    .videos-a-ver section {
         display: flex;
         justify-content: center;
         flex-direction: column;
