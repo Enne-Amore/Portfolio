@@ -451,9 +451,6 @@ html {
         font-size: 7vw;
         gap: 3em;
     }
-    #conteudo .videos-a-ver br {
-        display: none;
-    }
     #conteudo .videos-a-ver .capas.cimas, #conteudo .videos-a-ver .capas.baixas {
         flex-direction: column;
         align-items: center;

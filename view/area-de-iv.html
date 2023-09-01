@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Área de inspiração visual</title>
     <link rel="stylesheet" href="../css/cores.css">
-    <link rel="shortcut icon" href="Imagens para todas/image-editing.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../Imagens para todas/image-editing.png" type="image/x-icon">
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../js/menu.js" defer></script>
+    <script src="../js/topo.js" defer></script>
+    <script src="../js/aparecer.js" defer></script>
     </style>
 </head>
 <body>
     <header id="cabecalho">
         <img id="menu" class="menu" onclick="abrirMenu()" src="../Imagens para todas/menu.png" alt="Menu de páginas">
-        <div onclick="sairDoMenu()" id="titulo">
+        <div id="titulo">
             <label for="texto"><h1>Inspirações visuais</h1></label>
         </div>
-        <nav onclick="sairDoMenu()" class="nav">
+        <nav class="nav" id="nav">
             <ul>
                 <a href="#conteudo"><li><h3>Sobre</h3></li></a>
                 <a href="#imagens"><li><h3>Imagens</h3></li></a>
@@ -33,7 +36,7 @@
             <a href="conclusoes-finais.html"><h3>Conclusões finais</h3></a>
         </nav>
     </header>
-    <main onclick="sairDoMenu()" id="conteudo">
+    <main id="conteudo">
         <section>
             <label for="texto e imagem"></label>
             <figure class="secao">
@@ -173,8 +176,5 @@
                 </li>
         </section>
     </footer>
-    <script src="../js/menu.js"></script>
-    <script src="../js/topo.js"></script>
-    <script src="../js/aparecer.js"></script>
 </body>
 </html>

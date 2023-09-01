@@ -1,5 +1,8 @@
+// Abrir o menu
+// Chamando a tag com uma constante
 const menu = document.getElementById('menu')
 
+// Aplicando a função de abrir o menu
 function abrirMenu() {
     if (areas.style.left = '-80%') {
         areas.style.left = '0'
@@ -8,6 +11,19 @@ function abrirMenu() {
         menu.style.boxShadow = '1px 1px 1px 1px #a479c0'
     }
 }
+
+// Sair do menu
+// Chamada das tags por ID's
+const titulo = window.document.getElementById('titulo')
+const nav = window.document.getElementById('nav')
+const conteudo = window.document.getElementById('conteudo')
+
+// Adicionar o evento nelas
+titulo.addEventListener('click', sairDoMenu)
+nav.addEventListener('click', sairDoMenu)
+conteudo.addEventListener('click', sairDoMenu)
+
+// Aplicando função de sair do menu
 function sairDoMenu() {
     areas.style.left = '-80%'
     areas.style.opacity = '0%'
