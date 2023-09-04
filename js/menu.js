@@ -3,14 +3,14 @@
 const menu = document.getElementById('menu')
 
 // Aplicando a função de abrir o menu
-function abrirMenu() {
+menu.addEventListener('click', () => {
     if (areas.style.left = '-80%') {
         areas.style.left = '0'
         areas.style.opacity = '100%'
         menu.style.transform = 'rotate(-360deg)'
         menu.style.boxShadow = '1px 1px 1px 1px #a479c0'
     }
-}
+})
 
 // Sair do menu
 // Chamada das tags por ID's

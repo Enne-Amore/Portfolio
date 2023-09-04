@@ -463,7 +463,7 @@ html {
         gap: 0;
     }
     #conteudo .videos-a-ver .capas.cimas a figcaption, #conteudo .videos-a-ver .capas.baixas a figcaption {
-        width: 100%;
+        width: 101%;
         margin: 0;
     }
     #conteudo .videos-a-ver .capas.cimas a figcaption, #conteudo .videos-a-ver .capas.cimas a figcaption:hover, #conteudo .videos-a-ver .capas.cimas a figcaption:active {
@@ -531,7 +531,7 @@ html {
         width: fit-content;
     }
 }
-@media only screen and (min-width: 600px) and (max-width: 768px) {
+@media only screen and (min-width: 600px) and (max-width: 769px) {
     body {
         font-size: 5vw;
     }
@@ -676,7 +676,7 @@ html {
         width: fit-content;
     }
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 769px) and (max-width: 992px) {
     body {
         font-size: 5vw;
     }
@@ -752,7 +752,7 @@ html {
         gap: 0;
     }
     #conteudo .videos-a-ver .capas.cimas a figcaption, #conteudo .videos-a-ver .capas.baixas a figcaption {
-        width: 95%;
+        width: 96%;
         margin: 0;
     }
     #conteudo .videos-a-ver .capas.cimas a figcaption, #conteudo .videos-a-ver .capas.cimas a figcaption:hover, #conteudo .videos-a-ver .capas.cimas a figcaption:active {
@@ -896,8 +896,9 @@ html {
         gap: 0;
     }
     #conteudo .videos-a-ver .capas.cimas a figcaption, #conteudo .videos-a-ver .capas.baixas a figcaption {
-        width: 76%;
+        width: 80%;
         margin: 0;
+        padding: 3%;
     }
     #conteudo .videos-a-ver .capas.cimas a figcaption, #conteudo .videos-a-ver .capas.cimas a figcaption:hover, #conteudo .videos-a-ver .capas.cimas a figcaption:active {
         border-radius: 0 0 1.5em 1.5em ;
@@ -913,7 +914,7 @@ html {
     }
     #conteudo .videos-a-ver .capas .igual {
         max-height: 100%;
-        width: 80%;
+        width: 86%;
     }
     #conteudo .imagens {
         flex-direction: column;
