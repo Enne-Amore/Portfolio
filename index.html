@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Área principal</title>
     <link rel="stylesheet" href="src/css/cores.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
     <link rel="shortcut icon" href="src/Imagens para todas/heart.png" type="image/x-icon">
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="src/js/menu.js" defer></script>
@@ -13,6 +14,7 @@
     <script src="src/js/aparecer.js" defer></script>
 </head>
 <body>
+    <!--O cabeçalho do site-->
     <header id="cabecalho">
         <img id="menu" class="menu" src="src/Imagens para todas/menu.png" alt="Menu de páginas">
         <div id="titulo">
@@ -20,10 +22,10 @@
         </div>
         <nav class="nav" id="nav">
             <ul>
-                <a href="#conteudo"><li><h3>Biografia</h3></li></a>
-                <a href="#sobre"><li><h3>Sobre</h3></li></a>
-                <a href="#contatos"><li><h3>Contatos</h3></li></a>
-                <a href="#autorias"><li><h3>Autorias</h3></li></a>
+                <a href="#conteudo">Biografia</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contatos">Contatos</a>
+                <a href="#autorias">Autorias</a>
             </ul>
         </nav>
         <nav id="areas">
@@ -35,6 +37,8 @@
             <a href="src/view/conclusoes-finais.html" rel="next"><h3>Conclusões finais</h3></a>
         </nav>
     </header>
+
+    <!--O conteúdo do site-->
     <main id="conteudo">
         <label for="texto e imagem"></label>
         <section>
@@ -107,7 +111,9 @@
             <img class="topo" src="src/Imagens para todas/topo.png" alt="Clique aqui para voltar ao topo da página">
         </div>
     </main>
-    <footer id="final" onclick="sairDoMenu()">
+    
+    <!--O rodapé do site-->
+    <footer id="final">
         <section id="contatos">
             <label for="texto, imagem e link"><h2>Meus Contatos</h2></label>
             <table border="1" class="table">

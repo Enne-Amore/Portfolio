@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Área final</title>
     <link rel="stylesheet" href="../css/cores.css">
+    <link rel="stylesheet" href="../css/responsive.css">
     <link rel="shortcut icon" href="../Imagens para todas/heart.png" type="image/x-icon">
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="../js/menu.js" defer></script>
@@ -13,6 +14,7 @@
     <script src="../js/aparecer.js" defer></script>
 </head>
 <body>
+    <!--O cabeçalho do site-->
     <header id="cabecalho">
         <img id="menu" class="menu" src="../Imagens para todas/menu.png" alt="Menu de páginas">
         <div id="titulo">
@@ -20,9 +22,9 @@
         </div>
         <nav class="nav" id="nav">
             <ul>
-                <a href="#conteudo"><li><h3>Importância</h3></li></a>
-                <a href="#contatos"><li><h3>Contatos</h3></li></a>
-                <a href="#autorias"><li><h3>Autorias</h3></li></a>
+                <a href="#conteudo">Importância</a>
+                <a href="#contatos">Contatos</a>
+                <a href="#autorias">Autorias</a>
             </ul>
         </nav>
         <nav id="areas">
@@ -34,48 +36,46 @@
             <a href="area-de-iv.html"><h3>Inspirações de imagem</h3></a>
         </nav>
     </header>
+
+    <!--O conteúdo do site-->
     <main id="conteudo">
         <section>
             <label for="texto e imagem"></label>
             <figure class="especial">
                 <img src="../Considerações finais/imagens/Importância.png" alt="Porque tudo isso importa tanto assim?">
             </figure>
-            <p>
-                <article class="parte" id="parte-antihoraria">
-                    <div class="retangulo esquerdo">
-                        <h3>
-                            Cada obra é feita por algum propósito. E aquela que é produzida com uma intenção boa deve ser valorizada e reconhecida!
-                        </h3>
-                    </div>
-                    <img class="circulo" src="../Considerações finais/imagens/arco-íris.jpeg" alt="Um lindo arco-íris ao lado">
-                </article>
-            </p>
-            <p>
-                <article class="parte" id="parte-horaria">
-                    <img src="../Considerações finais/imagens/pessoas coloridas.jpeg" class="circulo" alt="Diversas pessoas coloridas reunidas">
-                    <div class="retangulo direito">
-                        <h3>
-                            Existe uma grande pluralidade em cada grupo de seres vivos, icnlusive na espécie humana, e ela não deve sofrer tipo algum de repressão, e sim deve ser respeitada e visibilizada, sendo maioria ou não.
-                        </h3>
-                    </div>
-                </article>
-            </p>
-            <p>
-                <article class="parte" id="parte-antihoraria">
-                    <div class="retangulo esquerdo">
-                        <h3>
-                            Devemos sempre aprender, evoluir e nos tornamos pessoas melhores e mais humanas que antes a fim de construir lugares e relações mais saudáveis e inclusivas.
-                        </h3>
-                    </div>
-                    <img class="circulo" src="../Considerações finais/imagens/união diversa.jpeg" alt="Várias pessoas unidas colocando as mãos abertas no meio em união">
-                </article>
-            </p>
+            <article class="parte" id="parte-antihoraria">
+                <div class="retangulo esquerdo">
+                    <p>
+                        Cada obra é feita por algum propósito. E aquela que é produzida com uma intenção boa deve ser valorizada e reconhecida!
+                    </p>
+                </div>
+                <img class="circulo" src="../Considerações finais/imagens/arco-íris.jpeg" alt="Um lindo arco-íris ao lado">
+            </article>
+            <article class="parte" id="parte-horaria">
+                <img src="../Considerações finais/imagens/pessoas coloridas.jpeg" class="circulo" alt="Diversas pessoas coloridas reunidas">
+                <div class="retangulo direito">
+                    <p>
+                        Existe uma grande pluralidade em cada grupo de seres vivos, icnlusive na espécie humana, e ela não deve sofrer tipo algum de repressão, e sim deve ser respeitada e visibilizada, sendo maioria ou não.
+                    </p>
+                </div>
+            </article>
+            <article class="parte" id="parte-antihoraria">
+                <div class="retangulo esquerdo">
+                    <p>
+                        Devemos sempre aprender, evoluir e nos tornamos pessoas melhores e mais humanas que antes a fim de construir lugares e relações mais saudáveis e inclusivas.
+                    </p>
+                </div>
+                <img class="circulo" src="../Considerações finais/imagens/união diversa.jpeg" alt="Várias pessoas unidas colocando as mãos abertas no meio em união">
+            </article>
         </section>
         <div id="topo">
             <img class="topo" src="../Imagens para todas/topo.png" alt="Clique aqui para voltar ao topo da página">
         </div>
     </main>
-    <footer id="final" onclick="sairDoMenu()">
+    
+    <!--O rodapé do site-->
+    <footer id="final">
         <section id="contatos">
             <label for="texto, imagem e link"><h2>Meus Contatos</h2></label>
             <table border="1" class="table">

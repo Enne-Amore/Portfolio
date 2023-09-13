@@ -17,11 +17,13 @@ menu.addEventListener('click', () => {
 const titulo = window.document.getElementById('titulo')
 const nav = window.document.getElementById('nav')
 const conteudo = window.document.getElementById('conteudo')
+const rodape = window.document.getElementById('final')
 
 // Adicionar o evento nelas
 titulo.addEventListener('click', sairDoMenu)
 nav.addEventListener('click', sairDoMenu)
 conteudo.addEventListener('click', sairDoMenu)
+rodape.addEventListener('click', sairDoMenu)
 
 // Aplicando função de sair do menu
 function sairDoMenu() {
