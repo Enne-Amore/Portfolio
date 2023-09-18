@@ -12,7 +12,7 @@
     }
     #cabecalho #titulo {
         padding: 4%;
-        padding-top: 5%;
+        padding-top: 6%;
     }
     #cabecalho #titulo h1 {
         font-size: 10vw;
@@ -47,7 +47,7 @@
         width: 70%;
     }
     #conteudo .especial img {
-        width: 70%;
+        width: 80%;
     }
     #conteudo #parte-horaria {
         flex-direction: column;
@@ -59,12 +59,32 @@
         border-radius: 10em 10em 0 0;
         width: 50%;
     }
-    #conteudo .parte .retangulo.direito h2, #conteudo .parte .retangulo.direito p {
-        text-align: center;
+    #conteudo .parte .retangulo {
+        width: 85vw;
+        padding: 3.5% 0;
     }
-    #conteudo .parte .retangulo.esquerdo h2, #conteudo .parte .retangulo.esquerdo p {
-        text-align: center;
+    #conteudo .parte .retangulo h2 {
+        padding-bottom: 1%;
     }
+    #conteudo .parte .retangulo .feituras:last-child {
+        padding-bottom: 2%;
+    }
+    #conteudo .parte .retangulo p {
+        padding: 3% 0;
+    }
+    #conteudo .parte .retangulo p, #conteudo .parte .retangulo .feituras {
+        font-size: 1.2em;
+        width: auto;
+    }
+    #conteudo .parte .retangulo.direito h2, #conteudo .parte .retangulo.direito p, #conteudo .parte .retangulo.direito .feituras {
+        text-align: center;
+        width: auto;
+    }
+    #conteudo .parte .retangulo.esquerdo h2, #conteudo .parte .retangulo.esquerdo p, #conteudo .parte .retangulo.esquerdo .feituras {
+        text-align: center;
+        width: auto;
+    }
+
     #conteudo .videos-a-ver section {
         font-size: 7vw;
         gap: 3em;
@@ -120,7 +140,7 @@
         padding: 10% 5% 6%;
     }
     #final #contatos .table {
-        margin: auto 15% 5%;
+        margin: auto auto 5%;
         display: flex;
         width: max-content;
     }
@@ -151,16 +171,18 @@
     }
 }
 @media only screen and (min-width: 600px) and (max-width: 769px) {
+    
     body {
         font-size: 5vw;
     }
+    
     #cabecalho .menu {
         left: 3%;
         width: 25%;
     }
     #cabecalho #titulo {
         padding: 4%;
-        padding-top: 5%;
+        padding-top: 6%;
     }
     #cabecalho #titulo h1 {
         font-size: 10vw;
@@ -174,9 +196,11 @@
         gap: 0vw;
         width: auto;
     }
+    
     #areas {
         padding: 8% 5%;
     }
+    
     #conteudo {
         font-size: 5vw;
     }
@@ -193,7 +217,7 @@
         width: 70%;
     }
     #conteudo .especial img {
-        width: 70%;
+        width: 80%;
     }
     #conteudo #parte-horaria {
         flex-direction: column;
@@ -205,12 +229,32 @@
         border-radius: 10em 10em 0 0;
         width: 50%;
     }
-    #conteudo .parte .retangulo.direito h2, #conteudo .parte .retangulo.direito p {
-        text-align: center;
+    #conteudo .parte .retangulo {
+        width: 85vw;
+        padding: 3.5% 0;
     }
-    #conteudo .parte .retangulo.esquerdo h2, #conteudo .parte .retangulo.esquerdo p {
-        text-align: center;
+    #conteudo .parte .retangulo h2 {
+        padding-bottom: 1%;
     }
+    #conteudo .parte .retangulo .feituras:last-child {
+        padding-bottom: 2%;
+    }
+    #conteudo .parte .retangulo p {
+        padding: 3% 0;
+    }
+    #conteudo .parte .retangulo p, #conteudo .parte .retangulo .feituras {
+        font-size: 1.2em;
+        width: auto;
+    }
+    #conteudo .parte .retangulo.direito h2, #conteudo .parte .retangulo.direito p, #conteudo .parte .retangulo.direito .feituras {
+        text-align: center;
+        width: auto;
+    }
+    #conteudo .parte .retangulo.esquerdo h2, #conteudo .parte .retangulo.esquerdo p, #conteudo .parte .retangulo.esquerdo .feituras {
+        text-align: center;
+        width: auto;
+    }
+
     #conteudo .videos-a-ver section {
         font-size: 7vw;
         gap: 3em;
@@ -262,6 +306,7 @@
         width: 20%;
         right: 4%;
     }
+
     #final {
         margin-top: 10%;
     }
@@ -269,7 +314,7 @@
         padding: 10% 5% 6%;
     }
     #final #contatos .table {
-        margin: auto 15% 5%;
+        margin: auto auto 5%;
         display: flex;
         width: max-content;
     }
@@ -300,16 +345,18 @@
     }
 }
 @media only screen and (min-width: 769px) and (max-width: 992px) {
+    
     body {
         font-size: 5vw;
     }
+    
     #cabecalho .menu {
         left: 3%;
         width: 25%;
     }
     #cabecalho #titulo {
         padding: 4%;
-        padding-top: 5%;
+        padding-top: 6%;
     }
     #cabecalho #titulo h1 {
         font-size: 10vw;
@@ -323,9 +370,11 @@
         gap: 0vw;
         width: auto;
     }
+    
     #areas {
         padding: 8% 5%;
     }
+    
     #conteudo {
         font-size: 5vw;
     }
@@ -342,7 +391,7 @@
         width: 70%;
     }
     #conteudo .especial img {
-        width: 70%;
+        width: 80%;
     }
     #conteudo #parte-horaria {
         flex-direction: column;
@@ -354,12 +403,32 @@
         border-radius: 10em 10em 0 0;
         width: 50%;
     }
-    #conteudo .parte .retangulo.direito h2, #conteudo .parte .retangulo.direito p {
-        text-align: center;
+    #conteudo .parte .retangulo {
+        width: 85vw;
+        padding: 3.5% 0;
     }
-    #conteudo .parte .retangulo.esquerdo h2, #conteudo .parte .retangulo.esquerdo p {
-        text-align: center;
+    #conteudo .parte .retangulo h2 {
+        padding-bottom: 1%;
     }
+    #conteudo .parte .retangulo .feituras:last-child {
+        padding-bottom: 2%;
+    }
+    #conteudo .parte .retangulo p {
+        padding: 3% 0;
+    }
+    #conteudo .parte .retangulo p, #conteudo .parte .retangulo .feituras {
+        font-size: 1.2em;
+        width: auto;
+    }
+    #conteudo .parte .retangulo.direito h2, #conteudo .parte .retangulo.direito p, #conteudo .parte .retangulo.direito .feituras {
+        text-align: center;
+        width: auto;
+    }
+    #conteudo .parte .retangulo.esquerdo h2, #conteudo .parte .retangulo.esquerdo p, #conteudo .parte .retangulo.esquerdo .feituras {
+        text-align: center;
+        width: auto;
+    }
+
     #conteudo .videos-a-ver section {
         font-size: 7vw;
         gap: 3em;
@@ -417,7 +486,7 @@
         padding: 10% 5% 6%;
     }
     #final #contatos .table {
-        margin: auto 15% 5%;
+        margin: auto auto 5%;
         display: flex;
         width: max-content;
     }
@@ -448,16 +517,18 @@
     }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+
     body {
         font-size: 5vw;
     }
+    
     #cabecalho .menu {
         left: 3%;
         width: 25%;
     }
     #cabecalho #titulo {
         padding: 4%;
-        padding-top: 5%;
+        padding-top: 6%;
     }
     #cabecalho #titulo h1 {
         font-size: 10vw;
@@ -471,9 +542,11 @@
         gap: 0vw;
         width: auto;
     }
+    
     #areas {
         padding: 8% 5%;
     }
+    
     #conteudo {
         font-size: 5vw;
     }
@@ -490,7 +563,7 @@
         width: 70%;
     }
     #conteudo .especial img {
-        width: 70%;
+        width: 80%;
     }
     #conteudo #parte-horaria {
         flex-direction: column;
@@ -502,12 +575,32 @@
         border-radius: 10em 10em 0 0;
         width: 50%;
     }
-    #conteudo .parte .retangulo.direito h2, #conteudo .parte .retangulo.direito p {
-        text-align: center;
+    #conteudo .parte .retangulo {
+        width: 85vw;
+        padding: 3.5% 0;
     }
-    #conteudo .parte .retangulo.esquerdo h2, #conteudo .parte .retangulo.esquerdo p {
-        text-align: center;
+    #conteudo .parte .retangulo h2 {
+        padding-bottom: 1%;
     }
+    #conteudo .parte .retangulo .feituras:last-child {
+        padding-bottom: 2%;
+    }
+    #conteudo .parte .retangulo p {
+        padding: 3% 0;
+    }
+    #conteudo .parte .retangulo p, #conteudo .parte .retangulo .feituras {
+        font-size: 1.2em;
+        width: auto;
+    }
+    #conteudo .parte .retangulo.direito h2, #conteudo .parte .retangulo.direito p, #conteudo .parte .retangulo.direito .feituras {
+        text-align: center;
+        width: auto;
+    }
+    #conteudo .parte .retangulo.esquerdo h2, #conteudo .parte .retangulo.esquerdo p, #conteudo .parte .retangulo.esquerdo .feituras {
+        text-align: center;
+        width: auto;
+    }
+
     #conteudo .videos-a-ver section {
         font-size: 7vw;
         gap: 3em;
@@ -559,6 +652,7 @@
         width: 20%;
         right: 4%;
     }
+    
     #final {
         margin-top: 10%;
     }
@@ -566,7 +660,7 @@
         padding: 10% 5% 6%;
     }
     #final #contatos .table {
-        margin: auto 15% 5%;
+        margin: auto auto 5%;
         display: flex;
         width: max-content;
     }
@@ -595,4 +689,13 @@
     #final #autorias .list li {
         width: fit-content;
     }
+}
+
+/* Ajuste específico em telas específicas */ 
+@media screen and (min-width: 1200px) {
+
+    #conteudo .parte .retangulo .feituras#identidade {
+        width: max-content;
+    }
+
 }

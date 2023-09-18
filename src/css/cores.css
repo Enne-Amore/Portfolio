@@ -76,7 +76,6 @@ html {
 #cabecalho .nav ul a:hover {
     background-color: #698bac;
     color: white;
-    margin: 0% auto;
     padding: 2.5% 3%;
     transition-duration: .6s;
 }
@@ -177,19 +176,37 @@ html {
     color: #ff81b1;
     background-color: rgb(248, 248, 248);
     border-radius: 1em;
-    padding: 1% 2%;
+    padding: 2%;
+    width: min-content;
 }
-#conteudo .parte .retangulo h2, #conteudo .parte .retangulo p {
+#conteudo .parte .retangulo h2 {
     margin: 2% 0;
-    width: auto;
+    width: max-content;
     height: auto;
 }
-#conteudo .parte .retangulo.direito h2, #conteudo .parte .retangulo.direito p {
+#conteudo .parte .retangulo p {
+    width: 35vw;
+}
+#conteudo .parte .retangulo.direito h2, #conteudo .parte .retangulo.direito p, #conteudo .parte .retangulo.direito .feituras {
     text-align: left;
 }
-#conteudo .parte .retangulo.esquerdo h2, #conteudo .parte .retangulo.esquerdo p {
+#conteudo .parte .retangulo.esquerdo h2, #conteudo .parte .retangulo.esquerdo p, #conteudo .parte .retangulo.esquerdo .feituras {
     text-align: right;
 }
+#conteudo .parte .retangulo .feituras {
+    list-style: none;
+    width: fit-content;
+}
+#conteudo .parte .retangulo .feituras li {
+    padding-bottom: 2%;
+}
+#conteudo .parte .retangulo .feituras li:nth-last-child(1) {
+    padding-bottom: 0%;
+}
+#conteudo .parte .retangulo .feituras li::before {
+    content: "💟 ";
+}
+
 #conteudo .videos-a-ver section {
     display: flex;
     justify-content: center;
@@ -314,7 +331,7 @@ html {
     border-collapse: collapse;
     position: static;
     align-items: center;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.411);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.178);
     width: 80%;
 }
 #final #contatos .table tbody tr td {
