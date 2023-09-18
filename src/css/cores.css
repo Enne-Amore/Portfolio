@@ -12,6 +12,7 @@ body {
     text-align: center;
     max-width: 100%;
     height: auto;
+    overflow-x: hidden;
 }
 html {
     scroll-behavior: smooth;
@@ -309,11 +310,15 @@ html {
 #final #contatos .table {
     margin: -0.6em auto 5%;
     text-align: center;
+    vertical-align: middle;
+    border-collapse: collapse;
     position: static;
     align-items: center;
-    border: 0.3em groove #7cc2ff;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.411);
     width: 80%;
+}
+#final #contatos .table tbody tr td {
+    border: 0.3em double #7cc2ff;
 }
 #final #contatos .cima {
     display: flex;
@@ -330,17 +335,14 @@ html {
     border-radius: 0.5em;
     padding: 2%;
 }
-#final #contatos .cima a h3:hover {
-    background-color: #a479c0;
-    color: white;
-    transition-duration: .2s;
+#final #contatos .cima a .la {
+    align-items: center;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    margin: 0 0.3em;
 }
-#final #contatos .cima a h3:active {
-    color: rgb(248, 248, 248);
-    background-color: #ff609a;
-    transition-duration: .2s;
-}
-#final #contatos .contato {
+#final #contatos .cima a .contato {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -350,12 +352,15 @@ html {
     padding: 3%;
     margin: 0 -5%;
 }
-#final #contatos .la {
-    align-items: center;
-    display: flex;
-    width: 60px;
-    height: 60px;
-    margin: 0 0.3em;
+#final #contatos .cima a .contato:hover {
+    background-color: #a479c0;
+    color: white;
+    transition-duration: .2s;
+}
+#final #contatos .cima a .contato:active {
+    color: rgb(248, 248, 248);
+    background-color: #ff609a;
+    transition-duration: .2s;
 }
 #final #autorias {
     display: flex;

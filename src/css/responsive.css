@@ -1,20 +1,23 @@
 /* A responsividade do site */
 
 @media only screen and (max-width: 600px) {
+
     body {
         font-size: 5vw;
     }
+
     #cabecalho .menu {
         left: 3%;
         width: 25%;
     }
     #cabecalho #titulo {
         padding: 4%;
+        padding-top: 5%;
     }
     #cabecalho #titulo h1 {
         font-size: 10vw;
-        margin: auto 20%;
-        width: min-content;
+        margin: auto -8% auto 20%;
+        width: fit-content;
     }
     #cabecalho .nav {
         font-size: 3.5vw;
@@ -23,9 +26,11 @@
         gap: 0vw;
         width: auto;
     }
+
     #areas {
         padding: 8% 5%;
     }
+
     #conteudo {
         font-size: 4.8vw;
     }
@@ -107,6 +112,7 @@
         width: 20%;
         right: 4%;
     }
+
     #final {
         margin-top: 10%;
     }
@@ -118,19 +124,19 @@
         display: flex;
         width: max-content;
     }
-    #final #contatos .table thead tr {
+    #final #contatos .table tbody tr {
         font-size: 7vw;
         display: flex;
         flex-direction: column;
         text-align: left;
     }
-    #final #contatos .table thead tr th {
+    #final #contatos .table tbody tr td {
         padding: 0.3em;
     }
     #final #contatos .cima {
         display: flex;
     }
-    #final #contatos .la {
+    #final #contatos .cima a .la {
         width: auto;
         height: 40px;
     }
@@ -154,11 +160,12 @@
     }
     #cabecalho #titulo {
         padding: 4%;
+        padding-top: 5%;
     }
     #cabecalho #titulo h1 {
         font-size: 10vw;
-        margin: auto 20%;
-        width: min-content;
+        margin: auto -8% auto 20%;
+        width: fit-content;
     }
     #cabecalho .nav {
         font-size: 3.5vw;
@@ -266,19 +273,19 @@
         display: flex;
         width: max-content;
     }
-    #final #contatos .table thead tr {
+    #final #contatos .table tbody tr {
         font-size: 7vw;
         display: flex;
         flex-direction: column;
         text-align: left;
     }
-    #final #contatos .table thead tr th {
+    #final #contatos .table tbody tr td {
         padding: 0.3em;
     }
     #final #contatos .cima {
         display: flex;
     }
-    #final #contatos .la {
+    #final #contatos .cima a .la {
         width: auto;
         height: 90px;
     }
@@ -302,11 +309,12 @@
     }
     #cabecalho #titulo {
         padding: 4%;
+        padding-top: 5%;
     }
     #cabecalho #titulo h1 {
         font-size: 10vw;
-        margin: auto 20%;
-        width: min-content;
+        margin: auto -8% auto 20%;
+        width: fit-content;
     }
     #cabecalho .nav {
         font-size: 3.5vw;
@@ -413,19 +421,19 @@
         display: flex;
         width: max-content;
     }
-    #final #contatos .table thead tr {
+    #final #contatos .table tbody tr {
         font-size: 7vw;
         display: flex;
         flex-direction: column;
         text-align: left;
     }
-    #final #contatos .table thead tr th {
+    #final #contatos .table tbody tr td {
         padding: 0.3em;
     }
     #final #contatos .cima {
         display: flex;
     }
-    #final #contatos .la {
+    #final #contatos .cima a .la {
         width: auto;
         height: 40px;
     }
@@ -562,19 +570,19 @@
         display: flex;
         width: max-content;
     }
-    #final #contatos .table thead tr {
+    #final #contatos .table tbody tr {
         font-size: 7vw;
         display: flex;
         flex-direction: column;
         text-align: left;
     }
-    #final #contatos .table thead tr th {
+    #final #contatos .table tbody tr td {
         padding: 0.3em;
     }
     #final #contatos .cima {
         display: flex;
     }
-    #final #contatos .la {
+    #final #contatos .cima a .la {
         width: auto;
         height: 150px;
     }
