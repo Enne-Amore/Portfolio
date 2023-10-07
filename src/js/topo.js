@@ -5,9 +5,19 @@ const topo = document.getElementById('topo')
 topo.addEventListener("click", function(){
     window.scrollTo(0, 0)
 })
-document.addEventListener('scroll', ocultar)
+
+// Voltar ao topo usando o teclado
+topo.addEventListener('keypress', (tecla) => {
+    if (tecla.key === "Enter") {
+        tecla.target.click()
+    }
+})
+
 
 // Aplicando a função de ocultar
+document.addEventListener('scroll', ocultar)
+
+// Função de ocultar
 function ocultar() {
     if (window.scrollY > 1000) {
         topo.style.display = 'flex'
