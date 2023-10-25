@@ -42,7 +42,7 @@
     }
     #cabecalho #titulo h1 {
         font-size: 10vw;
-        margin: auto -8% auto 20%;
+        margin-left: 27%;
         width: fit-content;
     }
     #cabecalho .nav {
@@ -63,7 +63,7 @@
     #conteudo .txt {
         margin: auto 2% 15%;
         padding: 2% 5%;
-        font-size: 1.5em;
+        font-size: 1.2em;
         line-height: 1.8em;
     }
     #conteudo .txt p {
@@ -212,7 +212,7 @@
     }
     #cabecalho #titulo h1 {
         font-size: 10vw;
-        margin: auto -8% auto 20%;
+        margin-left: 27%;
         width: fit-content;
     }
     #cabecalho .nav {
@@ -233,7 +233,7 @@
     #conteudo .txt {
         margin: auto 2% 15%;
         padding: 2% 5%;
-        font-size: 1.5em;
+        font-size: 1.2em;
         line-height: 1.8em;
     }
     #conteudo .txt p {
@@ -386,7 +386,7 @@
     }
     #cabecalho #titulo h1 {
         font-size: 10vw;
-        margin: auto -8% auto 20%;
+        margin-left: 27%;
         width: fit-content;
     }
     #cabecalho .nav {
@@ -407,7 +407,7 @@
     #conteudo .txt {
         margin: auto 2% 15%;
         padding: 2% 5%;
-        font-size: 1.5em;
+        font-size: 1.2em;
         line-height: 1.8em;
     }
     #conteudo .txt p {
@@ -558,7 +558,7 @@
     }
     #cabecalho #titulo h1 {
         font-size: 10vw;
-        margin: auto -8% auto 20%;
+        margin-left: 27%;
         width: fit-content;
     }
     #cabecalho .nav {
@@ -579,7 +579,7 @@
     #conteudo .txt {
         margin: auto 2% 15%;
         padding: 2% 5%;
-        font-size: 1.5em;
+        font-size: 1.2em;
         line-height: 1.8em;
     }
     #conteudo .txt p {
