@@ -57,21 +57,17 @@ html {
     font-size: 1.1em;
     list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 10vw;
-    margin: auto;
-    width: max-content;
+    justify-content: space-evenly;
+    margin: auto 6%;
 }
 #cabecalho .nav ul a {
-    margin: auto;
+    text-decoration: none;
+    color: #7cc2ff;
     padding: 2.5% 0;
     font-size: 1.3em;
     font-weight: bolder;
     border-radius: 1.2em;
-    color: #7cc2ff;
-    text-decoration: none;
     transition-duration: .6s;
-    width: auto;
 }
 #cabecalho .nav ul a:hover {
     background-color: #698bac;

@@ -9,8 +9,38 @@
 
     #cabecalho .menu {
         top: 1.6%;
+        left: 3%;
+        width: 25%;
+    }
+    #cabecalho #titulo h1 {
+        font-size: 10vw;
+        margin-left: 27%;
+        width: fit-content;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.048);
+    }
+    #cabecalho .nav {
+        font-size: 3.5vw;
+    }
+    #cabecalho .nav ul {
+        margin: 0;
+    }
+    
+    #areas {
+        padding: 8% 5%;
     }
 
+    #conteudo {
+        font-size: 5vw;
+    }
+    #conteudo .txt {
+        margin: auto 2% 15%;
+        padding: 2% 4%;
+        font-size: 0.8em;
+        line-height: 1.8em;
+    }
+    #conteudo .txt strong {
+        padding: 0.6% 1.6% 0.6%;
+    }
     #conteudo .videos-a-ver .capas .video:hover {
         box-shadow: 0px 0px 30px 1px #ff81b1;
     }
@@ -31,46 +61,15 @@
 
 /* Especificidades de cada tela */
 @media only screen and (max-width: 600px) {
-
-    body {
-        font-size: 5vw;
-    }
-
-    #cabecalho .menu {
-        left: 3%;
-        width: 25%;
-    }
     #cabecalho #titulo {
         padding: 4%;
-        padding-top: 6%;
-    }
-    #cabecalho #titulo h1 {
-        font-size: 10vw;
-        margin-left: 27%;
-        width: fit-content;
-    }
-    #cabecalho .nav {
-        font-size: 3.5vw;
-    }
-    #cabecalho .nav ul {
-        gap: 0vw;
-        width: auto;
+        padding-top: 5%;
     }
 
     #areas {
-        padding: 8% 5%;
         font-size: 0.9em;
     }
 
-    #conteudo {
-        font-size: 4.8vw;
-    }
-    #conteudo .txt {
-        margin: auto 2% 15%;
-        padding: 2% 5%;
-        font-size: 1.2em;
-        line-height: 1.8em;
-    }
     #conteudo .txt p {
         margin: 3% 0;
     }
@@ -203,43 +202,8 @@
 }
 @media only screen and (min-width: 600px) and (max-width: 769px) {
     
-    body {
-        font-size: 5vw;
-    }
-    
-    #cabecalho .menu {
-        left: 3%;
-        width: 25%;
-    }
-    #cabecalho #titulo {
-        padding: 4%;
-        padding-top: 6%;
-    }
-    #cabecalho #titulo h1 {
-        font-size: 10vw;
-        margin-left: 27%;
-        width: fit-content;
-    }
-    #cabecalho .nav {
-        font-size: 3.5vw;
-    }
-    #cabecalho .nav ul {
-        gap: 0vw;
-        width: auto;
-    }
-    
-    #areas {
-        padding: 8% 5%;
-    }
-    
-    #conteudo {
-        font-size: 5vw;
-    }
     #conteudo .txt {
-        margin: auto 2% 15%;
-        padding: 2% 5%;
-        font-size: 1.2em;
-        line-height: 1.8em;
+        font-size: 0.9em;
     }
     #conteudo .txt p {
         margin: 3% 0;
@@ -377,43 +341,8 @@
 }
 @media only screen and (min-width: 769px) and (max-width: 992px) {
     
-    body {
-        font-size: 5vw;
-    }
-    
-    #cabecalho .menu {
-        left: 3%;
-        width: 25%;
-    }
-    #cabecalho #titulo {
-        padding: 4%;
-        padding-top: 6%;
-    }
-    #cabecalho #titulo h1 {
-        font-size: 10vw;
-        margin-left: 27%;
-        width: fit-content;
-    }
-    #cabecalho .nav {
-        font-size: 3.5vw;
-    }
-    #cabecalho .nav ul {
-        gap: 0vw;
-        width: auto;
-    }
-    
-    #areas {
-        padding: 8% 5%;
-    }
-    
-    #conteudo {
-        font-size: 5vw;
-    }
     #conteudo .txt {
-        margin: auto 2% 15%;
-        padding: 2% 5%;
-        font-size: 1.2em;
-        line-height: 1.8em;
+        font-size: 0.9em;
     }
     #conteudo .txt p {
         margin: 3% 0;
@@ -548,44 +477,9 @@
     }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-
-    body {
-        font-size: 5vw;
-    }
     
-    #cabecalho .menu {
-        left: 3%;
-        width: 25%;
-    }
-    #cabecalho #titulo {
-        padding: 4%;
-        padding-top: 6%;
-    }
-    #cabecalho #titulo h1 {
-        font-size: 10vw;
-        margin-left: 27%;
-        width: fit-content;
-    }
-    #cabecalho .nav {
-        font-size: 3.5vw;
-    }
-    #cabecalho .nav ul {
-        gap: 0vw;
-        width: auto;
-    }
-    
-    #areas {
-        padding: 8% 5%;
-    }
-    
-    #conteudo {
-        font-size: 5vw;
-    }
     #conteudo .txt {
-        margin: auto 2% 15%;
-        padding: 2% 5%;
-        font-size: 1.2em;
-        line-height: 1.8em;
+        font-size: 0.9em;
     }
     #conteudo .txt p {
         margin: 3% 0;
@@ -721,8 +615,6 @@
         width: fit-content;
     }
 }
-
-/* Ajuste específico em telas específicas */ 
 @media screen and (min-width: 1200px) {
 
     #conteudo .parte .retangulo .feituras#identidade {
