@@ -6,9 +6,15 @@
 }
 
 /* A mente do site */
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-    font-size: 1.8em;
+    min-height: 100vh;
+    max-width: 100vw;
+    font-size: 1.8vw;
     font-family: 'inclusao';
     text-align: center;
     background-repeat: no-repeat;
@@ -28,8 +34,13 @@ body#inspiracoes-audiovisuais {
 /* O nome do vídeo do site */
 
 .nome {
-    margin-top: -1.5%;
-    margin-bottom: -1.5%;
+    background-color: #f8f8f850;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.123);
+    width: max-content;
+    text-align: center;
+    margin: 0.5% auto;
+    padding: 0.9% 1% 0.1%;
+    border-radius: 1em;
 }
 
 /* O vídeo e seus tamanhos */
@@ -53,35 +64,41 @@ body#inspiracoes-audiovisuais {
 /* Os botões */
 
 .botao {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.158);
     width: 4%;
     height: auto;
-    margin-top: -5.5%;
-    overflow: hidden;
     border-radius: 60%;
     margin-inline-start: 1%;
     margin-inline-end: 1%;
+    margin-bottom: 1%;
     transition-duration: .1s;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.158);
 }
 .botao:hover {
     box-shadow: 0px 0px 10px 1px #ff609a;
-    transition-duration: .1s;
 }
 .botao:active {
     box-shadow: 0px 0px 10px 1px #FFC8DD;
-    transition-duration: .1s;
 }
 
 /* A responsividade do site */
-
-@media screen and (max-width: 600px) {
-    body {
-        font-size: 1.5em;
-    }
+/* Características padrões das menores telas */
+@media screen and (max-width: 1200px) {
     .nome {
-        margin-top: -2.5%;
-        margin-bottom: -4.5%;
+        width: auto;
+        margin: 5% 9%;
+        padding: 3% 5% 1%;
+        font-size: 6vw;
     }
+    .botao {
+        margin-top: 5%;
+        margin-bottom: 8%;
+        margin-inline-start: 5%;
+        margin-inline-end: 5%;
+    }
+}
+
+/* Características específicas das menores telas */
+@media screen and (max-width: 600px) {
     .igual {
         width: 88%;
     }
@@ -93,15 +110,9 @@ body#inspiracoes-audiovisuais {
     }
     .botao {
         width: 20%;
-        margin-top: 1%;
-        margin-inline-start: 5%;
-        margin-inline-end: 5%;
     }
 }
 @media screen and (min-width: 600px) and (max-width: 768px) {
-    body {
-        font-size: 2em;
-    }
     .igual {
         width: 86%;
     }
@@ -113,12 +124,9 @@ body#inspiracoes-audiovisuais {
     }
     .botao {
         width: 15%;
-        margin-top: 1%;
-        margin-inline-start: 4%;
-        margin-inline-end: 4%;
     }
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
     .igual {
         width: 86%;
     }
@@ -130,14 +138,6 @@ body#inspiracoes-audiovisuais {
     }
     .botao {
         width: 15%;
-        margin-top: 1%;
-        margin-inline-start: 3%;
-        margin-inline-end: 3%;
     }
 
-}
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-    body {
-        font-size: 1.3em;
-    }
 }

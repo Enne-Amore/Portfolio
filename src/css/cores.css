@@ -25,7 +25,7 @@ html {
 /* E o seu cabeçalho */
 
 #cabecalho #titulo {
-    padding: 4%;
+    padding: 4.5% 0 4%;
     background-color: #FFC8DD;
     color: #a479c0;
     letter-spacing: 1px;
@@ -38,6 +38,7 @@ html {
 #cabecalho #titulo h1 {
     width: max-content;
     margin-left: 3%;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.123);
 }
 #cabecalho .menu {
     position: absolute;
@@ -105,6 +106,7 @@ html {
 }
 #areas label h2 {
     margin-bottom: 10%;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.048);
 }
 #areas a h3 {
     padding: 0 1%;
@@ -158,8 +160,23 @@ html {
 }
 #conteudo .txt strong {
     background-color: #7cc2ff48;
-    padding: 0.3% 0.6%;
+    padding: 0.6% 0.6% 0.3%;
     border-radius: 1em;
+}
+#conteudo .txt a::after {
+    content: '\1F517';
+}
+#conteudo .txt a {
+    color: #698bac;
+    text-decoration: underline;
+    transition-duration: .2s;
+}
+#conteudo .txt a:hover {
+    text-decoration: underline;
+    color: #7cc2ff;
+}
+#conteudo .txt a:active {
+    color: #a479c0;
 }
 #conteudo .parte {
     display: flex;
@@ -169,7 +186,7 @@ html {
     gap: 4%;
 }
 #conteudo .parte .circulo {
-    width: 30%;
+    width: 26%;
     height: auto;
     background-color: #f8f8f8;
     border-radius: 10em;
@@ -188,6 +205,7 @@ html {
     margin: 2% 0;
     width: max-content;
     height: auto;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.048);
 }
 #conteudo .parte .retangulo p {
     width: 35vw;
@@ -331,6 +349,7 @@ html {
 }
 #final h2 {
     padding: 4%;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.123);
 }
 #final #contatos .table {
     margin: -0.6em auto 5%;

@@ -7,6 +7,10 @@
         font-size: 5vw;
     }
 
+    #cabecalho .menu {
+        top: 1.6%;
+    }
+
     #conteudo .videos-a-ver .capas .video:hover {
         box-shadow: 0px 0px 30px 1px #ff81b1;
     }
@@ -55,6 +59,7 @@
 
     #areas {
         padding: 8% 5%;
+        font-size: 0.9em;
     }
 
     #conteudo {
