@@ -67,6 +67,7 @@ html {
     font-size: 1.3em;
     font-weight: bolder;
     border-radius: 1.2em;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.048);
     transition-duration: .6s;
 }
 #cabecalho .nav ul a:hover {
@@ -84,7 +85,7 @@ html {
 /* O menu de páginas do site */
 
 #areas {
-    height: 100em;
+    height: 100vh;
     width: max-content;
     background-color: #f8f8f8;
     float: left;
@@ -106,7 +107,7 @@ html {
 }
 #areas a h3 {
     padding: 0 1%;
-    width: max-content;
+    width: 100%;
 }
 #areas a, #areas a h3 {
     text-decoration: none;
@@ -119,7 +120,7 @@ html {
     background-color: #698bac;
     transition-duration: .6s;
     border-radius: 1em;
-    padding: 3%;
+    padding: 4% 3% 3%;
 }
 #areas a:active, #areas a h3:active {
     color: #f8f8f8;
@@ -255,7 +256,7 @@ html {
     border-radius: 0.9em;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
     transition-duration: .6s;
-    padding: 2%;
+    padding: 3% 2% 2%;
     margin: 8% 2%;
     height: max-content;
 }
