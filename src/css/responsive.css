@@ -30,19 +30,59 @@
     }
     
     #areas {
-        padding: 8% 5%;
+        font-size: 0.9em;
+        padding: 8% 6% 8% 4%;
     }
 
     #conteudo {
         font-size: 5vw;
     }
+
+    #conteudo .secao img {
+        width: 70%;
+    }
+    #conteudo .especial img {
+        width: 80%;
+    }
+    
     #conteudo .txt {
         margin: auto 2% 15%;
         padding: 2% 4%;
         line-height: 1.8em;
     }
+    #conteudo .txt p {
+        margin: 3% 0;
+    }
     #conteudo .txt strong {
         padding: 1.4% 1.6%;
+    }
+
+    #conteudo .parte.horaria {
+        flex-direction: column;
+    }
+    #conteudo .parte.antihoraria {
+        flex-direction: column-reverse;
+    }
+    #conteudo .parte .circulo {
+        border-radius: 10em 10em 0 0;
+        width: 50%;
+    }
+    #conteudo .parte .retangulo {
+        width: 85vw;
+        padding: 3.5%;
+    }
+    #conteudo .parte .retangulo h2 {
+        padding-bottom: 1%;
+    }
+    #conteudo .parte .retangulo .feituras:last-child {
+        padding-bottom: 2%;
+    }
+    #conteudo .parte .retangulo p {
+        padding: 3%;
+    }
+    #conteudo .parte .retangulo p, #conteudo .parte .retangulo .feituras {
+        font-size: 1.2em;
+        width: auto;
     }
     #conteudo .parte .retangulo.direito h2, #conteudo .parte .retangulo.direito .feituras {
         text-align: center;
@@ -57,6 +97,27 @@
         text-align: justify;
     }
 
+    #conteudo .videos-a-ver section {
+        font-size: 7vw;
+        gap: 3em;
+    }
+    #conteudo .videos-a-ver br {
+        display: none;
+    }
+    #conteudo .videos-a-ver .capas.cimas, #conteudo .videos-a-ver .capas.baixas {
+        flex-direction: column;
+        align-items: center;
+        gap: 3em;
+        margin: auto 15%;
+    }
+    #conteudo .videos-a-ver .capas.cimas a, #conteudo .videos-a-ver .capas.baixas a {
+        align-items: center;
+        flex-direction: column;
+        gap: 0;
+    }
+    #conteudo .videos-a-ver .capas.cimas a figcaption, #conteudo .videos-a-ver .capas.baixas a figcaption {
+        margin: 0;
+    }
     #conteudo .videos-a-ver .capas.cimas a figcaption, #conteudo .videos-a-ver .capas.cimas a figcaption:hover, #conteudo .videos-a-ver .capas.cimas a figcaption:active {
         border-radius: 0 0 1.5em 1.5em;
     }
@@ -86,75 +147,6 @@
         transition-duration: .2s;
     }
 
-}
-
-/* Especificidades de cada tela */
-@media only screen and (max-width: 600px) {
-
-    #areas {
-        font-size: 0.9em;
-    }
-
-    #conteudo .txt p {
-        margin: 3% 0;
-    }
-    #conteudo .secao img {
-        width: 70%;
-    }
-    #conteudo .especial img {
-        width: 80%;
-    }
-    #conteudo #parte-horaria {
-        flex-direction: column;
-    }
-    #conteudo #parte-antihoraria {
-        flex-direction: column-reverse;
-    }
-    #conteudo .parte .circulo {
-        border-radius: 10em 10em 0 0;
-        width: 50%;
-    }
-    #conteudo .parte .retangulo {
-        width: 85vw;
-        padding: 3.5%;
-    }
-    #conteudo .parte .retangulo h2 {
-        padding-bottom: 1%;
-    }
-    #conteudo .parte .retangulo .feituras:last-child {
-        padding-bottom: 2%;
-    }
-    #conteudo .parte .retangulo p {
-        padding: 3%;
-    }
-    #conteudo .parte .retangulo p, #conteudo .parte .retangulo .feituras {
-        font-size: 1.2em;
-        width: auto;
-    }
-
-    #conteudo .videos-a-ver section {
-        font-size: 7vw;
-        gap: 3em;
-    }
-    #conteudo .videos-a-ver .capas.cimas, #conteudo .videos-a-ver .capas.baixas {
-        flex-direction: column;
-        align-items: center;
-        gap: 3em;
-        margin: auto 15%;
-    }
-    #conteudo .videos-a-ver .capas.cimas a, #conteudo .videos-a-ver .capas.baixas a {
-        align-items: center;
-        flex-direction: column;
-        gap: 0;
-    }
-    #conteudo .videos-a-ver .capas.cimas a figcaption, #conteudo .videos-a-ver .capas.baixas a figcaption {
-        width: 101%;
-        margin: 0;
-    }
-    #conteudo .videos-a-ver .capas .igual {
-        height: 100%;
-        width: 105%;
-    }
     #conteudo .imagens {
         flex-direction: column;
         margin: 5% auto;
@@ -167,7 +159,7 @@
         width: 20%;
         right: 4%;
     }
-
+    
     #final {
         margin-top: 10%;
     }
@@ -193,7 +185,6 @@
     }
     #final #contatos .cima a .la {
         width: auto;
-        height: 40px;
     }
     #final #autorias .list {
         font-size: 5vw;
@@ -204,377 +195,75 @@
     #final #autorias .list li {
         width: fit-content;
     }
-}
-@media only screen and (min-width: 600px) and (max-width: 769px) {
-    
-    #conteudo .txt p {
-        margin: 3% 0;
-    }
-    #conteudo .secao img {
-        width: 70%;
-    }
-    #conteudo .especial img {
-        width: 80%;
-    }
-    #conteudo #parte-horaria {
-        flex-direction: column;
-    }
-    #conteudo #parte-antihoraria {
-        flex-direction: column-reverse;
-    }
-    #conteudo .parte .circulo {
-        border-radius: 10em 10em 0 0;
-        width: 50%;
-    }
-    #conteudo .parte .retangulo {
-        width: 85vw;
-        padding: 3.5% 0;
-    }
-    #conteudo .parte .retangulo h2 {
-        padding-bottom: 1%;
-    }
-    #conteudo .parte .retangulo .feituras:last-child {
-        padding-bottom: 2%;
-    }
-    #conteudo .parte .retangulo p {
-        padding: 3% 0;
-    }
-    #conteudo .parte .retangulo p, #conteudo .parte .retangulo .feituras {
-        font-size: 1.2em;
-        width: auto;
-    }
-    #conteudo .parte .retangulo.direito h2, #conteudo .parte .retangulo.direito p, #conteudo .parte .retangulo.direito .feituras {
-        text-align: center;
-        width: auto;
-    }
-    #conteudo .parte .retangulo.esquerdo h2, #conteudo .parte .retangulo.esquerdo p, #conteudo .parte .retangulo.esquerdo .feituras {
-        text-align: center;
-        width: auto;
-    }
 
-    #conteudo .videos-a-ver section {
-        font-size: 7vw;
-        gap: 3em;
-    }
+}
+
+/* Especificidades de cada tela */
+@media only screen and (max-width: 600px) {
+
     #conteudo .videos-a-ver br {
-        display: none;
-    }
-    #conteudo .videos-a-ver .capas.cimas, #conteudo .videos-a-ver .capas.baixas {
-        flex-direction: column;
-        align-items: center;
-        gap: 3em;
-        margin: auto 15%;
-    }
-    #conteudo .videos-a-ver .capas.cimas a, #conteudo .videos-a-ver .capas.baixas a {
-        align-items: center;
-        flex-direction: column;
-        gap: 0;
+        display: inline;
     }
     #conteudo .videos-a-ver .capas.cimas a figcaption, #conteudo .videos-a-ver .capas.baixas a figcaption {
+        width: 101%;
+    }
+    #conteudo .videos-a-ver .capas .igual {
+        height: 100%;
+        width: 105%;
+    }
+
+    #final #contatos .cima a .la {
+        height: 40px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 769px) {
+
+    #conteudo .videos-a-ver .capas.cimas a figcaption, #conteudo .videos-a-ver .capas.baixas a figcaption {
         width: 90%;
-        margin: 0;
         padding: 5%;
     }
     #conteudo .videos-a-ver .capas .igual {
         max-height: 100%;
         width: 100%;
     }
-    #conteudo .imagens {
-        flex-direction: column;
-        margin: 5% auto;
-        gap: 1em;
-    }
-    #conteudo .imagens .iguali {
-        width: 80%;
-    }
-    #conteudo .topo {
-        width: 20%;
-        right: 4%;
-    }
 
-    #final {
-        margin-top: 10%;
-    }
-    #final h2 {
-        padding: 10% 5% 6%;
-    }
-    #final #contatos .table {
-        margin: auto auto 5%;
-        display: flex;
-        width: max-content;
-    }
-    #final #contatos .table tbody tr {
-        font-size: 7vw;
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-    }
-    #final #contatos .table tbody tr td {
-        padding: 0.3em;
-    }
-    #final #contatos .cima {
-        display: flex;
-    }
     #final #contatos .cima a .la {
-        width: auto;
         height: 90px;
     }
-    #final #autorias .list {
-        font-size: 5vw;
-        margin: 0 5%;
-        columns: 2;
-        gap: 1vw;
-    }
-    #final #autorias .list li {
-        width: fit-content;
-    }
 }
-@media only screen and (min-width: 769px) and (max-width: 992px) {
-    
-    #conteudo .txt p {
-        margin: 3% 0;
-    }
-    #conteudo .secao img {
-        width: 70%;
-    }
-    #conteudo .especial img {
-        width: 80%;
-    }
-    #conteudo #parte-horaria {
-        flex-direction: column;
-    }
-    #conteudo #parte-antihoraria {
-        flex-direction: column-reverse;
-    }
-    #conteudo .parte .circulo {
-        border-radius: 10em 10em 0 0;
-        width: 50%;
-    }
-    #conteudo .parte .retangulo {
-        width: 85vw;
-        padding: 3.5% 0;
-    }
-    #conteudo .parte .retangulo h2 {
-        padding-bottom: 1%;
-    }
-    #conteudo .parte .retangulo .feituras:last-child {
-        padding-bottom: 2%;
-    }
-    #conteudo .parte .retangulo p {
-        padding: 3% 0;
-    }
-    #conteudo .parte .retangulo p, #conteudo .parte .retangulo .feituras {
-        font-size: 1.2em;
-        width: auto;
-    }
-    #conteudo .parte .retangulo.direito h2, #conteudo .parte .retangulo.direito p, #conteudo .parte .retangulo.direito .feituras {
-        text-align: center;
-        width: auto;
-    }
-    #conteudo .parte .retangulo.esquerdo h2, #conteudo .parte .retangulo.esquerdo p, #conteudo .parte .retangulo.esquerdo .feituras {
-        text-align: center;
-        width: auto;
-    }
 
-    #conteudo .videos-a-ver section {
-        font-size: 7vw;
-        gap: 3em;
-    }
-    #conteudo .videos-a-ver br {
-        display: none;
-    }
-    #conteudo .videos-a-ver .capas.cimas, #conteudo .videos-a-ver .capas.baixas {
-        flex-direction: column;
-        align-items: center;
-        gap: 3em;
-        margin: auto 15%;
-    }
-    #conteudo .videos-a-ver .capas.cimas a, #conteudo .videos-a-ver .capas.baixas a {
-        align-items: center;
-        flex-direction: column;
-        gap: 0;
-    }
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
     #conteudo .videos-a-ver .capas.cimas a figcaption, #conteudo .videos-a-ver .capas.baixas a figcaption {
         width: 96%;
-        margin: 0;
     }
     #conteudo .videos-a-ver .capas .igual {
         max-height: 100%;
         width: 100%;
     }
-    #conteudo .imagens {
-        flex-direction: column;
-        margin: 5% auto;
-        gap: 1em;
-    }
-    #conteudo .imagens .iguali {
-        width: 80%;
-    }
-    #conteudo .topo {
-        width: 20%;
-        right: 4%;
-    }
-    #final {
-        margin-top: 10%;
-    }
-    #final h2 {
-        padding: 10% 5% 6%;
-    }
-    #final #contatos .table {
-        margin: auto auto 5%;
-        display: flex;
-        width: max-content;
-    }
-    #final #contatos .table tbody tr {
-        font-size: 7vw;
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-    }
-    #final #contatos .table tbody tr td {
-        padding: 0.3em;
-    }
-    #final #contatos .cima {
-        display: flex;
-    }
+
     #final #contatos .cima a .la {
-        width: auto;
         height: 40px;
     }
-    #final #autorias .list {
-        font-size: 5vw;
-        margin: 0 5%;
-        columns: 2;
-        gap: 1vw;
-    }
-    #final #autorias .list li {
-        width: fit-content;
-    }
 }
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-    
-    #conteudo .txt p {
-        margin: 3% 0;
-    }
-    #conteudo .secao img {
-        width: 70%;
-    }
-    #conteudo .especial img {
-        width: 80%;
-    }
-    #conteudo #parte-horaria {
-        flex-direction: column;
-    }
-    #conteudo #parte-antihoraria {
-        flex-direction: column-reverse;
-    }
-    #conteudo .parte .circulo {
-        border-radius: 10em 10em 0 0;
-        width: 50%;
-    }
-    #conteudo .parte .retangulo {
-        width: 85vw;
-        padding: 3.5% 0;
-    }
-    #conteudo .parte .retangulo h2 {
-        padding-bottom: 1%;
-    }
-    #conteudo .parte .retangulo .feituras:last-child {
-        padding-bottom: 2%;
-    }
-    #conteudo .parte .retangulo p {
-        padding: 3% 0;
-    }
-    #conteudo .parte .retangulo p, #conteudo .parte .retangulo .feituras {
-        font-size: 1.2em;
-        width: auto;
-    }
-    #conteudo .parte .retangulo.direito h2, #conteudo .parte .retangulo.direito p, #conteudo .parte .retangulo.direito .feituras {
-        text-align: center;
-        width: auto;
-    }
-    #conteudo .parte .retangulo.esquerdo h2, #conteudo .parte .retangulo.esquerdo p, #conteudo .parte .retangulo.esquerdo .feituras {
-        text-align: center;
-        width: auto;
-    }
 
-    #conteudo .videos-a-ver section {
-        font-size: 7vw;
-        gap: 3em;
-    }
-    #conteudo .videos-a-ver br {
-        display: none;
-    }
-    #conteudo .videos-a-ver .capas.cimas, #conteudo .videos-a-ver .capas.baixas {
-        flex-direction: column;
-        align-items: center;
-        gap: 3em;
-        margin: auto 15%;
-    }
-    #conteudo .videos-a-ver .capas.cimas a, #conteudo .videos-a-ver .capas.baixas a {
-        align-items: center;
-        flex-direction: column;
-        gap: 0;
-    }
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
     #conteudo .videos-a-ver .capas.cimas a figcaption, #conteudo .videos-a-ver .capas.baixas a figcaption {
         width: 80%;
-        margin: 0;
         padding: 3%;
     }
     #conteudo .videos-a-ver .capas .igual {
         max-height: 100%;
         width: 86%;
     }
-    #conteudo .imagens {
-        flex-direction: column;
-        margin: 5% auto;
-        gap: 1em;
-    }
-    #conteudo .imagens .iguali {
-        width: 80%;
-    }
-    #conteudo .topo {
-        width: 20%;
-        right: 4%;
-    }
-    
-    #final {
-        margin-top: 10%;
-    }
-    #final h2 {
-        padding: 10% 5% 6%;
-    }
-    #final #contatos .table {
-        margin: auto auto 5%;
-        display: flex;
-        width: max-content;
-    }
-    #final #contatos .table tbody tr {
-        font-size: 7vw;
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-    }
-    #final #contatos .table tbody tr td {
-        padding: 0.3em;
-    }
-    #final #contatos .cima {
-        display: flex;
-    }
+
     #final #contatos .cima a .la {
-        width: auto;
         height: 150px;
     }
-    #final #autorias .list {
-        font-size: 5vw;
-        margin: 0 5%;
-        columns: 2;
-        gap: 1vw;
-    }
-    #final #autorias .list li {
-        width: fit-content;
-    }
 }
+
 @media screen and (min-width: 1200px) {
 
     #conteudo .parte .retangulo .feituras#identidade {
