@@ -21,13 +21,43 @@ html {
     padding: 0;
 }
 
+/* Variáveis CSS */
+:root {
+    --azul-claro: #7cc2ff;
+    --azul-escuro: #698bac;
+    --azul-transparente: #7cc2ff48;
+    --rosa-claro: #FFC8DD;
+    --rosa: #ff81b1;
+    --rosa-escuro: #ff609a;
+    --cinza-claro: #f8f8f8;
+    --roxo: #a479c0;
+}
+
+/* Estilização da barrinha de rolagem */
+::-webkit-scrollbar {
+    width: auto;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--azul-transparente);
+    border-radius: 1em;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--azul-claro);
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: var(--azul-escuro);
+}
+
 /* O corpo do site */
 /* E o seu cabeçalho */
 
 #cabecalho #titulo {
     padding: 4.5% 0 4%;
-    background-color: #FFC8DD;
-    color: #a479c0;
+    background-color: var(--rosa-claro);
+    color: var(--roxo);
     letter-spacing: 1px;
     text-transform: capitalize;
     font-size: 1.5em;
@@ -51,7 +81,7 @@ html {
     transition-duration: .6s;
 }
 #cabecalho .nav {
-    background-color: #f8f8f8;
+    background-color: var(--cinza-claro);
 }
 #cabecalho .nav ul {
     font-size: 1.1em;
@@ -62,7 +92,7 @@ html {
 }
 #cabecalho .nav ul a {
     text-decoration: none;
-    color: #7cc2ff;
+    color: var(--azul-claro);
     padding: 2.5% 0;
     font-size: 1.3em;
     font-weight: bolder;
@@ -71,14 +101,14 @@ html {
     transition-duration: .6s;
 }
 #cabecalho .nav ul a:hover {
-    background-color: #698bac;
+    background-color: var(--azul-escuro);
     color: white;
     padding: 2.5% 3%;
     transition-duration: .6s;
 }
 #cabecalho .nav ul a:active {
-    background-color: #7cc2ff;
-    color: #f8f8f8;
+    background-color: var(--azul-claro);
+    color: var(--cinza-claro);
     transition-duration: .2s;
 }
 
@@ -87,10 +117,10 @@ html {
 #areas {
     height: 100vh;
     width: max-content;
-    background-color: #f8f8f8;
+    background-color: var(--cinza-claro);
     float: left;
     padding: 3%;
-    color: hsl(210, 29%, 54%);
+    color: #688aac;
     text-align: left;
     font-size: 1em;
     letter-spacing: 1px;
@@ -111,20 +141,20 @@ html {
 }
 #areas a, #areas a h3 {
     text-decoration: none;
-    color: #7cc2ff;
+    color: var(--azul-claro);
     margin-bottom: 10%;
     transition-duration: .6s;
 }
 #areas a:hover, #areas a h3:hover {
-    color: #f8f8f8;
-    background-color: #698bac;
+    color: var(--cinza-claro);
+    background-color: var(--azul-escuro);
     transition-duration: .6s;
     border-radius: 1em;
     padding: 4% 3% 3%;
 }
 #areas a:active, #areas a h3:active {
-    color: #f8f8f8;
-    background-color: #7cc2ff;
+    color: var(--cinza-claro);
+    background-color: var(--azul-claro);
     transition-duration: .1s;
 }
 
@@ -137,7 +167,7 @@ html {
     font-size: 1.2em;
 }
 #conteudo .secao img {
-    background-color: #f8f8f8;
+    background-color: var(--cinza-claro);
     width: 30%;
     height: auto;
     margin-top: 0.2em;
@@ -156,24 +186,27 @@ html {
     margin: 1.5% 0;
 }
 #conteudo .txt strong {
-    background-color: #7cc2ff48;
-    padding: 0.6% 0.6% 0.3%;
+    background-image: linear-gradient(to right, var(--azul-transparente), white);
+    padding: 0.3% 0.6%;
     border-radius: 1em;
+}
+#conteudo .txt strong:nth-child(2n) {
+    background-image: linear-gradient(to right, white, var(--azul-transparente));
 }
 #conteudo .txt a::after {
     content: '\1F517';
 }
 #conteudo .txt a {
-    color: #698bac;
+    color: var(--azul-escuro);
     text-decoration: underline;
     transition-duration: .2s;
 }
 #conteudo .txt a:hover {
     text-decoration: underline;
-    color: #7cc2ff;
+    color: var(--azul-claro);
 }
 #conteudo .txt a:active {
-    color: #a479c0;
+    color: var(--roxo);
 }
 #conteudo .parte {
     display: flex;
@@ -185,7 +218,7 @@ html {
 #conteudo .parte .circulo {
     width: 26%;
     height: auto;
-    background-color: #f8f8f8;
+    background-color: var(--cinza-claro);
     border-radius: 10em;
     margin: 0;
     padding: 0;
@@ -193,7 +226,7 @@ html {
 }
 #conteudo .parte .retangulo {
     color: #ff81b1;
-    background-color: #f8f8f8;
+    background-color: var(--cinza-claro);
     border-radius: 1em;
     padding: 2%;
     width: min-content;
@@ -252,7 +285,7 @@ html {
 }
 #conteudo .videos-a-ver .capas.cimas a figcaption, #conteudo .videos-a-ver .capas.baixas a figcaption {
     color: white;
-    background-color: #7cc2ff;
+    background-color: var(--azul-claro);
     border-radius: 0.9em;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
     transition-duration: .6s;
@@ -267,12 +300,12 @@ html {
     transition-duration: .4s;
 }
 #conteudo .videos-a-ver .capas.cimas a figcaption:active, #conteudo .videos-a-ver .capas.baixas a figcaption:active {
-    background-color: #FFC8DD;
-    color: #f8f8f8;
+    background-color: var(--rosa-claro);
+    color: var(--cinza-claro);
     transition-duration: .2s;
 }
 #conteudo .videos-a-ver .capas .igual {
-    background-color: #f8f8f8;
+    background-color: var(--cinza-claro);
     width: auto;
     max-height: 400px;
     border-radius: 1.5em;
@@ -296,14 +329,14 @@ html {
     margin: 4% 5%;
 }
 #conteudo .imagens .iguali {
-    background-color: #f8f8f8;
+    background-color: var(--cinza-claro);
     width: 40%;
     height: auto;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.212);
     border-radius: 1em;
 }
 #conteudo .especial img {
-    background-color: #f8f8f8;
+    background-color: var(--cinza-claro);
     width: 38%;
     height: auto;
     margin-top: 1em;
@@ -326,15 +359,15 @@ html {
     transition-duration: .1s;
 }
 #conteudo .topo:active {
-    box-shadow: 0px 0px 15px 1px #FFC8DD;
+    box-shadow: 0px 0px 15px 1px var(--rosa-claro);
     transition-duration: .1s;
 }
 
 /* O rodapé do site */
 
 #final {
-    background-color: #FFC8DD;
-    color: #a479c0;
+    background-color: var(--rosa-claro);
+    color: var(--roxo);
     text-transform: none;
     letter-spacing: 1px;
     font-weight: bolder;
@@ -359,7 +392,7 @@ html {
     width: 80%;
 }
 #final #contatos .table tbody tr td {
-    border: 0.3em double #7cc2ff;
+    border: 0.3em double var(--azul-claro);
 }
 #final #contatos .cima {
     display: flex;
@@ -394,12 +427,12 @@ html {
     margin: 0 -5%;
 }
 #final #contatos .cima a .contato:hover {
-    background-color: #a479c0;
+    background-color: var(--roxo);
     color: white;
     transition-duration: .2s;
 }
 #final #contatos .cima a .contato:active {
-    color: #f8f8f8;
+    color: var(--cinza-claro);
     background-color: #ff609a;
     transition-duration: .2s;
 }
@@ -429,12 +462,12 @@ html {
     padding: 1%;
 }
 #final #autorias .list li a:hover {
-    background-color: #a479c0;
+    background-color: var(--roxo);
     color: white;
     transition-duration: .2s;
 }
 #final #autorias .list li a:active  {
-    color: #f8f8f8;
+    color: var(--cinza-claro);
     background-color: #ff609a;
     transition-duration: .2s;
 }

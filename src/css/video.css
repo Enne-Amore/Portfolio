@@ -34,7 +34,7 @@ body#inspiracoes-audiovisuais {
 /* O nome do vídeo do site */
 
 .nome {
-    background-color: #f8f8f850;
+    background-color: var(--cinza-claro)50;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.123);
     width: max-content;
     text-align: center;
@@ -77,7 +77,7 @@ body#inspiracoes-audiovisuais {
     box-shadow: 0px 0px 10px 1px #ff609a;
 }
 .botao:active {
-    box-shadow: 0px 0px 10px 1px #FFC8DD;
+    box-shadow: 0px 0px 10px 1px var(--rosa-claro);
 }
 
 /* A responsividade do site */

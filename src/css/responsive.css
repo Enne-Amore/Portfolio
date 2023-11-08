@@ -142,8 +142,8 @@
         background-color: #ff81b1;
     }
     #conteudo .videos-a-ver .capas .video:active figcaption {
-        background-color: #FFC8DD;
-        color: #f8f8f8;
+        background-color: var(--rosa-claro);
+        color: var(--cinza-claro);
         transition-duration: .2s;
     }
 
