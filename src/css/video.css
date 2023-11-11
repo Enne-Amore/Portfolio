@@ -30,6 +30,36 @@ body#inspiracoes-audiovisuais {
     background-position: bottom;
 }
 
+/* Variáveis CSS */
+:root {
+    --azul-claro: #7cc2ff;
+    --azul-escuro: #698bac;
+    --azul-transparente: #7cc2ff48;
+    --rosa-claro: #FFC8DD;
+    --rosa: #ff81b1;
+    --rosa-escuro: #ff609a;
+    --cinza-claro: #f8f8f8;
+    --roxo: #a479c0;
+}
+
+/* Estilização da barrinha de rolagem */
+::-webkit-scrollbar {
+    width: auto;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--azul-transparente);
+    border-radius: 1em;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--azul-claro);
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: var(--azul-escuro);
+}
+
 /* O corpo do site */
 /* O nome do vídeo do site */
 
@@ -74,7 +104,7 @@ body#inspiracoes-audiovisuais {
     transition-duration: .1s;
 }
 .botao:hover {
-    box-shadow: 0px 0px 10px 1px #ff609a;
+    box-shadow: 0px 0px 10px 1px var(--rosa-escuro);
 }
 .botao:active {
     box-shadow: 0px 0px 10px 1px var(--rosa-claro);

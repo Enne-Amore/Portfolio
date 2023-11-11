@@ -161,7 +161,7 @@ html {
 /* O conteúdo do site */
 
 #conteudo {
-    color: #ff609a;
+    color: var(--rosa-escuro);
     letter-spacing: 1px;
     text-transform: none;
     font-size: 1.2em;
@@ -225,7 +225,7 @@ html {
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.116);
 }
 #conteudo .parte .retangulo {
-    color: #ff81b1;
+    color: var(--rosa);
     background-color: var(--cinza-claro);
     border-radius: 1em;
     padding: 2%;
@@ -295,7 +295,7 @@ html {
 }
 #conteudo .videos-a-ver .capas.cimas a figcaption:hover, #conteudo .videos-a-ver .capas.baixas a figcaption:hover {
     color: white;
-    background-color: #ff81b1;
+    background-color: var(--rosa);
     border-radius: 0.9em;
     transition-duration: .4s;
 }
@@ -313,11 +313,11 @@ html {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
 }
 #conteudo .videos-a-ver .capas .igual:hover {
-    box-shadow: 0px 0px 30px 1px #ff81b1;
+    box-shadow: 0px 0px 30px 1px var(--rosa);
     transition-duration: .2s;
 }
 #conteudo .videos-a-ver .capas .igual:active {
-    box-shadow: 0px 0px 30px 1px #ff609a;
+    box-shadow: 0px 0px 30px 1px var(--rosa-escuro);
     transition-duration: .1s;
 }
 
@@ -355,7 +355,7 @@ html {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.158);
 }
 #conteudo .topo:hover {
-    box-shadow: 0px 0px 15px 1px #ff609a;
+    box-shadow: 0px 0px 15px 1px var(--rosa-escuro);
     transition-duration: .1s;
 }
 #conteudo .topo:active {
@@ -433,7 +433,7 @@ html {
 }
 #final #contatos .cima a .contato:active {
     color: var(--cinza-claro);
-    background-color: #ff609a;
+    background-color: var(--rosa-escuro);
     transition-duration: .2s;
 }
 #final #autorias {
@@ -468,6 +468,6 @@ html {
 }
 #final #autorias .list li a:active  {
     color: var(--cinza-claro);
-    background-color: #ff609a;
+    background-color: var(--rosa-escuro);
     transition-duration: .2s;
 }

@@ -132,14 +132,14 @@
         border-radius: 0 0 1.5em 1.5em ;
     }
     #conteudo .videos-a-ver .capas .video:hover {
-        box-shadow: 0px 0px 30px 1px #ff81b1;
+        box-shadow: 0px 0px 30px 1px var(--rosa);
     }
     #conteudo .videos-a-ver .capas .video:active {
-        box-shadow: 0px 0px 30px 1px #ff609a;
+        box-shadow: 0px 0px 30px 1px var(--rosa-escuro);
     }
     #conteudo .videos-a-ver .capas .video:hover figcaption {
         color: white;
-        background-color: #ff81b1;
+        background-color: var(--rosa);
     }
     #conteudo .videos-a-ver .capas .video:active figcaption {
         background-color: var(--rosa-claro);
