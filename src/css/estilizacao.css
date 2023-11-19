@@ -20,6 +20,9 @@ html {
     margin: 0;
     padding: 0;
 }
+:focus {
+    outline: 0;
+}
 
 /* Variáveis CSS */
 :root {
@@ -80,6 +83,12 @@ html {
     border-radius: 50% 50% 100% 100%;
     transition-duration: .6s;
 }
+#cabecalho .menu:focus {
+    outline: 2px solid #a479c0;
+}
+#cabecalho .menu:active {
+    outline: 0;
+}
 #cabecalho .nav {
     background-color: var(--cinza-claro);
 }
@@ -100,7 +109,8 @@ html {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.048);
     transition-duration: .6s;
 }
-#cabecalho .nav ul a:hover {
+#cabecalho .nav ul a:hover,
+#cabecalho .nav ul a:focus {
     background-color: var(--azul-escuro);
     color: white;
     padding: 2.5% 3%;
@@ -131,28 +141,33 @@ html {
     opacity: 0;
     transition-duration: .8s;
 }
-#areas label h2 {
+#areas h2 {
     margin-bottom: 10%;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.048);
 }
-#areas a h3 {
-    padding: 0 1%;
-    width: 100%;
+#areas ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3em;
 }
-#areas a, #areas a h3 {
+#areas ul a {
     text-decoration: none;
     color: var(--azul-claro);
-    margin-bottom: 10%;
+    width: 100%;
+    padding: 0 1%;
+    font-size: 1.2em;
+    font-weight: bolder;
     transition-duration: .6s;
 }
-#areas a:hover, #areas a h3:hover {
+#areas ul a:hover,
+#areas ul a:focus {
     color: var(--cinza-claro);
     background-color: var(--azul-escuro);
     transition-duration: .6s;
     border-radius: 1em;
     padding: 4% 3% 3%;
 }
-#areas a:active, #areas a h3:active {
+#areas ul a:active {
     color: var(--cinza-claro);
     background-color: var(--azul-claro);
     transition-duration: .1s;
@@ -201,7 +216,8 @@ html {
     text-decoration: underline;
     transition-duration: .2s;
 }
-#conteudo .txt a:hover {
+#conteudo .txt a:hover,
+#conteudo .txt a:focus {
     text-decoration: underline;
     color: var(--azul-claro);
 }
@@ -240,10 +256,14 @@ html {
 #conteudo .parte .retangulo p {
     width: 35vw;
 }
-#conteudo .parte .retangulo.direito h2, #conteudo .parte .retangulo.direito p, #conteudo .parte .retangulo.direito .feituras {
+#conteudo .parte .retangulo.direito h2, 
+#conteudo .parte .retangulo.direito p, 
+#conteudo .parte .retangulo.direito .feituras {
     text-align: left;
 }
-#conteudo .parte .retangulo.esquerdo h2, #conteudo .parte .retangulo.esquerdo p, #conteudo .parte .retangulo.esquerdo .feituras {
+#conteudo .parte .retangulo.esquerdo h2, 
+#conteudo .parte .retangulo.esquerdo p, 
+#conteudo .parte .retangulo.esquerdo .feituras {
     text-align: right;
 }
 #conteudo .parte .retangulo .feituras {
@@ -273,7 +293,8 @@ html {
     flex-direction: row;
     gap: 2em;
 }
-#conteudo .videos-a-ver .capas.cimas a, #conteudo .videos-a-ver .capas.baixas a {
+#conteudo .videos-a-ver .capas.cimas a, 
+#conteudo .videos-a-ver .capas.baixas a {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -283,7 +304,8 @@ html {
     text-decoration: none;
     border-radius: 2em;
 }
-#conteudo .videos-a-ver .capas.cimas a figcaption, #conteudo .videos-a-ver .capas.baixas a figcaption {
+#conteudo .videos-a-ver .capas.cimas a figcaption, 
+#conteudo .videos-a-ver .capas.baixas a figcaption {
     color: white;
     background-color: var(--azul-claro);
     border-radius: 0.9em;
@@ -293,13 +315,14 @@ html {
     margin: 8% 2%;
     height: max-content;
 }
-#conteudo .videos-a-ver .capas.cimas a figcaption:hover, #conteudo .videos-a-ver .capas.baixas a figcaption:hover {
+#conteudo .videos-a-ver .capas a figcaption:hover, 
+#conteudo .videos-a-ver .capas a:focus figcaption {
     color: white;
     background-color: var(--rosa);
     border-radius: 0.9em;
     transition-duration: .4s;
 }
-#conteudo .videos-a-ver .capas.cimas a figcaption:active, #conteudo .videos-a-ver .capas.baixas a figcaption:active {
+#conteudo .videos-a-ver .capas a figcaption:active {
     background-color: var(--rosa-claro);
     color: var(--cinza-claro);
     transition-duration: .2s;
@@ -312,7 +335,8 @@ html {
     transition-duration: .6s;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
 }
-#conteudo .videos-a-ver .capas .igual:hover {
+#conteudo .videos-a-ver .capas .igual:hover,
+#conteudo .videos-a-ver .capas a:focus .igual {
     box-shadow: 0px 0px 30px 1px var(--rosa);
     transition-duration: .2s;
 }
@@ -354,7 +378,8 @@ html {
     transition-duration: .1s;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.158);
 }
-#conteudo .topo:hover {
+#conteudo .topo:hover,
+#conteudo .topo:focus {
     box-shadow: 0px 0px 15px 1px var(--rosa-escuro);
     transition-duration: .1s;
 }
@@ -426,7 +451,8 @@ html {
     padding: 3%;
     margin: 0 -5%;
 }
-#final #contatos .cima a .contato:hover {
+#final #contatos .cima a .contato:hover,
+#final #contatos .cima a:focus .contato {
     background-color: var(--roxo);
     color: white;
     transition-duration: .2s;
@@ -461,7 +487,8 @@ html {
     width: fit-content;
     padding: 1%;
 }
-#final #autorias .list li a:hover {
+#final #autorias .list li a:hover,
+#final #autorias .list li a:focus {
     background-color: var(--roxo);
     color: white;
     transition-duration: .2s;

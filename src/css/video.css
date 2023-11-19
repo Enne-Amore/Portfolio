@@ -103,8 +103,13 @@ body#inspiracoes-audiovisuais {
     margin-bottom: 1%;
     transition-duration: .1s;
 }
-.botao:hover {
+a:focus {
+    outline: 0;
+}
+.botao:hover,
+a:focus .botao {
     box-shadow: 0px 0px 10px 1px var(--rosa-escuro);
+    outline: 0;
 }
 .botao:active {
     box-shadow: 0px 0px 10px 1px var(--rosa-claro);
