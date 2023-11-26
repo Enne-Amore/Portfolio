@@ -9,6 +9,12 @@ menu.addEventListener('click', () => {
         areas.style.opacity = '100%'
         menu.style.transform = 'rotate(-360deg)'
         menu.style.boxShadow = '1px 1px 1px 1px #a479c0'
+
+        // Nomes das páginas navegáveis por tab
+        for (let i = 0 ; i <= 4 ; i++) {
+            let a = document.getElementsByTagName('a')[i]
+            a.style.display = 'flex'
+        }
     }
 })
 
@@ -43,4 +49,10 @@ function sairDoMenu() {
     areas.style.opacity = '0%'
     menu.style.transform = 'rotate(0deg)'
     menu.style.boxShadow = '0px 0px 0px 0px #a479c0'
+
+    // Nomes das páginas não navegáveis por tab
+    for (let i = 0 ; i <= 4 ; i++) {
+        let a = document.getElementsByTagName('a')[i]
+        a.style.display = 'none'
+    }
 }
