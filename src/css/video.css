@@ -107,7 +107,7 @@ a:focus {
     outline: 0;
 }
 .botao:hover,
-a:focus .botao {
+a:focus-visible .botao {
     box-shadow: 0px 0px 10px 1px var(--rosa-escuro);
     outline: 0;
 }
