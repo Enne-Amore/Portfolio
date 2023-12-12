@@ -4,6 +4,7 @@ const topo = document.getElementById('topo')
 // Adicionando os eventos
 topo.addEventListener("click", function(){
     window.scrollTo(0, 0)
+    menu.focus()
 })
 
 // Voltar ao topo usando o teclado
