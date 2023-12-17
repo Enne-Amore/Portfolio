@@ -12,6 +12,7 @@ body {
     text-align: center;
     max-width: 100vw;
     height: auto;
+    animation: aparecer 0.5s ease-out ;
 }
 html {
     scroll-behavior: smooth;
@@ -54,9 +55,24 @@ html {
     background-color: var(--azul-escuro);
 }
 
+/* Efeito de aparecer página inteira */
+@keyframes aparecer {
+    0% {
+        transform: translateX(-5px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
 /* O corpo do site */
 /* E o seu cabeçalho */
 
+#cabecalho {
+    position: relative;
+}
 #cabecalho #titulo {
     padding: 4.5% 0 4%;
     background-color: var(--rosa-claro);
@@ -77,8 +93,8 @@ html {
     position: absolute;
     width: 13%;
     height: auto;
+    top: 2%;
     left: 1%;
-    top: 0.8%;
     cursor: pointer;
     border-radius: 50% 50% 100% 100%;
     transition-duration: .6s;
@@ -122,21 +138,22 @@ html {
 /* O menu de páginas do site */
 
 #areas {
+    position: fixed;
     height: 100vh;
     width: max-content;
     background-color: var(--cinza-claro);
-    float: left;
+    color: #688aac;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.075);
     padding: 3%;
     padding-left: 2.5%;
-    color: #688aac;
     text-align: left;
     font-size: 1em;
-    letter-spacing: 1px;
     font-style: italic;
-    position: fixed;
+    letter-spacing: 1px;
     top: 0;
     left: -80%;
     opacity: 0;
+    z-index: 1;
     transition-duration: .8s;
 }
 #areas h2 {
@@ -185,7 +202,6 @@ html {
     width: 30%;
     height: auto;
     margin-top: 0.2em;
-    position: static;
 }
 #conteudo .txt {
     margin: auto 10% 5%;
@@ -214,6 +230,10 @@ html {
     color: var(--azul-escuro);
     text-decoration: underline;
     transition-duration: .2s;
+}
+#conteudo .txt a:focus-visible {
+    outline: auto;
+    padding: 0.2em;
 }
 #conteudo .txt a:hover,
 #conteudo .txt a:focus-visible {
@@ -254,9 +274,11 @@ html {
 }
 #conteudo .parte .retangulo p {
     width: 35vw;
+    font-weight: bold;
+    line-height: 1.5em;
 }
-#conteudo .parte .retangulo.direito h2, 
-#conteudo .parte .retangulo.direito p, 
+#conteudo .parte .retangulo.direito h2,
+#conteudo .parte .retangulo.direito p,
 #conteudo .parte .retangulo.direito .feituras {
     text-align: left;
 }
@@ -273,7 +295,7 @@ html {
     padding-bottom: 2%;
 }
 #conteudo .parte .retangulo .feituras li:nth-last-child(1) {
-    padding-bottom: 0%;
+    padding-bottom: 1.5%;
 }
 #conteudo .parte .retangulo .feituras li::before {
     content: "💟 ";
@@ -355,6 +377,7 @@ html {
     background-color: var(--cinza-claro);
     width: 40%;
     height: auto;
+    max-height: 90vh;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.212);
     border-radius: 1em;
 }
@@ -376,6 +399,9 @@ html {
     border-radius: 60%;
     transition-duration: .1s;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.158);
+}
+#conteudo .topo:focus-visible {
+    outline: auto;
 }
 #conteudo .topo:hover,
 #conteudo .topo:focus-visible {
