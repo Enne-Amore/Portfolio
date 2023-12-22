@@ -14,6 +14,7 @@ menu.addEventListener('click', () => {
         for (let i = 0 ; i <= 4 ; i++) {
             let a = document.getElementsByTagName('a')[i]
             a.style.display = 'flex'
+            btnFecharMenu.style.display = 'flex'
         }
     }
 })
@@ -32,12 +33,14 @@ menu.addEventListener('keypress', (tecla) => {
 
 // Sair do menu
 // Chamada das tags por ID's
+const btnFecharMenu = window.document.getElementById('fechar-menu')
 const titulo = window.document.getElementById('titulo')
 const nav = window.document.getElementById('nav')
 const conteudo = window.document.getElementById('conteudo')
 const rodape = window.document.getElementById('final')
 
 // Adicionar o evento nelas
+btnFecharMenu.addEventListener('click', sairDoMenu)
 titulo.addEventListener('click', sairDoMenu)
 nav.addEventListener('click', sairDoMenu)
 conteudo.addEventListener('click', sairDoMenu)
@@ -54,5 +57,6 @@ function sairDoMenu() {
     for (let i = 0 ; i <= 4 ; i++) {
         let a = document.getElementsByTagName('a')[i]
         a.style.display = 'none'
+        btnFecharMenu.style.display = 'none'
     }
 }

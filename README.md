@@ -24,6 +24,7 @@ Um site web que fala sobre mim mesme, minhas criações, inspirações e apreço
 - Efeito de aparecer e desaparecer elementos visuais do conteúdo conforme vai a rolagem vertical da página
 - Mais acessibilidade usando a tecla "tab"
 - Efeitos de "hover" e de "active" nos elementos clicáveis
+- Efeito suave de aparecer a página rapidamente assim que for carregada
 
 ## 🌈 Documentação de cores
 

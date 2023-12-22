@@ -7,6 +7,16 @@ body {
     height: auto;
     animation: aparecer 0.5s ease-out ;
 }
+:root {
+    --azul-claro: #7cc2ff;
+    --azul-escuro: #698bac;
+    --azul-transparente: #7cc2ff48;
+    --rosa-claro: #FFC8DD;
+    --rosa: #ff81b1;
+    --rosa-escuro: #ff609a;
+    --cinza-claro: #f8f8f8;
+    --roxo: #a479c0;
+}
 
 /* O corpo do site */
 /* E o seu cabeçalho */
@@ -41,7 +51,7 @@ body {
     transition-duration: .6s;
 }
 #cabecalho .menu:focus-visible {
-    outline: 2px solid #a479c0;
+    outline: 2px solid var(--roxo);
 }
 #cabecalho .nav {
     background-color: var(--cinza-claro);
@@ -82,7 +92,7 @@ body {
     height: 100vh;
     width: max-content;
     background-color: var(--cinza-claro);
-    color: #688aac;
+    color: var(--azul-escuro);
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.075);
     padding: 3%;
     padding-left: 2.5%;
@@ -127,6 +137,30 @@ body {
     color: var(--cinza-claro);
     background-color: var(--azul-claro);
     transition-duration: .1s;
+}
+#areas .fechar-menu {
+    display: none;
+    border: 0;
+    justify-content: center;
+    background-color: var(--azul-escuro);
+    color: white;
+    font-size: 1.4em;
+    font-family: 'inclusao';
+    font-weight: bolder;
+    padding: 4% 10% 3.5%;
+    margin: 10% auto 0;
+    border-radius: 1em;
+    cursor: pointer;
+    transition-duration: .4s;
+}
+#areas .fechar-menu:hover,
+#areas .fechar-menu:focus-visible {
+    background-color: var(--azul-claro);
+}
+#areas .fechar-menu:active {
+    background-color: var(--azul-transparente);
+    color: var(--azul-claro);
+    transition: .2s;
 }
 
 /* O conteúdo do site */
