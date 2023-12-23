@@ -288,8 +288,8 @@ body {
     flex-direction: row;
     gap: 2em;
 }
-#conteudo .videos-a-ver .capas.cimas a, 
-#conteudo .videos-a-ver .capas.baixas a {
+#conteudo .videos-a-ver .capas.cimas .video, 
+#conteudo .videos-a-ver .capas.baixas .video {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -299,8 +299,8 @@ body {
     text-decoration: none;
     border-radius: 2em;
 }
-#conteudo .videos-a-ver .capas.cimas a figcaption, 
-#conteudo .videos-a-ver .capas.baixas a figcaption {
+#conteudo .videos-a-ver .capas.cimas .video figcaption, 
+#conteudo .videos-a-ver .capas.baixas .video figcaption {
     color: white;
     background-color: var(--azul-claro);
     border-radius: 0.9em;
@@ -310,14 +310,14 @@ body {
     margin: 8% 2%;
     height: max-content;
 }
-#conteudo .videos-a-ver .capas a figcaption:hover, 
-#conteudo .videos-a-ver .capas a:focus-visible figcaption {
+#conteudo .videos-a-ver .capas .video figcaption:hover, 
+#conteudo .videos-a-ver .capas .video:focus-visible figcaption {
     color: white;
     background-color: var(--rosa);
     border-radius: 0.9em;
     transition-duration: .4s;
 }
-#conteudo .videos-a-ver .capas a figcaption:active {
+#conteudo .videos-a-ver .capas .video figcaption:active {
     background-color: var(--rosa-claro);
     color: var(--cinza-claro);
     transition-duration: .2s;
@@ -331,7 +331,7 @@ body {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
 }
 #conteudo .videos-a-ver .capas .igual:hover,
-#conteudo .videos-a-ver .capas a:focus-visible .igual {
+#conteudo .videos-a-ver .capas .video:focus-visible .igual {
     box-shadow: 0px 0px 30px 1px var(--rosa);
     transition-duration: .2s;
 }

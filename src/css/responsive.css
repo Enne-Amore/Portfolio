@@ -86,19 +86,23 @@
     #conteudo .parte .retangulo p {
         padding: 3%;
     }
-    #conteudo .parte .retangulo p, #conteudo .parte .retangulo .feituras {
+    #conteudo .parte .retangulo p, 
+    #conteudo .parte .retangulo .feituras {
         font-size: 1.2em;
         width: auto;
     }
-    #conteudo .parte .retangulo.direito h2, #conteudo .parte .retangulo.direito .feituras {
+    #conteudo .parte .retangulo.direito h2, 
+    #conteudo .parte .retangulo.direito .feituras {
         text-align: center;
         width: auto;
     }
-    #conteudo .parte .retangulo.esquerdo h2, #conteudo .parte .retangulo.esquerdo .feituras {
+    #conteudo .parte .retangulo.esquerdo h2, 
+    #conteudo .parte .retangulo.esquerdo .feituras {
         text-align: center;
         width: auto;
     }
-    #conteudo .parte .retangulo.direito p, #conteudo .parte .retangulo.esquerdo p {
+    #conteudo .parte .retangulo.direito p, 
+    #conteudo .parte .retangulo.esquerdo p {
         padding: 3%;
         text-align: justify;
     }
@@ -110,24 +114,32 @@
     #conteudo .videos-a-ver br {
         display: none;
     }
-    #conteudo .videos-a-ver .capas.cimas, #conteudo .videos-a-ver .capas.baixas {
+    #conteudo .videos-a-ver .capas.cimas, 
+    #conteudo .videos-a-ver .capas.baixas {
         flex-direction: column;
         align-items: center;
         gap: 3em;
         margin: auto 15%;
     }
-    #conteudo .videos-a-ver .capas.cimas a, #conteudo .videos-a-ver .capas.baixas a {
+    #conteudo .videos-a-ver .capas.cimas .video, 
+    #conteudo .videos-a-ver .capas.baixas .video {
         align-items: center;
         flex-direction: column;
         gap: 0;
     }
-    #conteudo .videos-a-ver .capas.cimas a figcaption, #conteudo .videos-a-ver .capas.baixas a figcaption {
+    #conteudo .videos-a-ver .capas.cimas .video figcaption, 
+    #conteudo .videos-a-ver .capas.baixas .video figcaption {
         margin: 0;
+        box-sizing: content-box;
     }
-    #conteudo .videos-a-ver .capas.cimas a figcaption, #conteudo .videos-a-ver .capas.cimas a figcaption:hover, #conteudo .videos-a-ver .capas.cimas a figcaption:active {
+    #conteudo .videos-a-ver .capas.cimas .video figcaption, 
+    #conteudo .videos-a-ver .capas.cimas .video figcaption:hover, 
+    #conteudo .videos-a-ver .capas.cimas .video figcaption:active {
         border-radius: 0 0 1.5em 1.5em;
     }
-    #conteudo .videos-a-ver .capas.baixas a figcaption, #conteudo .videos-a-ver .capas.baixas a figcaption:hover, #conteudo .videos-a-ver .capas.baixas a figcaption:active {
+    #conteudo .videos-a-ver .capas.baixas .video figcaption, 
+    #conteudo .videos-a-ver .capas.baixas .video figcaption:hover, 
+    #conteudo .videos-a-ver .capas.baixas .video figcaption:active {
         border-radius: 1.5em 1.5em 0 0;
         padding: 5% 2% 2%;
     }
@@ -137,20 +149,22 @@
     #conteudo .videos-a-ver .igual.baixa {
         border-radius: 0 0 1.5em 1.5em ;
     }
-    #conteudo .videos-a-ver .capas .video:hover {
+    #conteudo .videos-a-ver .capas .video:hover,
+    #conteudo .videos-a-ver .capas .video:hover .igual {
         box-shadow: 0px 0px 30px 1px var(--rosa);
     }
-    #conteudo .videos-a-ver .capas .video:active {
+    #conteudo .videos-a-ver .capas .video:active,
+    #conteudo .videos-a-ver .capas .video:active .igual {
         box-shadow: 0px 0px 30px 1px var(--rosa-escuro);
     }
     #conteudo .videos-a-ver .capas .video:hover figcaption {
         color: white;
         background-color: var(--rosa);
+        transition-duration: .2s;
     }
     #conteudo .videos-a-ver .capas .video:active figcaption {
         background-color: var(--rosa-claro);
         color: var(--cinza-claro);
-        transition-duration: .2s;
     }
 
     #conteudo .imagens {
@@ -210,7 +224,8 @@
     #conteudo .videos-a-ver br {
         display: inline;
     }
-    #conteudo .videos-a-ver .capas.cimas a figcaption, #conteudo .videos-a-ver .capas.baixas a figcaption {
+    #conteudo .videos-a-ver .capas.cimas .video figcaption, 
+    #conteudo .videos-a-ver .capas.baixas .video figcaption {
         width: 101%;
     }
     #conteudo .videos-a-ver .capas .igual {
@@ -225,7 +240,8 @@
 
 @media only screen and (min-width: 600px) and (max-width: 769px) {
 
-    #conteudo .videos-a-ver .capas.cimas a figcaption, #conteudo .videos-a-ver .capas.baixas a figcaption {
+    #conteudo .videos-a-ver .capas.cimas .video figcaption, 
+    #conteudo .videos-a-ver .capas.baixas .video figcaption {
         width: 90%;
         padding: 5%;
     }
@@ -241,7 +257,8 @@
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
 
-    #conteudo .videos-a-ver .capas.cimas a figcaption, #conteudo .videos-a-ver .capas.baixas a figcaption {
+    #conteudo .videos-a-ver .capas.cimas .video figcaption, 
+    #conteudo .videos-a-ver .capas.baixas .video figcaption {
         width: 96%;
     }
     #conteudo .videos-a-ver .capas .igual {
@@ -256,7 +273,8 @@
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
 
-    #conteudo .videos-a-ver .capas.cimas a figcaption, #conteudo .videos-a-ver .capas.baixas a figcaption {
+    #conteudo .videos-a-ver .capas.cimas .video figcaption, 
+    #conteudo .videos-a-ver .capas.baixas .video figcaption {
         width: 80%;
         padding: 3%;
     }
