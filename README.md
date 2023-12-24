@@ -25,6 +25,8 @@ Um site web que fala sobre mim mesme, minhas criações, inspirações e apreço
 - Mais acessibilidade usando a tecla "tab"
 - Efeitos de "hover" e de "active" nos elementos clicáveis
 - Efeito suave de aparecer a página rapidamente assim que for carregada
+- Botão de voltar ao topo da tela
+
 
 ## 🌈 Documentação de cores
 
