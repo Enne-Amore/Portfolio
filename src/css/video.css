@@ -133,3 +133,12 @@ a:focus-visible .botao {
     }
 
 }
+
+/* Características específicas das maiores telas */
+@media screen and (min-height: 620px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
