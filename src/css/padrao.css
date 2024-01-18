@@ -7,6 +7,7 @@ body {
     height: auto;
     animation: aparecer 0.5s ease-out ;
 }
+/* Variáveis para cores */
 :root {
     --azul-claro: #7cc2ff;
     --azul-escuro: #698bac;
@@ -18,12 +19,11 @@ body {
     --roxo: #a479c0;
 }
 
-/* O corpo do site */
-/* E o seu cabeçalho */
-
+/* Cabeçalho */
 #cabecalho {
     position: relative;
 }
+
 #cabecalho #titulo {
     padding: 4.5% 0 4%;
     background-color: var(--rosa-claro);
@@ -35,11 +35,14 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 #cabecalho #titulo h1 {
     width: max-content;
     margin-left: 3%;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.123);
 }
+
+/* Menu de seções */
 #cabecalho .menu {
     position: absolute;
     width: 13%;
@@ -53,9 +56,11 @@ body {
 #cabecalho .menu:focus-visible {
     outline: 2px solid var(--roxo);
 }
+
 #cabecalho .nav {
     background-color: var(--cinza-claro);
 }
+
 #cabecalho .nav ul {
     font-size: 1.1em;
     list-style: none;
@@ -63,6 +68,7 @@ body {
     justify-content: space-evenly;
     margin: auto 6%;
 }
+
 #cabecalho .nav ul a {
     color: var(--azul-claro);
     padding: 2.5% 0;
@@ -85,8 +91,7 @@ body {
     transition-duration: .2s;
 }
 
-/* O menu de páginas do site */
-
+/* Menu de páginas */
 #areas {
     position: fixed;
     height: 100vh;
@@ -106,15 +111,18 @@ body {
     z-index: 1;
     transition-duration: .8s;
 }
+
 #areas h2 {
     margin-bottom: 10%;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.048);
 }
+
 #areas ul {
     display: flex;
     flex-direction: column;
     gap: 1.3em;
 }
+
 #areas ul a {
     box-sizing: content-box;
     display: none;
@@ -138,6 +146,7 @@ body {
     background-color: var(--azul-claro);
     transition-duration: .1s;
 }
+
 #areas .fechar-menu {
     display: none;
     border: 0;
@@ -164,19 +173,20 @@ body {
 }
 
 /* O conteúdo do site */
-
 #conteudo {
     color: var(--rosa-escuro);
     letter-spacing: 1px;
     text-transform: none;
     font-size: 1.2em;
 }
+
 #conteudo .secao img {
     background-color: var(--cinza-claro);
     width: 30%;
     height: auto;
     margin-top: 0.2em;
 }
+
 #conteudo .txt {
     margin: auto 10% 5%;
     padding: 1% 2%;
@@ -186,9 +196,11 @@ body {
     box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.199);
     font-weight: bolder;
 }
+
 #conteudo .txt p {
     margin: 1.5% 0;
 }
+
 #conteudo .txt strong {
     background-image: linear-gradient(to right, var(--azul-transparente), white);
     padding: 0.3% 0.6%;
@@ -197,6 +209,7 @@ body {
 #conteudo .txt strong:nth-child(2n) {
     background-image: linear-gradient(to right, white, var(--azul-transparente));
 }
+
 #conteudo .txt a::after {
     content: '\1F517';
 }
@@ -217,152 +230,8 @@ body {
 #conteudo .txt a:active {
     color: var(--roxo);
 }
-#conteudo .parte {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5%;
-    gap: 4%;
-}
-#conteudo .parte .circulo {
-    width: 26%;
-    height: auto;
-    background-color: var(--cinza-claro);
-    border-radius: 10em;
-    margin: 0;
-    padding: 0;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.116);
-}
-#conteudo .parte .retangulo {
-    color: var(--rosa);
-    background-color: var(--cinza-claro);
-    border-radius: 1em;
-    padding: 2%;
-    width: min-content;
-}
-#conteudo .parte .retangulo h2 {
-    margin: 2% 0;
-    width: max-content;
-    height: auto;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.048);
-}
-#conteudo .parte .retangulo p {
-    width: 35vw;
-    font-weight: bold;
-    line-height: 1.5em;
-}
-#conteudo .parte .retangulo.direito h2,
-#conteudo .parte .retangulo.direito p,
-#conteudo .parte .retangulo.direito .feituras {
-    text-align: left;
-}
-#conteudo .parte .retangulo.esquerdo h2, 
-#conteudo .parte .retangulo.esquerdo p, 
-#conteudo .parte .retangulo.esquerdo .feituras {
-    text-align: right;
-}
-#conteudo .parte .retangulo .feituras {
-    list-style: none;
-    width: fit-content;
-}
-#conteudo .parte .retangulo .feituras li {
-    padding-bottom: 2%;
-}
-#conteudo .parte .retangulo .feituras li:nth-last-child(1) {
-    padding-bottom: 1.5%;
-}
-#conteudo .parte .retangulo .feituras li::before {
-    content: "💟 ";
-}
 
-#conteudo .videos-a-ver section {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1.5em;
-    margin: 5% auto;
-}
-#conteudo .videos-a-ver .capas {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 2em;
-}
-#conteudo .videos-a-ver .capas.cimas .video, 
-#conteudo .videos-a-ver .capas.baixas .video {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 0;
-    margin: 0;
-    text-decoration: none;
-    border-radius: 2em;
-}
-#conteudo .videos-a-ver .capas.cimas .video figcaption, 
-#conteudo .videos-a-ver .capas.baixas .video figcaption {
-    color: white;
-    background-color: var(--azul-claro);
-    border-radius: 0.9em;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
-    transition-duration: .6s;
-    padding: 3% 2% 2%;
-    margin: 8% 2%;
-    height: max-content;
-}
-#conteudo .videos-a-ver .capas .video figcaption:hover, 
-#conteudo .videos-a-ver .capas .video:focus-visible figcaption {
-    color: white;
-    background-color: var(--rosa);
-    border-radius: 0.9em;
-    transition-duration: .4s;
-}
-#conteudo .videos-a-ver .capas .video figcaption:active {
-    background-color: var(--rosa-claro);
-    color: var(--cinza-claro);
-    transition-duration: .2s;
-}
-#conteudo .videos-a-ver .capas .igual {
-    background-color: var(--cinza-claro);
-    width: auto;
-    max-height: 400px;
-    border-radius: 1.5em;
-    transition-duration: .6s;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
-}
-#conteudo .videos-a-ver .capas .igual:hover,
-#conteudo .videos-a-ver .capas .video:focus-visible .igual {
-    box-shadow: 0px 0px 30px 1px var(--rosa);
-    transition-duration: .2s;
-}
-#conteudo .videos-a-ver .capas .igual:active {
-    box-shadow: 0px 0px 30px 1px var(--rosa-escuro);
-    transition-duration: .1s;
-}
-
-#conteudo .imagens {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5%;
-    margin: 4% 5%;
-}
-#conteudo .imagens .iguali {
-    background-color: var(--cinza-claro);
-    width: 40%;
-    height: auto;
-    max-height: 90vh;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.212);
-    border-radius: 1em;
-}
-#conteudo .especial img {
-    background-color: var(--cinza-claro);
-    width: 38%;
-    height: auto;
-    margin-top: 1em;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.055);
-    position: static;
-}
+/* Botão de topo */
 #conteudo .topo {
     width: 6%;
     height: auto;
@@ -387,8 +256,7 @@ body {
     transition-duration: .1s;
 }
 
-/* O rodapé do site */
-
+/* Rodapé */
 #final {
     background-color: var(--rosa-claro);
     color: var(--roxo);
@@ -401,10 +269,12 @@ body {
     font-size: 1.5em;
     padding-bottom: 4%;
 }
+
 #final h2 {
     padding: 4%;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.123);
 }
+
 #final #contatos .table {
     margin: -0.6em auto 5%;
     text-align: center;
@@ -415,14 +285,17 @@ body {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.178);
     width: 80%;
 }
+
 #final #contatos .table tbody tr td {
     border: 0.3em double var(--azul-claro);
 }
+
 #final #contatos .cima {
     display: flex;
     justify-content: center;
     padding: 1%;
 }
+
 #final #contatos .cima a {
     display: flex;
     align-items: center;
@@ -432,6 +305,7 @@ body {
     border-radius: 0.5em;
     padding: 2%;
 }
+
 #final #contatos .cima a .la {
     align-items: center;
     display: flex;
@@ -439,6 +313,7 @@ body {
     height: 60px;
     margin: 0 0.3em;
 }
+
 #final #contatos .cima a .contato {
     display: flex;
     align-items: center;
@@ -460,22 +335,26 @@ body {
     background-color: var(--rosa-escuro);
     transition-duration: .2s;
 }
+
 #final #autorias {
     display: flex;
     flex-direction: column;
     font-size: 0.9em;
 }
+
 #final #autorias .list {
     list-style: none;
     columns: 4;
     gap: 1.5em;
     margin: 0 8%;
 }
+
 #final #autorias .list li {
     margin-bottom: 30%;
     text-align: start;
     color: white;
 }
+
 #final #autorias .list li a {
     color: white;
     transition-duration: .6s;

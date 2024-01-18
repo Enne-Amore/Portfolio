@@ -1,0 +1,16 @@
+#conteudo .imagens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    margin: 4% 5%;
+}
+
+#conteudo .imagens .iguali {
+    background-color: var(--cinza-claro);
+    width: 40%;
+    height: auto;
+    max-height: 90vh;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.212);
+    border-radius: 1em;
+}

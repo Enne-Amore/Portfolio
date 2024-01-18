@@ -1,0 +1,78 @@
+/* Imagem de título especial */
+#conteudo .especial img {
+    background-color: var(--cinza-claro);
+    width: 38%;
+    height: auto;
+    margin-top: 1em;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.055);
+    position: static;
+}
+
+/* Imagem + Conteúdo Escrito */
+#conteudo .parte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    gap: 4%;
+}
+
+/* Imagem */
+#conteudo .parte .circulo {
+    width: 26%;
+    height: auto;
+    background-color: var(--cinza-claro);
+    border-radius: 10em;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.116);
+}
+
+/* Conteúdo Escrito */
+#conteudo .parte .retangulo {
+    color: var(--rosa);
+    background-color: var(--cinza-claro);
+    border-radius: 1em;
+    padding: 2%;
+    width: min-content;
+}
+
+#conteudo .parte .retangulo h2 {
+    margin: 2% 0;
+    width: max-content;
+    height: auto;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.048);
+}
+
+#conteudo .parte .retangulo p {
+    width: 35vw;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+#conteudo .parte .retangulo.direito h2,
+#conteudo .parte .retangulo.direito p,
+#conteudo .parte .retangulo.direito .feituras {
+    text-align: left;
+}
+
+#conteudo .parte .retangulo.esquerdo h2, 
+#conteudo .parte .retangulo.esquerdo p, 
+#conteudo .parte .retangulo.esquerdo .feituras {
+    text-align: right;
+}
+
+#conteudo .parte .retangulo .feituras {
+    list-style: none;
+    width: fit-content;
+}
+
+#conteudo .parte .retangulo .feituras li {
+    padding-bottom: 2%;
+}
+#conteudo .parte .retangulo .feituras li:nth-last-child(1) {
+    padding-bottom: 1.5%;
+}
+#conteudo .parte .retangulo .feituras li::before {
+    content: "💟 ";
+}
