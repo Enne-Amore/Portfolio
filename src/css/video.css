@@ -9,12 +9,10 @@ body {
     background-size: cover;
 }
 body#meus-videos{
-    background-image: url(../Imagens\ para\ todas/fundo\ colorido\ claro.jpg);
-    background-position: center;
+    background: url(../img-padrao/fundo-colorido-claro.jpg) center;
 }
 body#inspiracoes-audiovisuais {
-    background-image: url(../Imagens\ para\ todas/céu\ rosa.jpg);
-    background-position: bottom;
+    background: url(../img-padrao/ceu-rosa.jpg) bottom;
 }
 video:focus-visible {
     outline: auto;

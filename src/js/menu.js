@@ -11,7 +11,7 @@ menu.addEventListener('click', () => {
         menu.style.boxShadow = '1px 1px 1px 1px #a479c0'
 
         // Nomes das páginas navegáveis por tab
-        for (let i = 0 ; i <= 4 ; i++) {
+        for (let i = 0 ; i <= 5 ; i++) {
             let a = document.getElementsByTagName('a')[i]
             a.style.display = 'flex'
             btnFecharMenu.style.display = 'flex'
@@ -54,7 +54,7 @@ function sairDoMenu() {
     menu.style.boxShadow = '0px 0px 0px 0px #a479c0'
 
     // Nomes das páginas não navegáveis por tab
-    for (let i = 0 ; i <= 4 ; i++) {
+    for (let i = 0 ; i <= 5 ; i++) {
         let a = document.getElementsByTagName('a')[i]
         a.style.display = 'none'
         btnFecharMenu.style.display = 'none'

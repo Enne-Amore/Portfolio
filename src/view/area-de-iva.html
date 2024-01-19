@@ -18,9 +18,7 @@
     <script src="../js/aparecer.js" defer></script>
 </head>
 <body>
-
     <header id="cabecalho">
-
         <div id="titulo">
             <label for="texto"><h1>Inspirações audiovisuais</h1></label>
         </div>
@@ -28,12 +26,17 @@
         <img id="menu" class="menu" src="../img-padrao/menu.png" alt="Menu de páginas" tabindex="0">
 
         <nav id="areas">
-            <label for="texto e link"></label>
+            <label for="texto, link e botão"></label>
+
             <h2>Áreas a acessar:</h2>
             
             <ul>
                 <a href="../../index.html" aria-label="Acesse a área principal" rel="prev">
                     Entrada principal
+                </a>
+    
+                <a href="meus-websites.html" aria-label="Acesse a área dos meus websites desenvolvidos">
+                    Meus websites
                 </a>
     
                 <a href="area-de-videos.html" aria-label="Acesse a área das minhas edições de vídeo">
@@ -54,33 +57,33 @@
             </ul>
 
             <button type="button" id="fechar-menu" class="fechar-menu">Fechar</button>
-
         </nav>
 
         <nav class="nav" id="nav">
-            
             <label for="texto e link"></label>
             
             <ul>
+                <a href="#sobre" aria-label="Sobre o que se trata esta página">
+                    Sobre
+                </a>
                 
-                <a href="#conteudo" aria-label="Sobre o que se trata esta página">Sobre</a>
+                <a href="#videos" aria-label="Vídeos para assistir">
+                    Vídeos
+                </a>
                 
-                <a href="#videos" aria-label="Vídeos para assistir">Vídeos</a>
+                <a href="#contatos" aria-label="Formas de me contatar">
+                    Contatos
+                </a>
                 
-                <a href="#contatos" aria-label="Formas de me contatar">Contatos</a>
-                
-                <a href="#autorias" aria-label="Créditos de autorias de certos elementos que usei">Autorias</a>
-                
+                <a href="#autorias" aria-label="Créditos de autorias de certos elementos que usei">
+                    Autorias
+                </a>
             </ul>
-            
         </nav>
-
     </header>
 
     <main id="conteudo">
-
-        <section>
-
+        <section id="sobre">
             <label for="imagem e texto"></label>
 
             <figure class="secao">
@@ -110,7 +113,7 @@
             <label for="imagem, texto e link"></label>
 
             <figure class="secao">
-                <img src="../img-padrao/videos a ver.png" id="videos" class="coisa" alt="Vídeos a ver:">
+                <img src="../img-padrao/videos-a-ver.png" id="videos" class="coisa" alt="Vídeos a ver:">
             </figure>
 
             <section>

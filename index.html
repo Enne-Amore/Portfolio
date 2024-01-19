@@ -20,23 +20,25 @@
 </head>
 
 <body>
-
     <header id="cabecalho">
-
         <div id="titulo">
             <label for="texto">
-                <h1>Área principal</h1>
+                <h1> Área principal </h1>
             </label>
         </div>
 
         <img id="menu" class="menu" src="src/img-padrao/menu.png" alt="Menu de páginas" tabindex="0">
 
         <nav id="areas">
-
-            <label for="texto e link"></label>
+            <label for="texto, link e botão"></label>
+            
             <h2>Áreas a acessar:</h2>
 
             <ul>
+                <a href="src/view/meus-websites.html" aria-label="Acesse a área dos meus websites desenvolvidos">
+                    Meus websites
+                </a>
+
                 <a href="src/view/area-de-videos.html" aria-label="Acesse a área das minhas edições de vídeo" rel="next">
                     Edições audiovisuais
                 </a>
@@ -59,31 +61,32 @@
             </ul>
 
             <button type="button" id="fechar-menu" class="fechar-menu">Fechar</button>
-
         </nav>
 
         <nav class="nav" id="nav">
-            
             <label for="texto e link"></label>
             
             <ul>
-                
-                <a href="#conteudo" aria-label="Minha própria biografia">Biografia</a>
+                <a href="#conteudo" aria-label="Minha própria biografia">
+                    Biografia
+                </a>
 
-                <a href="#sobre" aria-label="O que é o meu portfólio">Sobre</a>
+                <a href="#sobre" aria-label="O que é o meu portfólio">
+                    Sobre
+                </a>
                 
-                <a href="#contatos" aria-label="Formas de me contatar">Contatos</a>
+                <a href="#contatos" aria-label="Formas de me contatar">
+                    Contatos
+                </a>
                 
-                <a href="#autorias" aria-label="Créditos de autorias de certos elementos que usei">Autorias</a>
-                
+                <a href="#autorias" aria-label="Créditos de autorias de certos elementos que usei">
+                    Autorias
+                </a>
             </ul>
-            
         </nav>
-
     </header>
 
     <main id="conteudo">
-
         <label for="texto e imagem"></label>
 
         <section>
@@ -101,11 +104,11 @@
                     </h2>
 
                     <ul class="feituras" id="identidade">
-                        <li>Nome: Enne Jim Pessoa</li>
-                        <li>Pronome: elu</li>
-                        <li>Identidade de gênero: não-binária</li>
-                        <li>Identidade étnica: negra e branca</li>
-                        <li>Data de nascimento: 30/12/2004</li>
+                        <li> Nome: Enne Jim Pessoa </li>
+                        <li> Pronome: elu </li>
+                        <li> Identidade de gênero: não-binária </li>
+                        <li> Identidade étnica: negra e branca </li>
+                        <li> Data de nascimento: 30/12/2004 </li>
                     </ul>
                 </div>
             </article>
@@ -118,20 +121,18 @@
                     </h2>
 
                     <ul class="feituras">
-                        <li>Ensino médio concluído</li>
-                        <li>1º período de Ciência da computação concluído</li>
-                        <li>Cursando o 1º perído de Sistemas Para Internet</li>
+                        <li> Ensino médio concluído </li>
+                        <li> 1º período de Ciência da computação concluído </li>
+                        <li> Cursando o 1º perído de Sistemas Para Internet </li>
                     </ul>
 
                 </div>
 
-                <img class="circulo" src="src/area-principal/imagens/conhecimento.jpg"
-                    alt="Imagem ao lado direito representando conhecimento">
+                <img class="circulo" src="src/area-principal/imagens/conhecimento.jpg" alt="Imagem ao lado direito representando conhecimento">
             </article>
 
             <article class="parte horaria">
-                <img class="circulo" src="src/area-principal/imagens/design.jpg"
-                    alt="Imagem representando design digital ao lado esquerdo">
+                <img class="circulo" src="src/area-principal/imagens/design.jpg" alt="Imagem representando design digital ao lado esquerdo">
 
                 <div class="retangulo direito">
                     <h2>
@@ -139,24 +140,21 @@
                     </h2>
 
                     <ul class="feituras">
-                        <li>Design digital</li>
-                        <li>Criação de imagem</li>
-                        <li>Edição de vídeo e de foto</li>
-                        <li>Desenvolvimento web</li>
+                        <li> Design digital </li>
+                        <li> Criação de imagem </li>
+                        <li> Edição de vídeo e de foto </li>
+                        <li> Desenvolvimento web </li>
                     </ul>
                 </div>
             </article>
-
         </section>
 
-        <section>
-
+        <section id="sobre">
             <figure class="secao">
-                <img src="src/img-padrao/sobre.png" alt="Sobre:" id="sobre">
+                <img src="src/img-padrao/sobre.png" alt="Sobre:">
             </figure>
 
             <fieldset class="txt">
-
                 <p>
                     Aqui é a <strong>área principal</strong> em que fica o início do passeio pelo <strong>meu portfólio no formato de site &#x1F90E;</strong> Basicamente, desenvolvi esse super projeto com finalidade de apresentar várias das <strong>minhas habilidades</strong> em <strong>desenvolvimento web</strong> e em <strong>edições de vídeo e de imagem,</strong> além de mostrar o meu apreço que tenho pela diversidade de pessoas.
                 </p>
@@ -176,165 +174,126 @@
                 <p>
                     Pode ficar à vontade para navegar pelo meu portfólio maravifofo &#x1F495;
                 </p>
-
             </fieldset>
-
         </section>
 
         <div id="topo">
             <img class="topo" src="src/img-padrao/topo.png" alt="Clique aqui para voltar ao topo da página" tabindex="0">
         </div>
-
     </main>
 
     <footer id="final">
-
         <section id="contatos">
-
             <label for="texto, imagem e link">
                 <h2>Meus Contatos</h2>
             </label>
 
             <table class="table">
                 <tbody>
-
                     <tr>
-
                         <td>
                             <div class="cima">
-                                <a href="https://www.instagram.com/enne_jim10/" aria-label="Me contate pelo Instagram"
-                                    target="_blank" rel="external">
-                                
+                                <a href="https://www.instagram.com/enne_jim10/" aria-label="Me contate pelo Instagram" target="_blank" rel="external">
                                     <img src="src/img-padrao/instagram.png" alt="" class="la">
                                 
                                     <span class="contato">
                                         <abbr title="@enne_jim10" aria-label="@enne_jim10">Instagram</abbr>
                                     </span>
-                                
                                 </a>
                             </div>
                         </td>
 
                         <td>
                             <div class="cima">
-                                <a href="https://discord.com/channels/@me" aria-label="Me contate pelo Discord"
-                                    target="_blank" rel="external">
-                                
+                                <a href="https://discord.com/channels/@me" aria-label="Me contate pelo Discord" target="_blank" rel="external">
                                     <img src="src/img-padrao/discordia.png" alt="" class="la">
                                 
                                     <span class="contato" lang="en-us">
                                         <abbr title="Enne#9035" aria-label="Enne#9035">Discord</abbr>
                                     </span>
-                                
                                 </a>
                             </div>
                         </td>
 
                         <td>
                             <div class="cima">
-                                <a href="https://www.tiktok.com/@enne_jim_pessoa?is_from_webapp=1&sender_device=pc"
-                                    aria-label="Me contate pelo Tik Tok" target="_blank" rel="external">
-                                    
+                                <a href="https://www.tiktok.com/@enne_jim_pessoa?is_from_webapp=1&sender_device=pc" aria-label="Me contate pelo Tik Tok" target="_blank" rel="external">
                                     <img src="src/img-padrao/tik-tok.png" alt="" class="la">
                                     
                                     <span class="contato">
                                         <abbr title="@enne_jim_pessoa" aria-label="@enne_jim_pessoa">Tik Teko</abbr>
                                     </span>
-                                
                                 </a>
                             </div>
                         </td>
-
                     </tr>
 
                     <tr>
-
                         <td>
                             <div class="cima">
-                                <a href="https://github.com/Enne-Amore" aria-label="Me contate pelo GitHub"
-                                    rel="external" target="_blank">
-                                    
+                                <a href="https://github.com/Enne-Amore" aria-label="Me contate pelo GitHub" rel="external" target="_blank">
                                     <img src="src/img-padrao/github.png" alt="" class="la">
                                     
                                     <span class="contato">
                                         <abbr title="Enne-Amore" aria-label="Enne-Amore">GitHub</abbr>
                                     </span>
-
                                 </a>
                             </div>
                         </td>
 
                         <td>
                             <div class="cima">
-                                <a href="tel:+5583981448264" aria-label="Me contate pelo número de telefone"
-                                    target="_blank" rel="external">
-                                    
+                                <a href="tel:+5583981448264" aria-label="Me contate pelo número de telefone" target="_blank" rel="external">
                                     <img src="src/img-padrao/telefone.png" alt="" class="la">
                                     
                                     <span class="contato">
                                         <abbr title="(83) 981448264" aria-label="(83) 981448264">Telefone</abbr>
                                     </span>
-
                                 </a>
                             </div>
                         </td>
 
                         <td>
                             <div class="cima">
-                                <a href="https://www.linkedin.com/in/enne-jim-pessoa-b90a18231"
-                                    aria-label="Me contate pelo Linkedin" target="_blank" rel="external">
-                                    
+                                <a href="https://www.linkedin.com/in/enne-jim-pessoa-b90a18231" aria-label="Me contate pelo Linkedin" target="_blank" rel="external">
                                     <img src="src/img-padrao/linkedin.png" alt="" class="la">
                                     
                                     <span class="contato">
                                         <abbr title="Enne Jim Pessoa" aria-label="Enne Jim Pessoa">Linkedin</abbr>
                                     </span>
-
                                 </a>
                             </div>
                         </td>
-
                     </tr>
 
                     <tr>
-
                         <td colspan="2%">
                             <div class="cima">
-                                <a href="mailto:ennefofe10@gmail.com"
-                                    aria-label="Me contate pelo meu email do Google Gmail" target="_blank"
-                                    rel="external">
-                                    
+                                <a href="mailto:ennefofe10@gmail.com" aria-label="Me contate pelo meu email do Google Gmail" target="_blank" rel="external">
                                     <img src="src/img-padrao/email.png" alt="" class="la">
                                     
                                     <span class="contato" lang="en-us">
                                         <abbr title="EnneFofe10@gmail.com"
                                             aria-label="EnneFofe10@gmail.com">Email</abbr>
                                     </span>
-
                                 </a>
                             </div>
                         </td>
 
                         <td colspan="1%">
                             <div class="cima">
-                                <a href="https://www.facebook.com/people/Enne-Jim-Pessoa/pfbid0aQ6yJzDEVnNtwyvhJpWuwZpj3WJCVeGaacUncsjyKa69tKhu13Ng9Nd64FHmxzwwl/"
-                                    aria-label="Me contate pelo Facebook" target="_blank" rel="external">
-
+                                <a href="https://www.facebook.com/people/Enne-Jim-Pessoa/pfbid0aQ6yJzDEVnNtwyvhJpWuwZpj3WJCVeGaacUncsjyKa69tKhu13Ng9Nd64FHmxzwwl/" aria-label="Me contate pelo Facebook" target="_blank" rel="external">
                                     <img src="src/img-padrao/facebook.png" alt="" class="la">
 
                                     <span class="contato" lang="en-us">
                                         <abbr title="Enne Jim Pessoa" aria-label="Enne Jim Pessoa">Facebook</abbr>
                                     </span>
-
                                 </a>
                             </div>
                         </td>
-
                     </tr>
-
                 </tbody>
             </table>
-
         </section>
 
         <section id="autorias">
@@ -343,7 +302,6 @@
             </label>
 
             <ul class="list">
-
                 <li>
                     <a href="https://www.flaticon.com/br/icones-gratis/instagram" aria-label="Autoria daquele ícone do Instagram" title="instagram ícones" target="_blank" rel="external">
                         Instagram ícones criados por <span lang="en-us">Freepik - Flaticon</span>
@@ -448,11 +406,8 @@
                         Imagens de inteligência artificial
                     </a>
                 </li>
-
         </section>
-
     </footer>
-
 </body>
 
 </html>
