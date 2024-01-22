@@ -13,19 +13,22 @@
 
 /* Efeito de carregamento */
 body {
-    animation: carregar .1s ease-in-out ;
+    animation: carregar .2s ease-in-out ;
 }
 
 @keyframes carregar {
     0% {
         opacity: 0;
+        transform: translate(-3px, -3px);
     }
     100% {
         opacity: 1;
+        transform: translate(0px, 0px);
     }
 }
 
 /* Tamanho todo da imagem */
 #tela {
     width: 100vw;
+    border-radius: 1em;
 }

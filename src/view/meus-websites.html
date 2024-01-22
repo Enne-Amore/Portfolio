@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enne Amore - Portfólio</title>
-    <link rel="shortcut icon" href="../../img-padrao/heart.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img-padrao/heart.png" type="image/x-icon">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/padrao.css">
@@ -18,6 +18,7 @@
     <script src="../js/menu.js" defer></script>
     <script src="../js/topo.js" defer></script>
     <script src="../js/aparecer.js" defer></script>
+    <script src="../js/sites.js" defer></script>
 </head>
 <body>
     <header id="cabecalho">
@@ -111,37 +112,39 @@
             </figure>
 
             <article class="sites">
-                <div>
-                    <div id="btn-responsive">
+                <!-- Cada site em uma div de tela -->
+                <div class="tela aparecida">
+                    <!-- Seleção de tela responsiva -->
+                    <div class="btn-responsive">
                         <h3>Responsividade:</h3>
                         
                         <div class="botoes">
-                            <a href="meus-websites/frames/dhms-desktop.html" target="tela" class="material-symbols-outlined">
-                                computer
+                            <a href="meus-websites/frames/dhms-desktop.html" target="tela-dhms" class="material-symbols-outlined">
+                                <abbr title="Tela Para Computador">computer</abbr>
                             </a>
-                           
-                            <a href="meus-websites/frames/dhms-mobile.html" target="tela" class="material-symbols-outlined">
-                                smartphone
+                        
+                            <a href="meus-websites/frames/dhms-mobile.html" target="tela-dhms" class="material-symbols-outlined">
+                                <abbr title="Tela Para Celular">smartphone</abbr>
                             </a>
                         </div>
                     </div>
 
-                    <div id="tela">
-                        <iframe src="meus-websites/frames/dhms-desktop.html" name="tela" frameborder="0">
+                    <div class="site">
+                        <!-- Tela sendo apresentada -->
+                        <iframe src="meus-websites/frames/dhms-desktop.html" name="tela-dhms" frameborder="0">
                             <p>
                                 Infelizmente, não há compatibilidade.
                             </p>
                         </iframe>
-
-                        <div id="btn-site">
+                        <!-- Botões de acesso ao projeto -->
+                        <div class="btn-site">
                             <a href="https://enne-amore.github.io/Do-not-hug-I-am-scared/" rel="external" target="_blank">
                                 <span class="material-symbols-outlined">
                                     public
                                 </span>
                                 Acesse o Site
                             </a>
-                    
-                            <a href="https://github.com/Enne-Amore/Do-not-hug-I-am-scared" rel="external" target="_blank">
+                            <a href="https://github.com/Enne-Amore/Do-not-hug-I-am-scared/" rel="external" target="_blank">
                                 <span class="material-symbols-outlined">
                                     folder
                                 </span>
@@ -149,36 +152,256 @@
                             </a>
                         </div>
                     </div>
-                    
-                    <div id="btn-sites">
-                        <button type="button">
-                            <img src="meus-websites/img/dhms-icon.ico" alt="">
-                        </button>
-                        
-                        <button type="button">
-                            <img src="meus-websites/img/formulario-icon.png" alt="">
-                        </button>
-                        
-                        <button type="button">
-                            <img src="meus-websites/img/lista-de-tarefas-icon.png" alt="">
-                        </button>
-                        
-                        <button type="button">
-                            <img src="meus-websites/img/miraculous-icon.ico" alt="">
-                        </button>
+                </div>
 
-                        <button type="button">
-                            <img src="meus-websites/img/obras-recomendadas-icon.png" alt="">
-                        </button>
-
-                        <button type="button">
-                            <img src="meus-websites/img/star-wars-icon.png" alt="">
-                        </button>
+                <div class="tela">
+                    <!-- Seleção de tela responsiva -->
+                    <div class="btn-responsive">
+                        <h3>Responsividade:</h3>
+                        
+                        <div class="botoes">
+                            <a href="meus-websites/frames/form-desktop.html" target="tela-form" class="material-symbols-outlined">
+                                <abbr title="Tela Para Computador">computer</abbr>
+                            </a>
+                        
+                            <a href="meus-websites/frames/form-mobile.html" target="tela-form" class="material-symbols-outlined">
+                                <abbr title="Tela Para Celular">smartphone</abbr>
+                            </a>
+                        </div>
                     </div>
+
+                    <div class="site">
+                        <!-- Tela sendo apresentada -->
+                        <iframe src="meus-websites/frames/form-desktop.html" name="tela-form" frameborder="0">
+                            <p>
+                                Infelizmente, não há compatibilidade.
+                            </p>
+                        </iframe>
+                        <!-- Botões de acesso ao projeto -->
+                        <div class="btn-site">
+                            <a href="https://enne-amore.github.io/Formulario/" rel="external" target="_blank">
+                                <span class="material-symbols-outlined">
+                                    public
+                                </span>
+                                Acesse o Site
+                            </a>
+                            <a href="https://github.com/Enne-Amore/Formulario/" rel="external" target="_blank">
+                                <span class="material-symbols-outlined">
+                                    folder
+                                </span>
+                                Ver Repositório
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tela">
+                    <!-- Seleção de tela responsiva -->
+                    <div class="btn-responsive">
+                        <h3>Responsividade:</h3>
+                        
+                        <div class="botoes">
+                            <a href="meus-websites/frames/lista-de-tarefas-desktop.html" target="tela-list" class="material-symbols-outlined">
+                                <abbr title="Tela Para Computador">computer</abbr>
+                            </a>
+                        
+                            <a href="meus-websites/frames/lista-de-tarefas-mobile.html" target="tela-list" class="material-symbols-outlined">
+                                <abbr title="Tela Para Celular">smartphone</abbr>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="site">
+                        <!-- Tela sendo apresentada -->
+                        <iframe src="meus-websites/frames/lista-de-tarefas-desktop.html" name="tela-list" frameborder="0">
+                            <p>
+                                Infelizmente, não há compatibilidade.
+                            </p>
+                        </iframe>
+                        <!-- Botões de acesso ao projeto -->
+                        <div class="btn-site">
+                            <a href="https://enne-amore.github.io/lista-de-tarefas/" rel="external" target="_blank">
+                                <span class="material-symbols-outlined">
+                                    public
+                                </span>
+                                Acesse o Site
+                            </a>
+                            <a href="https://github.com/Enne-Amore/lista-de-tarefas/" rel="external" target="_blank">
+                                <span class="material-symbols-outlined">
+                                    folder
+                                </span>
+                                Ver Repositório
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tela">
+                    <!-- Seleção de tela responsiva -->
+                    <div class="btn-responsive">
+                        <h3>Responsividade:</h3>
+                        
+                        <div class="botoes">
+                            <a href="meus-websites/frames/miraculous-desktop.html" target="tela-miraculous" class="material-symbols-outlined">
+                                <abbr title="Tela Para Computador">computer</abbr>
+                            </a>
+                        
+                            <a href="meus-websites/frames/miraculous-mobile.html" target="tela-miraculous" class="material-symbols-outlined">
+                                <abbr title="Tela Para Celular">smartphone</abbr>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="site">
+                        <!-- Tela sendo apresentada -->
+                        <iframe src="meus-websites/frames/miraculous-desktop.html" name="tela-miraculous" frameborder="0">
+                            <p>
+                                Infelizmente, não há compatibilidade.
+                            </p>
+                        </iframe>
+                        <!-- Botões de acesso ao projeto -->
+                        <div class="btn-site">
+                            <a href="https://enne-amore.github.io/Miraculous/" rel="external" target="_blank">
+                                <span class="material-symbols-outlined">
+                                    public
+                                </span>
+                                Acesse o Site
+                            </a>
+                            <a href="https://github.com/Enne-Amore/Miraculous/" rel="external" target="_blank">
+                                <span class="material-symbols-outlined">
+                                    folder
+                                </span>
+                                Ver Repositório
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tela">
+                    <!-- Seleção de tela responsiva -->
+                    <div class="btn-responsive">
+                        <h3>Responsividade:</h3>
+                        
+                        <div class="botoes">
+                            <a href="meus-websites/frames/obras-recomendadas-desktop.html" target="tela-or" class="material-symbols-outlined">
+                                <abbr title="Tela Para Computador">computer</abbr>
+                            </a>
+                        
+                            <a href="meus-websites/frames/obras-recomendadas-mobile.html" target="tela-or" class="material-symbols-outlined">
+                                <abbr title="Tela Para Celular">smartphone</abbr>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="site">
+                        <!-- Tela sendo apresentada -->
+                        <iframe src="meus-websites/frames/obras-recomendadas-desktop.html" name="tela-or" frameborder="0">
+                            <p>
+                                Infelizmente, não há compatibilidade.
+                            </p>
+                        </iframe>
+                        <!-- Botões de acesso ao projeto -->
+                        <div class="btn-site">
+                            <a href="https://enne-amore.github.io/Obras-Recomendadas/" rel="external" target="_blank">
+                                <span class="material-symbols-outlined">
+                                    public
+                                </span>
+                                Acesse o Site
+                            </a>
+                            <a href="https://github.com/Enne-Amore/Obras-Recomendadas/" rel="external" target="_blank">
+                                <span class="material-symbols-outlined">
+                                    folder
+                                </span>
+                                Ver Repositório
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tela">
+                    <!-- Seleção de tela responsiva -->
+                    <div class="btn-responsive">
+                        <h3>Responsividade:</h3>
+                        
+                        <div class="botoes">
+                            <a href="meus-websites/frames/star-wars-desktop.html" target="tela-sw" class="material-symbols-outlined">
+                                <abbr title="Tela Para Computador">computer</abbr>
+                            </a>
+                        
+                            <a href="meus-websites/frames/star-wars-mobile.html" target="tela-sw" class="material-symbols-outlined">
+                                <abbr title="Tela Para Celular">smartphone</abbr>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="site">
+                        <!-- Tela sendo apresentada -->
+                        <iframe src="meus-websites/frames/star-wars-desktop.html" name="tela-sw" frameborder="0">
+                            <p>
+                                Infelizmente, não há compatibilidade.
+                            </p>
+                        </iframe>
+                        
+                        <!-- Botões de acesso ao projeto -->
+                        <div class="btn-site">
+                            <a href="https://enne-amore.github.io/workshop-frontend-2023.2/" rel="external" target="_blank">
+                                <span class="material-symbols-outlined">
+                                    public
+                                </span>
+                                Acesse o Site
+                            </a>
+                            <a href="https://github.com/Enne-Amore/workshop-frontend-2023.2" rel="external" target="_blank">
+                                <span class="material-symbols-outlined">
+                                    folder
+                                </span>
+                                Ver Repositório
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ícones para selecionar site -->
+                <div id="btn-sites">
+                    <button type="button" onclick="currentSlide(1)" class="icone selecionado">
+                        <abbr title="Não Me Abrace, Estou Assustado">
+                            <img src="meus-websites/img/dhms-icon.ico" alt="Logo do site Não Me Abrace, Estou Assustado">
+                        </abbr>
+                    </button>
+                    
+                    <button type="button" onclick="currentSlide(2)" class="icone">
+                        <abbr title="Formulário">
+                            <img src="meus-websites/img/formulario-icon.png" alt="Logo do site Formulário">
+                        </abbr>
+                    </button>
+                    
+                    <button type="button" onclick="currentSlide(3)" class="icone">
+                        <abbr title="Lista De Tarefas">
+                            <img src="meus-websites/img/lista-de-tarefas-icon.png" alt="Logo do site Lista De Tarefas">
+                        </abbr>
+                    </button>
+                    
+                    <button type="button" onclick="currentSlide(4)" class="icone">
+                        <abbr title="Miraculous">
+                            <img src="meus-websites/img/miraculous-icon.ico" alt="Logo do site Miraculous">
+                        </abbr>
+                    </button>
+
+                    <button type="button" onclick="currentSlide(5)" class="icone">
+                        <abbr title="Obras Recomendadas">
+                            <img src="meus-websites/img/obras-recomendadas-icon.png" alt="Logo do site Obras Recomendadas">
+                        </abbr>
+                    </button>
+
+                    <button type="button" onclick="currentSlide(6)" class="icone">
+                        <abbr title="Star Wars">
+                            <img src="meus-websites/img/star-wars-icon.png" alt="Logo do site Star Wars">
+                        </abbr>
+                    </button>
                 </div>
             </article>
         </section>
 
+        <!-- Botão de topo -->
         <div id="topo">
             <img class="topo" src="../img-padrao/topo.png" alt="Clique aqui para voltar ao topo da página" tabindex="0">
         </div>

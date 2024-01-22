@@ -11,72 +11,76 @@
 }
 
 #conteudo .sites {
-    background-color: var(--azul-transparente);
+    background-color: var(--azul-claro);
     margin-bottom: 10%;
     padding: 1.5em;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     gap: 1em;
 }
 
-#conteudo .sites div {
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
+#conteudo .sites .tela {
+    display: none;
 }
 
-#conteudo .sites #btn-responsive {
+#conteudo .sites .tela.aparecida {
+    display: flex;
+    align-items: start;
+    gap: 5em;
+}
+
+#conteudo .sites .tela .btn-responsive {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1em;
-    width: auto;
     margin-top: 1em;
 }
 
-#conteudo .sites #btn-responsive .botoes {
+#conteudo .sites .tela .btn-responsive h3 {
+    background-color: white;
+    padding: 0.5em;
+    padding-top: 0.6em;
+    border-radius: 1em;
+}
+
+#conteudo .sites .tela .btn-responsive .botoes {
     display: flex;
     gap: 1em;
 }
 
-#conteudo .sites #btn-responsive .botoes a {
+#conteudo .sites .tela .btn-responsive .botoes a {
     background-color: var(--rosa-escuro);
     color: white;
     width: max-content;
     padding: 20px;
     border-radius: 50%;
+    font-size: 1.3em;
     transition: .2s;
 }
 
-#conteudo .sites #tela {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5em;
-    width: max-content;
-    margin-left: -10%;
-}
-
-#conteudo .sites #tela iframe {
+#conteudo .sites .tela .site iframe {
     width: 100%;
-    height: 90vh;
+    height: 80vh;
     border-radius: 1em;
 }
 
-#conteudo .sites #tela #btn-site {
+#conteudo .sites .tela .site .btn-site {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1em;
+    margin-top: 0.3em;
 }
 
-#conteudo .sites #tela #btn-site a {
+#conteudo .sites .tela .site .btn-site a {
     display: flex;
     align-items: center;
     gap: 0.3em;
     background-color: var(--rosa-escuro);
     color: white;
     padding: 20px;
+    padding-bottom: 15px;
     border: 1em;
     border-radius: 1em;
     text-align: center;
@@ -86,15 +90,23 @@
     text-decoration: none;
     transition-duration: .2s;
 }
-#conteudo .sites #tela #btn-site a:hover, #conteudo .sites #btn-responsive a:hover {
+#conteudo .sites .tela .site .btn-site a:focus-visible,
+#conteudo .sites .tela .btn-responsive a:focus-visible {
+    outline: auto;
+}
+#conteudo .sites .tela .site .btn-site a:hover,
+#conteudo .sites .tela .site .btn-site a:focus-visible, 
+#conteudo .sites .tela .btn-responsive a:hover,
+#conteudo .sites .tela .btn-responsive a:focus-visible {
     background-color: var(--rosa);
 }
-#conteudo .sites #tela #btn-site a:active, #conteudo .sites #btn-responsive a:active {
+#conteudo .sites .tela .site .btn-site a:active,
+#conteudo .sites .tela .btn-responsive a:active {
     background-color: var(--rosa-claro);
 }
 
-#conteudo .sites #tela #btn-site a span {
-    margin-top: -5px;
+#conteudo .sites .tela .site .btn-site a span {
+    margin-top: -7px;
     font-size: 1.5em;
 }
 
@@ -104,15 +116,31 @@
     gap: 0.5em;
 }
 
-#conteudo .sites #btn-sites button {
+#conteudo .sites #btn-sites .icone {
     width: max-content;
+    border-radius: 50%;
+    padding: 0.7em;
     transition: .4s;
+    transform: translate(0, 0);
 }
-#conteudo .sites #btn-sites button:hover {
+#conteudo .sites #btn-sites .icone:not(.selecionado):hover,
+#conteudo .sites #btn-sites .icone:not(.selecionado):focus-visible {
     transform: translate(-5px, -5px);
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.082);
+    outline: 2px dotted white;
 }
 
-#conteudo .sites #btn-sites button img {
+#conteudo .sites #btn-sites .icone.selecionado {
+    transform: translate(-5px, -5px);
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.082);
+    outline: 2px solid white;
+}
+#conteudo .sites #btn-sites .icone.selecionado:focus-visible {
+    padding: 0.8em;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.247);
+}
+
+#conteudo .sites #btn-sites .icone img {
     width: 5em;
     height: auto;
 }
