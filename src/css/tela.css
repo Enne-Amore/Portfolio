@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/* Reset breve */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+/* Efeito de carregamento */
+body {
+    animation: carregar .1s ease-in-out ;
+}
+
+@keyframes carregar {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Tamanho todo da imagem */
+#tela {
+    width: 100vw;
+}

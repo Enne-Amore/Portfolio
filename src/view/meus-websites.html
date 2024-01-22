@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/padrao.css">
     <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/websites.css">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <!-- JavaScript -->
     <script src="https://unpkg.com/scrollreveal" defer></script>
     <script src="../js/menu.js" defer></script>
@@ -17,9 +20,7 @@
     <script src="../js/aparecer.js" defer></script>
 </head>
 <body>
-
     <header id="cabecalho">
-
         <div id="titulo">
             <label for="texto"><h1>Meus websites</h1></label>
         </div>
@@ -102,12 +103,80 @@
             </fieldset>
         </section>
 
-        <section>
+        <section id="sites">
             <label for="texto e imagem"></label>
 
             <figure class="secao">
-                <img src="../img-padrao/sites-a-ver.png" alt="Sites a ver" id="sites">
+                <img src="../img-padrao/sites-a-ver.png" alt="Sites a ver">
             </figure>
+
+            <article class="sites">
+                <div>
+                    <div id="btn-responsive">
+                        <h3>Responsividade:</h3>
+                        
+                        <div class="botoes">
+                            <a href="meus-websites/frames/dhms-desktop.html" target="tela" class="material-symbols-outlined">
+                                computer
+                            </a>
+                           
+                            <a href="meus-websites/frames/dhms-mobile.html" target="tela" class="material-symbols-outlined">
+                                smartphone
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="tela">
+                        <iframe src="meus-websites/frames/dhms-desktop.html" name="tela" frameborder="0">
+                            <p>
+                                Infelizmente, não há compatibilidade.
+                            </p>
+                        </iframe>
+
+                        <div id="btn-site">
+                            <a href="https://enne-amore.github.io/Do-not-hug-I-am-scared/" rel="external" target="_blank">
+                                <span class="material-symbols-outlined">
+                                    public
+                                </span>
+                                Acesse o Site
+                            </a>
+                    
+                            <a href="https://github.com/Enne-Amore/Do-not-hug-I-am-scared" rel="external" target="_blank">
+                                <span class="material-symbols-outlined">
+                                    folder
+                                </span>
+                                Ver Repositório
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div id="btn-sites">
+                        <button type="button">
+                            <img src="meus-websites/img/dhms-icon.ico" alt="">
+                        </button>
+                        
+                        <button type="button">
+                            <img src="meus-websites/img/formulario-icon.png" alt="">
+                        </button>
+                        
+                        <button type="button">
+                            <img src="meus-websites/img/lista-de-tarefas-icon.png" alt="">
+                        </button>
+                        
+                        <button type="button">
+                            <img src="meus-websites/img/miraculous-icon.ico" alt="">
+                        </button>
+
+                        <button type="button">
+                            <img src="meus-websites/img/obras-recomendadas-icon.png" alt="">
+                        </button>
+
+                        <button type="button">
+                            <img src="meus-websites/img/star-wars-icon.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </article>
         </section>
 
         <div id="topo">

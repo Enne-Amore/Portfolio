@@ -1,0 +1,118 @@
+/* Variáveis CSS */
+:root {
+    --azul-claro: #7cc2ff;
+    --azul-escuro: #698bac;
+    --azul-transparente: #7cc2ff48;
+    --rosa-claro: #FFC8DD;
+    --rosa: #ff81b1;
+    --rosa-escuro: #ff609a;
+    --cinza-claro: #f8f8f8;
+    --roxo: #a479c0;
+}
+
+#conteudo .sites {
+    background-color: var(--azul-transparente);
+    margin-bottom: 10%;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#conteudo .sites div {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+#conteudo .sites #btn-responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    width: auto;
+    margin-top: 1em;
+}
+
+#conteudo .sites #btn-responsive .botoes {
+    display: flex;
+    gap: 1em;
+}
+
+#conteudo .sites #btn-responsive .botoes a {
+    background-color: var(--rosa-escuro);
+    color: white;
+    width: max-content;
+    padding: 20px;
+    border-radius: 50%;
+    transition: .2s;
+}
+
+#conteudo .sites #tela {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    width: max-content;
+    margin-left: -10%;
+}
+
+#conteudo .sites #tela iframe {
+    width: 100%;
+    height: 90vh;
+    border-radius: 1em;
+}
+
+#conteudo .sites #tela #btn-site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+#conteudo .sites #tela #btn-site a {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+    background-color: var(--rosa-escuro);
+    color: white;
+    padding: 20px;
+    border: 1em;
+    border-radius: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: bolder;
+    text-decoration: none;
+    transition-duration: .2s;
+}
+#conteudo .sites #tela #btn-site a:hover, #conteudo .sites #btn-responsive a:hover {
+    background-color: var(--rosa);
+}
+#conteudo .sites #tela #btn-site a:active, #conteudo .sites #btn-responsive a:active {
+    background-color: var(--rosa-claro);
+}
+
+#conteudo .sites #tela #btn-site a span {
+    margin-top: -5px;
+    font-size: 1.5em;
+}
+
+#conteudo .sites #btn-sites {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+#conteudo .sites #btn-sites button {
+    width: max-content;
+    transition: .4s;
+}
+#conteudo .sites #btn-sites button:hover {
+    transform: translate(-5px, -5px);
+}
+
+#conteudo .sites #btn-sites button img {
+    width: 5em;
+    height: auto;
+}

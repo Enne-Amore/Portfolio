@@ -24,6 +24,11 @@ a {
     text-decoration: none;
     color: transparent;
 }
+button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
 :focus {
     outline: 0;
 }
