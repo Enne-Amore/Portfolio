@@ -3,16 +3,18 @@
 /* A mente do site */
 body {
     min-height: 100vh;
-    max-width: 100vw;
+    max-width: 100vw; 
     font-size: 1.8vw;
-    background: no-repeat fixed;
-    background-size: cover;
 }
 body#meus-videos{
     background: url(../img-padrao/fundo-colorido-claro.jpg) center;
 }
 body#inspiracoes-audiovisuais {
     background: url(../img-padrao/ceu-rosa.jpg) bottom;
+}
+body#meus-videos, body#inspiracoes-audiovisuais {
+    background-attachment: fixed;
+    background-size: cover;
 }
 video:focus-visible {
     outline: auto;
