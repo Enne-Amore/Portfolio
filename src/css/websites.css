@@ -76,6 +76,7 @@
 #conteudo .sites .tela .site .btn-site a {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.3em;
     background-color: var(--rosa-escuro);
     color: white;
@@ -113,13 +114,12 @@
 #conteudo .sites #btn-sites {
     display: flex;
     flex-direction: column;
-    gap: 0.5em;
+    gap: 0.4em;
 }
 
 #conteudo .sites #btn-sites .icone {
-    width: max-content;
     border-radius: 50%;
-    padding: 0.7em;
+    padding: 0 0.4em;
     transition: .4s;
     transform: translate(0, 0);
 }
@@ -128,19 +128,24 @@
     transform: translate(-5px, -5px);
     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.082);
     outline: 2px dotted white;
+    padding: 0.4em;
+    padding-bottom: 0.2em;
 }
 
 #conteudo .sites #btn-sites .icone.selecionado {
     transform: translate(-5px, -5px);
     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.082);
     outline: 2px solid white;
+    padding: 0.4em;
+    padding-bottom: 0.2em;
 }
 #conteudo .sites #btn-sites .icone.selecionado:focus-visible {
-    padding: 0.8em;
+    padding: 0.4em;
+    padding-bottom: 0.2em;
     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.247);
 }
 
 #conteudo .sites #btn-sites .icone img {
-    width: 5em;
+    width: 2.5em;
     height: auto;
 }

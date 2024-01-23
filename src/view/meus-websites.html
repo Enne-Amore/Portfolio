@@ -9,8 +9,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/padrao.css">
-    <link rel="stylesheet" href="../css/responsive.css">
     <link rel="stylesheet" href="../css/websites.css">
+    <link rel="stylesheet" href="../css/responsive.css">
     <!-- Ícones -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <!-- JavaScript -->
@@ -122,7 +122,7 @@
                             <a href="meus-websites/frames/dhms-desktop.html" target="tela-dhms" class="material-symbols-outlined">
                                 <abbr title="Tela Para Computador">computer</abbr>
                             </a>
-                        
+
                             <a href="meus-websites/frames/dhms-mobile.html" target="tela-dhms" class="material-symbols-outlined">
                                 <abbr title="Tela Para Celular">smartphone</abbr>
                             </a>
@@ -131,7 +131,7 @@
 
                     <div class="site">
                         <!-- Tela sendo apresentada -->
-                        <iframe src="meus-websites/frames/dhms-desktop.html" name="tela-dhms" frameborder="0">
+                        <iframe src="meus-websites/frames/dhms-desktop.html" name="tela-dhms" id="tela-dhms" frameborder="0">
                             <p>
                                 Infelizmente, não há compatibilidade.
                             </p>
@@ -142,7 +142,7 @@
                                 <span class="material-symbols-outlined">
                                     public
                                 </span>
-                                Acesse o Site
+                                Acessar Site
                             </a>
                             <a href="https://github.com/Enne-Amore/Do-not-hug-I-am-scared/" rel="external" target="_blank">
                                 <span class="material-symbols-outlined">
@@ -172,7 +172,7 @@
 
                     <div class="site">
                         <!-- Tela sendo apresentada -->
-                        <iframe src="meus-websites/frames/form-desktop.html" name="tela-form" frameborder="0">
+                        <iframe src="meus-websites/frames/form-desktop.html" name="tela-form" id="tela-form" frameborder="0">
                             <p>
                                 Infelizmente, não há compatibilidade.
                             </p>
@@ -183,7 +183,7 @@
                                 <span class="material-symbols-outlined">
                                     public
                                 </span>
-                                Acesse o Site
+                                Acessar Site
                             </a>
                             <a href="https://github.com/Enne-Amore/Formulario/" rel="external" target="_blank">
                                 <span class="material-symbols-outlined">
@@ -213,7 +213,7 @@
 
                     <div class="site">
                         <!-- Tela sendo apresentada -->
-                        <iframe src="meus-websites/frames/lista-de-tarefas-desktop.html" name="tela-list" frameborder="0">
+                        <iframe src="meus-websites/frames/lista-de-tarefas-desktop.html" name="tela-list" id="tela-list" frameborder="0">
                             <p>
                                 Infelizmente, não há compatibilidade.
                             </p>
@@ -224,7 +224,7 @@
                                 <span class="material-symbols-outlined">
                                     public
                                 </span>
-                                Acesse o Site
+                                Acessar Site
                             </a>
                             <a href="https://github.com/Enne-Amore/lista-de-tarefas/" rel="external" target="_blank">
                                 <span class="material-symbols-outlined">
@@ -254,7 +254,7 @@
                     
                     <div class="site">
                         <!-- Tela sendo apresentada -->
-                        <iframe src="meus-websites/frames/miraculous-desktop.html" name="tela-miraculous" frameborder="0">
+                        <iframe src="meus-websites/frames/miraculous-desktop.html" name="tela-miraculous" id="tela-miraculous" frameborder="0">
                             <p>
                                 Infelizmente, não há compatibilidade.
                             </p>
@@ -265,7 +265,7 @@
                                 <span class="material-symbols-outlined">
                                     public
                                 </span>
-                                Acesse o Site
+                                Acessar Site
                             </a>
                             <a href="https://github.com/Enne-Amore/Miraculous/" rel="external" target="_blank">
                                 <span class="material-symbols-outlined">
@@ -295,7 +295,7 @@
                     
                     <div class="site">
                         <!-- Tela sendo apresentada -->
-                        <iframe src="meus-websites/frames/obras-recomendadas-desktop.html" name="tela-or" frameborder="0">
+                        <iframe src="meus-websites/frames/obras-recomendadas-desktop.html" name="tela-or" id="tela-or" frameborder="0">
                             <p>
                                 Infelizmente, não há compatibilidade.
                             </p>
@@ -306,7 +306,7 @@
                                 <span class="material-symbols-outlined">
                                     public
                                 </span>
-                                Acesse o Site
+                                Acessar Site
                             </a>
                             <a href="https://github.com/Enne-Amore/Obras-Recomendadas/" rel="external" target="_blank">
                                 <span class="material-symbols-outlined">
@@ -336,7 +336,7 @@
                     
                     <div class="site">
                         <!-- Tela sendo apresentada -->
-                        <iframe src="meus-websites/frames/star-wars-desktop.html" name="tela-sw" frameborder="0">
+                        <iframe src="meus-websites/frames/star-wars-desktop.html" name="tela-sw" id="tela-sw" frameborder="0">
                             <p>
                                 Infelizmente, não há compatibilidade.
                             </p>
@@ -348,7 +348,7 @@
                                 <span class="material-symbols-outlined">
                                     public
                                 </span>
-                                Acesse o Site
+                                Acessar Site
                             </a>
                             <a href="https://github.com/Enne-Amore/workshop-frontend-2023.2" rel="external" target="_blank">
                                 <span class="material-symbols-outlined">
@@ -362,41 +362,41 @@
                 
                 <!-- Ícones para selecionar site -->
                 <div id="btn-sites">
-                    <button type="button" onclick="currentSlide(1)" class="icone selecionado">
+                    <a href="#tela-dhms" onclick="currentSlide(1)" class="icone selecionado">
                         <abbr title="Não Me Abrace, Estou Assustado">
                             <img src="meus-websites/img/dhms-icon.ico" alt="Logo do site Não Me Abrace, Estou Assustado">
                         </abbr>
-                    </button>
+                    </a>
                     
-                    <button type="button" onclick="currentSlide(2)" class="icone">
+                    <a href="#tela-form" onclick="currentSlide(2)" class="icone">
                         <abbr title="Formulário">
                             <img src="meus-websites/img/formulario-icon.png" alt="Logo do site Formulário">
                         </abbr>
-                    </button>
+                    </a>
                     
-                    <button type="button" onclick="currentSlide(3)" class="icone">
+                    <a href="#tela-list" onclick="currentSlide(3)" class="icone">
                         <abbr title="Lista De Tarefas">
                             <img src="meus-websites/img/lista-de-tarefas-icon.png" alt="Logo do site Lista De Tarefas">
                         </abbr>
-                    </button>
+                    </a>
                     
-                    <button type="button" onclick="currentSlide(4)" class="icone">
+                    <a href="#tela-miraculous" onclick="currentSlide(4)" class="icone">
                         <abbr title="Miraculous">
                             <img src="meus-websites/img/miraculous-icon.ico" alt="Logo do site Miraculous">
                         </abbr>
-                    </button>
+                    </a>
 
-                    <button type="button" onclick="currentSlide(5)" class="icone">
+                    <a href="#tela-or" onclick="currentSlide(5)" class="icone">
                         <abbr title="Obras Recomendadas">
                             <img src="meus-websites/img/obras-recomendadas-icon.png" alt="Logo do site Obras Recomendadas">
                         </abbr>
-                    </button>
+                    </a>
 
-                    <button type="button" onclick="currentSlide(6)" class="icone">
+                    <a href="#tela-sw" onclick="currentSlide(6)" class="icone">
                         <abbr title="Star Wars">
                             <img src="meus-websites/img/star-wars-icon.png" alt="Logo do site Star Wars">
                         </abbr>
-                    </button>
+                    </a>
                 </div>
             </article>
         </section>

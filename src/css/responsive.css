@@ -107,6 +107,48 @@
         text-align: justify;
     }
 
+    #conteudo .sites {
+        flex-direction: column;
+        gap: 2em;
+    }
+    #conteudo .sites .tela.aparecida {
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+    #conteudo .sites .tela .site iframe {
+        width: 90%;
+    }
+    #conteudo .sites .tela .site .btn-site {
+        margin-top: 0.6em;
+    }
+    #conteudo .sites .tela .site .btn-site a {
+        padding: 15px;
+        padding-bottom: 10px;
+        font-size: 0.8em;
+        gap: 0.6em;
+        line-height: 1.4em;
+    }
+    #conteudo .sites #btn-sites {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+    }
+    #conteudo .sites #btn-sites .icone {
+        padding: 0.4em;
+        padding-bottom: 0.2em;
+    }
+    #conteudo .sites #btn-sites .icone:not(.selecionado):hover,
+    #conteudo .sites #btn-sites .icone.selecionado {
+        transform: translate(0, 0);
+        padding: 0.7em;
+        padding-bottom: 0.5em;
+    }
+    #conteudo .sites #btn-sites .icone img {
+        width: 3em;
+    }
+
     #conteudo .videos-a-ver section {
         font-size: 7vw;
         gap: 3em;
@@ -185,6 +227,7 @@
     }
     #final h2 {
         padding: 10% 5% 6%;
+        font-size: 1.3em;
     }
     #final #contatos .table {
         margin: auto auto 5%;
@@ -192,7 +235,7 @@
         width: max-content;
     }
     #final #contatos .table tbody tr {
-        font-size: 7vw;
+        font-size: 6vw;
         display: flex;
         flex-direction: column;
         text-align: left;
