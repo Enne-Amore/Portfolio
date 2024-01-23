@@ -5,6 +5,7 @@ function currentSlide(n) {
     showSlides(slideIndex = n)
 }
 
+// Mostrar cada tela
 function showSlides(n) {
     let telas = document.querySelectorAll(".tela")
     const icones = document.querySelectorAll(".icone")
@@ -32,3 +33,26 @@ function showSlides(n) {
     // Adiciona a classe 'selecionada' à bolinha correspondente
     icones[slideIndex - 1].classList.add('selecionado')
 }
+
+// Focagem da tela
+let iframes = document.querySelectorAll("iframe")
+iframes.forEach((iframe) => {
+  // Focar
+  iframe.addEventListener("focusin", () => {
+    iframe.style.border = "2px solid white"
+  })
+  
+  // Desfocar
+  iframe.addEventListener("blur", () => {
+    iframe.style.border = "0px"
+  })
+
+  // Rolar à tela ao clicar
+  let a_btn_responsive = document.querySelectorAll(".a-btn-responsive")
+  a_btn_responsive.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      iframe.scrollIntoView({ behavior: "smooth" })
+      iframe.focus()
+    })
+  })
+})

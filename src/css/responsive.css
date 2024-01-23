@@ -110,6 +110,13 @@
     #conteudo .sites {
         flex-direction: column;
         gap: 2em;
+        border-radius: 2em;
+    }
+    #conteudo .sites .tela .btn-responsive {
+        margin-top: 0.5em;
+    }
+    #conteudo .sites .tela .btn-responsive .botoes {
+        gap: 1.4em;
     }
     #conteudo .sites .tela.aparecida {
         flex-direction: column;
@@ -134,6 +141,7 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 1em;
+        margin-bottom: 0.6em;
     }
     #conteudo .sites #btn-sites .icone {
         padding: 0.4em;
