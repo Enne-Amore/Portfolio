@@ -131,26 +131,26 @@
     }
     #conteudo .sites .tela .site .btn-site a {
         padding: 15px;
-        padding-bottom: 10px;
+        padding-bottom: 11px;
         font-size: 0.8em;
         gap: 0.6em;
         line-height: 1.4em;
     }
     #conteudo .sites #btn-sites {
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: center;
         gap: 1em;
         margin-bottom: 0.6em;
     }
     #conteudo .sites #btn-sites .icone {
-        padding: 0.4em;
-        padding-bottom: 0.2em;
+        padding: 0.7em;
+        padding-bottom: 0.4em;
     }
     #conteudo .sites #btn-sites .icone:not(.selecionado):hover,
-    #conteudo .sites #btn-sites .icone.selecionado {
+    #conteudo .sites #btn-sites .icone.selecionado,
+    #conteudo .sites #btn-sites .icone.selecionado:hover {
         transform: translate(0, 0);
-        padding: 0.7em;
+        padding: 0.8em;
         padding-bottom: 0.5em;
     }
     #conteudo .sites #btn-sites .icone img {
