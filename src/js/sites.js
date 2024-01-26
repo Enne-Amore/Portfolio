@@ -1,58 +1,75 @@
-let slideIndex = 1
-showSlides(slideIndex)
+// Chamada de elementos globais
+const tela = document.querySelector('iframe')
+let icones = document.querySelectorAll('.icone')
 
-function currentSlide(n) {
-    showSlides(slideIndex = n)
-}
+// Ao selecionar um ícone de site
+icones.forEach((icone) => {
+  icone.addEventListener('click', () => {
+    removerSelecaoDeIcone()
 
-// Mostrar cada tela
-function showSlides(n) {
-    let telas = document.querySelectorAll(".tela")
-    const icones = document.querySelectorAll(".icone")
+    icone.classList.add('selecionado')
 
-    // Remove a classe 'aparecida' de todas as folhas
-    telas.forEach((tela) => {
-      tela.classList.remove('aparecida')
-    })
-    
-    if (n > telas.length) {
-      slideIndex = 1;
-    }
-    if (n < 1) {
-      slideIndex = telas.length;
-    }
-    
-    // Adiciona a classe 'aparecida' à folha correspondente
-    telas[slideIndex - 1].classList.add('aparecida')
+    const tela = trocarDeTela(icone)
 
-    // Remove a classe 'selecionada' de todas as bolinhas
-    icones.forEach((icone) => {
-        icone.classList.remove('selecionado')
-    })
+    focarTela(tela)
 
-    // Adiciona a classe 'selecionada' à bolinha correspondente
-    icones[slideIndex - 1].classList.add('selecionado')
-}
+    trocarUrlDesktop(icone)
 
-// Focagem da tela
-let iframes = document.querySelectorAll("iframe")
-iframes.forEach((iframe) => {
-  // Focar
-  iframe.addEventListener("focusin", () => {
-    iframe.style.border = "2px solid white"
-  })
-  
-  // Desfocar
-  iframe.addEventListener("blur", () => {
-    iframe.style.border = "0px"
-  })
+    trocarUrlMobile(icone)
 
-  // Rolar à tela ao clicar
-  let a_btn_responsive = document.querySelectorAll(".a-btn-responsive")
-  a_btn_responsive.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      iframe.scrollIntoView({ behavior: "smooth" })
-      iframe.focus()
-    })
+    trocarUrlSite(icone)
+
+    trocarUrlRepository(icone)
   })
 })
+
+// Ao selecionar um ícone de responsividade
+let a_btn_responsive = document.querySelectorAll(".a-btn-responsive")
+a_btn_responsive.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    focarTela(tela)
+  })
+})
+
+// Funções das seleções
+function trocarUrlRepository(icone) {
+  const repository = document.querySelector('#repository')
+  repository.href = icone.getAttribute('data-repository')
+}
+
+function trocarUrlSite(icone) {
+  const site = document.querySelector('#site')
+  site.href = icone.getAttribute('data-site')
+}
+
+function trocarUrlMobile(icone) {
+  const mobile = document.querySelector('#mobile')
+  mobile.href = icone.getAttribute('data-mobile')
+}
+
+function trocarUrlDesktop(icone) {
+  const desktop = document.querySelector('#desktop')
+  desktop.href = icone.getAttribute('data-desktop')
+}
+
+function focarTela(tela) {
+  tela.scrollIntoView({ behavior: "smooth" })
+  tela.focus()
+  tela.addEventListener("focusin", () => {
+    tela.style.border = "2px solid white"
+  })
+  tela.addEventListener("blur", () => {
+    tela.style.border = "0px"
+  })
+}
+
+function trocarDeTela(icone) {
+  tela.src = icone.getAttribute('data-desktop')
+  return tela
+}
+
+function removerSelecaoDeIcone() {
+  const iconeSelecionado = document.querySelector('.selecionado')
+  iconeSelecionado.classList.remove('selecionado')
+}
+

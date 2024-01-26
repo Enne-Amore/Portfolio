@@ -9,10 +9,6 @@
 }
 
 #conteudo .sites .tela {
-    display: none;
-}
-
-#conteudo .sites .tela.aparecida {
     display: flex;
     align-items: start;
     gap: 5em;
@@ -104,9 +100,11 @@
 
 #conteudo .sites #btn-sites {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    max-height: 75vh;
+    max-width: 15vw;
+    max-height: 60vh;
     gap: 0.6em;
     margin-top: 0.5em;
 }
@@ -114,8 +112,8 @@
 #conteudo .sites #btn-sites .icone {
     background-color: rgba(255, 255, 255, 0.329);
     border-radius: 50%;
-    padding: 0.6em;
-    padding-bottom: 0.3em;
+    padding: 1em;
+    padding-bottom: 0.9em;
     transition: .4s;
     transform: translate(0, 0);
 }
@@ -130,18 +128,14 @@
     transform: translate(-5px, -5px);
     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.082);
     outline: 2px solid white;
-    padding: 0.6em;
-    padding-bottom: 0.3em;
 }
 #conteudo .sites #btn-sites .icone.selecionado:hover,
 #conteudo .sites #btn-sites .icone.selecionado:focus-visible {
-    padding: 0.6em;
-    padding-bottom: 0.3em;
     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.247);
     transform: translate(-8px, -8px);
 }
 
 #conteudo .sites #btn-sites .icone img {
-    width: 2.5em;
+    width: 4em;
     height: auto;
 }
