@@ -5,20 +5,18 @@ let icones = document.querySelectorAll('.icone')
 // Ao selecionar um ícone de site
 icones.forEach((icone) => {
   icone.addEventListener('click', () => {
+    // Adição e remoção de classe
     removerSelecaoDeIcone()
-
     icone.classList.add('selecionado')
-
+    
+    // Troca e foco de tela
     const tela = trocarDeTela(icone)
-
     focarTela(tela)
-
+    
+    // Troca de dados
     trocarUrlDesktop(icone)
-
     trocarUrlMobile(icone)
-
     trocarUrlSite(icone)
-
     trocarUrlRepository(icone)
   })
 })

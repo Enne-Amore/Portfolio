@@ -6,6 +6,7 @@ sr.reveal('.parte');
 sr.reveal('.txt');
 sr.reveal('.secao');
 sr.reveal('.especial');
+sr.reveal('.sites');
 
 // Especificidade para cada tela
 if (innerWidth <= 1200) {

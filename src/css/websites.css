@@ -45,7 +45,6 @@
 }
 
 #conteudo .sites .tela .site iframe {
-    box-sizing: content-box;
     width: 100%;
     height: 80vh;
     border-radius: 1em;
