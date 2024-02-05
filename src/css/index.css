@@ -27,6 +27,12 @@
     padding: 0;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.116);
 }
+#conteudo .parte .circulo:nth-child(odd) {
+    animation: esquerda 2s ease-out;
+}
+#conteudo .parte .circulo:nth-child(even) {
+    animation: direita 2s ease-out;
+}
 
 /* Conteúdo Escrito */
 #conteudo .parte .retangulo {
@@ -35,6 +41,12 @@
     border-radius: 1em;
     padding: 2%;
     width: min-content;
+}
+#conteudo .parte .retangulo:nth-child(odd) {
+    animation: direita 2s ease-out;
+}
+#conteudo .parte .retangulo:nth-child(even) {
+    animation: esquerda 2s ease-out;
 }
 
 #conteudo .parte .retangulo h2 {

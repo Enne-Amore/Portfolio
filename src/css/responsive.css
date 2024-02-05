@@ -8,7 +8,7 @@
     }
 
     #cabecalho .menu {
-        top: 8%;
+        top: 9%;
         left: 3%;
         width: 25%;
     }
@@ -211,9 +211,7 @@
     }
 
     #conteudo .imagens {
-        flex-direction: column;
         margin: 5% auto;
-        gap: 1em;
     }
     #conteudo .imagens .iguali {
         width: 80%;

@@ -186,7 +186,7 @@ body {
 
 #conteudo .txt {
     margin: auto 10% 5%;
-    padding: 1% 2%;
+    padding: 0.5% 2%;
     line-height: 1.7em;
     text-indent: 5%;
     text-align: justify;
@@ -195,7 +195,7 @@ body {
 }
 
 #conteudo .txt p {
-    margin: 1.5% 0;
+    margin: 2% 0;
 }
 
 #conteudo .txt strong {

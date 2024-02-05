@@ -2,7 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5%;
+    flex-wrap: wrap;
+    gap: 2.5em;
     margin: 4% 5%;
 }
 
