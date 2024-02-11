@@ -239,6 +239,7 @@ body {
     border-radius: 60%;
     transition-duration: .1s;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.158);
+    z-index: 1;
 }
 #conteudo .topo:focus-visible {
     outline: auto;
