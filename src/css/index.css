@@ -5,6 +5,7 @@
     height: auto;
     margin-top: 1em;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.055);
+    border-radius: 3px;
     position: static;
 }
 
@@ -77,14 +78,13 @@
 #conteudo .parte .retangulo .feituras {
     list-style: none;
     width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
 }
-
-#conteudo .parte .retangulo .feituras li {
-    padding-bottom: 2%;
-}
-#conteudo .parte .retangulo .feituras li:nth-last-child(1) {
-    padding-bottom: 1.5%;
+#conteudo .parte .retangulo .feituras li:last-child {
+    padding-bottom: 0.5em;
 }
 #conteudo .parte .retangulo .feituras li::before {
-    content: "💟 ";
+    content: "💟";
 }

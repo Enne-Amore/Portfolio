@@ -187,7 +187,7 @@ body {
 #conteudo .txt {
     margin: auto 10% 5%;
     padding: 0.5% 2%;
-    line-height: 1.7em;
+    line-height: 1.8em;
     text-indent: 5%;
     text-align: justify;
     box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.199);
@@ -200,7 +200,8 @@ body {
 
 #conteudo .txt strong {
     background-image: linear-gradient(to right, var(--azul-transparente), white);
-    padding: 0.3% 0.6%;
+    padding: 0.6%;
+    padding-bottom: 0.3%;
     border-radius: 1em;
 }
 #conteudo .txt strong:nth-child(2n) {
@@ -305,9 +306,9 @@ body {
 }
 
 #final #contatos .cima a .la {
-    align-items: center;
     display: flex;
-    width: 60px;
+    align-items: center;
+    width: auto;
     height: 60px;
     margin: 0 0.3em;
 }

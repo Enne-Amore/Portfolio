@@ -1,8 +1,99 @@
-/* A responsividade do site */
-
 /* Padrão de todas as telas pequenas */
 @media screen and (max-width: 1200px) {
+    #cabecalho #titulo {
+        padding: 4%;
+        padding-top: 6%;
+    }
 
+    #conteudo .sites {
+        flex-direction: column;
+        gap: 2em;
+        border-radius: 2em;
+    }
+    #conteudo .sites .tela .btn-responsive {
+        margin-top: 0.5em;
+    }
+    #conteudo .sites .tela .btn-responsive .botoes {
+        gap: 1.4em;
+    }
+    #conteudo .sites .tela {
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+    #conteudo .sites .tela .site iframe {
+        width: 90%;
+    }
+    #conteudo .sites .tela .site .btn-site {
+        margin-top: 0.6em;
+    }
+    #conteudo .sites .tela .site .btn-site a {
+        padding: 15px;
+        padding-bottom: 12px;
+        font-size: 0.8em;
+        gap: 0.6em;
+        line-height: 1.4em;
+    }
+    #conteudo .sites #btn-sites {
+        max-height: max-content;
+        gap: 1em;
+        margin: auto;
+        margin-bottom: 0.6em;
+    }
+    #conteudo .sites #btn-sites .icone {
+        padding: 0.8em;
+        padding-bottom: 0.7em;
+    }
+
+    #conteudo .videos-a-ver .capas.cimas .video, 
+    #conteudo .videos-a-ver .capas.baixas .video {
+        align-items: center;
+        flex-direction: column;
+        gap: 0;
+    }
+    #conteudo .videos-a-ver .capas.cimas .video figcaption, 
+    #conteudo .videos-a-ver .capas.baixas .video figcaption {
+        margin: 0;
+        box-sizing: content-box;
+    }
+    #conteudo .videos-a-ver .capas.cimas .video figcaption, 
+    #conteudo .videos-a-ver .capas.cimas .video figcaption:hover, 
+    #conteudo .videos-a-ver .capas.cimas .video figcaption:active {
+        border-radius: 0 0 1.5em 1.5em;
+    }
+    #conteudo .videos-a-ver .capas.baixas .video figcaption, 
+    #conteudo .videos-a-ver .capas.baixas .video figcaption:hover, 
+    #conteudo .videos-a-ver .capas.baixas .video figcaption:active {
+        border-radius: 1.5em 1.5em 0 0;
+        padding: 5% 2% 2%;
+    }
+    #conteudo .videos-a-ver .igual.cimas {
+        border-radius: 1.5em 1.5em 0 0;
+    }
+    #conteudo .videos-a-ver .igual.baixa {
+        border-radius: 0 0 1.5em 1.5em ;
+    }
+    #conteudo .videos-a-ver .capas .video:hover,
+    #conteudo .videos-a-ver .capas .video:hover .igual {
+        box-shadow: 0px 0px 30px 1px var(--rosa);
+    }
+    #conteudo .videos-a-ver .capas .video:active,
+    #conteudo .videos-a-ver .capas .video:active .igual {
+        box-shadow: 0px 0px 30px 1px var(--rosa-escuro);
+    }
+    #conteudo .videos-a-ver .capas .video:hover figcaption {
+        color: white;
+        background-color: var(--rosa);
+        transition-duration: .2s;
+    }
+    #conteudo .videos-a-ver .capas .video:active figcaption {
+        background-color: var(--rosa-claro);
+        color: var(--cinza-claro);
+    }
+}
+
+/* Dispositivos Em Pé */
+@media screen and (max-width: 1200px) and (orientation: portrait) {
     body {
         font-size: 5vw;
     }
@@ -75,13 +166,12 @@
     }
     #conteudo .parte .retangulo {
         width: 85vw;
-        padding: 3.5%;
+        padding: 1em 0.5em 1.3em;
+        margin-bottom: 0.8em;
     }
     #conteudo .parte .retangulo h2 {
-        padding-bottom: 1%;
-    }
-    #conteudo .parte .retangulo .feituras:last-child {
         padding-bottom: 2%;
+        font-size: 1.35em;
     }
     #conteudo .parte .retangulo p {
         padding: 3%;
@@ -91,60 +181,25 @@
         font-size: 1.2em;
         width: auto;
     }
-    #conteudo .parte .retangulo.direito h2, 
-    #conteudo .parte .retangulo.direito .feituras {
-        text-align: center;
-        width: auto;
-    }
-    #conteudo .parte .retangulo.esquerdo h2, 
+    #conteudo .parte .retangulo.direito h2,
+    #conteudo .parte .retangulo.direito .feituras,
+    #conteudo .parte .retangulo.esquerdo h2,
     #conteudo .parte .retangulo.esquerdo .feituras {
         text-align: center;
         width: auto;
     }
+    #conteudo .parte .retangulo .feituras li:last-child {
+        padding-bottom: 0.1em;
+    }
     #conteudo .parte .retangulo.direito p, 
     #conteudo .parte .retangulo.esquerdo p {
         padding: 3%;
-        text-align: justify;
+        font-size: 1.1em;
+        text-align: center;
     }
 
-    #conteudo .sites {
-        flex-direction: column;
-        gap: 2em;
-        border-radius: 2em;
-    }
-    #conteudo .sites .tela .btn-responsive {
-        margin-top: 0.5em;
-    }
-    #conteudo .sites .tela .btn-responsive .botoes {
-        gap: 1.4em;
-    }
-    #conteudo .sites .tela {
-        flex-direction: column;
-        align-items: center;
-        gap: 2em;
-    }
-    #conteudo .sites .tela .site iframe {
-        width: 90%;
-    }
-    #conteudo .sites .tela .site .btn-site {
-        margin-top: 0.6em;
-    }
-    #conteudo .sites .tela .site .btn-site a {
-        padding: 15px;
-        padding-bottom: 12px;
-        font-size: 0.8em;
-        gap: 0.6em;
-        line-height: 1.4em;
-    }
     #conteudo .sites #btn-sites {
         max-width: 90vw;
-        max-height: max-content;
-        gap: 1em;
-        margin-bottom: 0.6em;
-    }
-    #conteudo .sites #btn-sites .icone {
-        padding: 0.8em;
-        padding-bottom: 0.7em;
     }
     #conteudo .sites #btn-sites .icone img {
         width: 3.6em;
@@ -164,51 +219,6 @@
         gap: 3em;
         margin: auto 15%;
     }
-    #conteudo .videos-a-ver .capas.cimas .video, 
-    #conteudo .videos-a-ver .capas.baixas .video {
-        align-items: center;
-        flex-direction: column;
-        gap: 0;
-    }
-    #conteudo .videos-a-ver .capas.cimas .video figcaption, 
-    #conteudo .videos-a-ver .capas.baixas .video figcaption {
-        margin: 0;
-        box-sizing: content-box;
-    }
-    #conteudo .videos-a-ver .capas.cimas .video figcaption, 
-    #conteudo .videos-a-ver .capas.cimas .video figcaption:hover, 
-    #conteudo .videos-a-ver .capas.cimas .video figcaption:active {
-        border-radius: 0 0 1.5em 1.5em;
-    }
-    #conteudo .videos-a-ver .capas.baixas .video figcaption, 
-    #conteudo .videos-a-ver .capas.baixas .video figcaption:hover, 
-    #conteudo .videos-a-ver .capas.baixas .video figcaption:active {
-        border-radius: 1.5em 1.5em 0 0;
-        padding: 5% 2% 2%;
-    }
-    #conteudo .videos-a-ver .igual.cimas {
-        border-radius: 1.5em 1.5em 0 0;
-    }
-    #conteudo .videos-a-ver .igual.baixa {
-        border-radius: 0 0 1.5em 1.5em ;
-    }
-    #conteudo .videos-a-ver .capas .video:hover,
-    #conteudo .videos-a-ver .capas .video:hover .igual {
-        box-shadow: 0px 0px 30px 1px var(--rosa);
-    }
-    #conteudo .videos-a-ver .capas .video:active,
-    #conteudo .videos-a-ver .capas .video:active .igual {
-        box-shadow: 0px 0px 30px 1px var(--rosa-escuro);
-    }
-    #conteudo .videos-a-ver .capas .video:hover figcaption {
-        color: white;
-        background-color: var(--rosa);
-        transition-duration: .2s;
-    }
-    #conteudo .videos-a-ver .capas .video:active figcaption {
-        background-color: var(--rosa-claro);
-        color: var(--cinza-claro);
-    }
 
     #conteudo .imagens {
         margin: 5% auto;
@@ -216,6 +226,7 @@
     #conteudo .imagens .iguali {
         width: 80%;
     }
+
     #conteudo .topo {
         width: 20%;
         right: 4%;
@@ -260,8 +271,58 @@
 
 }
 
-/* Especificidades de cada tela */
-@media only screen and (max-width: 600px) {
+/* Dispostivos Deitados */
+@media screen and (max-width: 1200px) and (orientation: landscape) {
+    body {
+        font-size: 2vw;
+    }
+
+    #cabecalho .menu {
+        top: 8%;
+        left: 2%;
+    }
+
+    #conteudo .parte .retangulo p {
+        width: 50vw;
+    }
+
+    #conteudo .sites #btn-sites {
+        max-width: 70vw;
+    }
+    #conteudo .sites #btn-sites .icone img {
+        width: 3em;
+    }
+
+
+    #conteudo .videos-a-ver .capas.cimas, 
+    #conteudo .videos-a-ver .capas.baixas {
+        justify-content: center;
+        gap: 4em;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 1em;
+    }
+    #conteudo .videos-a-ver .capas.cimas .video figcaption, 
+    #conteudo .videos-a-ver .capas.baixas .video figcaption {
+        width: 96%;
+    }
+    #conteudo .videos-a-ver .capas .igual {
+        height: 100%;
+        width: 100%;
+    }
+
+    #conteudo .topo {
+        width: 10%;
+        right: 4%;
+    }
+
+    #final #contatos .cima a .la {
+        height: 9vh;
+    }   
+}
+
+/* Especificidades de cada tela em pé */
+@media only screen and (max-width: 600px) and (orientation: portrait) {
 
     #conteudo .videos-a-ver br {
         display: inline;
@@ -280,7 +341,7 @@
     }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 769px) {
+@media only screen and (min-width: 600px) and (max-width: 769px) and (orientation: portrait) {
 
     #conteudo .videos-a-ver .capas.cimas .video figcaption, 
     #conteudo .videos-a-ver .capas.baixas .video figcaption {
@@ -297,7 +358,7 @@
     }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 992px) {
+@media only screen and (min-width: 769px) and (max-width: 992px) and (orientation: portrait)  {
 
     #conteudo .videos-a-ver .capas.cimas .video figcaption, 
     #conteudo .videos-a-ver .capas.baixas .video figcaption {
@@ -313,7 +374,7 @@
     }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+@media only screen and (min-width: 992px) and (max-width: 1200px) and (orientation: portrait) {
 
     #conteudo .videos-a-ver .capas.cimas .video figcaption, 
     #conteudo .videos-a-ver .capas.baixas .video figcaption {
