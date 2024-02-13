@@ -113,6 +113,7 @@
         width: fit-content;
         text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.048);
     }
+
     #cabecalho .nav {
         font-size: 3.5vw;
     }
@@ -126,7 +127,7 @@
         padding-top: 3.5%;
     }
     
-    #areas {
+    #cabecalho #areas {
         font-size: 0.9em;
         padding: 8% 6% 8% 4%;
     }
@@ -280,6 +281,13 @@
     #cabecalho .menu {
         top: 8%;
         left: 2%;
+    }
+
+    #cabecalho #areas {
+        position: absolute;
+        height: max-content;
+        padding-bottom: 2em;
+        border-bottom-right-radius: 1em;
     }
 
     #conteudo .parte .retangulo p {

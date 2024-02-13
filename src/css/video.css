@@ -71,8 +71,8 @@ a:focus-visible .botao {
 }
 
 /* A responsividade da página */
-/* Características padrões das menores telas */
-@media screen and (max-width: 1200px) {
+/* Características padrões das menores telas em pé */
+@media screen and (max-width: 1200px) and (orientation: portrait) {
     .nome {
         width: auto;
         margin: 5% 9%;
@@ -87,8 +87,8 @@ a:focus-visible .botao {
     }
 }
 
-/* Características específicas das menores telas */
-@media screen and (max-width: 600px) {
+/* Características específicas das menores telas em pé */
+@media screen and (max-width: 600px) and (orientation: portrait) {
     .igual {
         width: 88%;
     }
@@ -103,7 +103,7 @@ a:focus-visible .botao {
     }
 }
 
-@media screen and (min-width: 600px) and (max-width: 768px) {
+@media screen and (min-width: 600px) and (max-width: 768px) and (orientation: portrait) {
     .igual {
         width: 86%;
     }
@@ -118,7 +118,7 @@ a:focus-visible .botao {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) and (orientation: portrait) {
     .igual {
         width: 86%;
     }
@@ -134,8 +134,20 @@ a:focus-visible .botao {
 
 }
 
+/* Dispositivos deitados */
+@media screen and (max-width: 1200px) and (orientation: landscape) {
+    .nome {
+        font-size: 3vw;
+        margin: 2% auto;
+    }
+    .botao {
+        width: 8%;
+        margin: 1% 1.5% 2%;
+    }
+}
+
 /* Características específicas das maiores telas */
-@media screen and (min-height: 620px) {
+@media screen and (min-height: 620px) and (min-width: 1200px) {
     body {
         display: flex;
         flex-direction: column;

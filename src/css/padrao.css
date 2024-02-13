@@ -91,7 +91,7 @@ body {
 }
 
 /* Menu de páginas */
-#areas {
+#cabecalho #areas {
     position: fixed;
     height: 100vh;
     width: max-content;
@@ -111,18 +111,18 @@ body {
     transition-duration: .8s;
 }
 
-#areas h2 {
+#cabecalho #areas h2 {
     margin-bottom: 10%;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.048);
 }
 
-#areas ul {
+#cabecalho #areas ul {
     display: flex;
     flex-direction: column;
     gap: 1.3em;
 }
 
-#areas ul a {
+#cabecalho #areas ul a {
     box-sizing: content-box;
     display: none;
     color: var(--azul-claro);
@@ -132,21 +132,21 @@ body {
     font-weight: bolder;
     transition-duration: .6s;
 }
-#areas ul a:hover,
-#areas ul a:focus-visible {
+#cabecalho #areas ul a:hover,
+#cabecalho #areas ul a:focus-visible {
     color: var(--cinza-claro);
     background-color: var(--azul-escuro);
     transition-duration: .6s;
     border-radius: 1em;
     padding: 4% 3% 3%;
 }
-#areas ul a:active {
+#cabecalho #areas ul a:active {
     color: var(--cinza-claro);
     background-color: var(--azul-claro);
     transition-duration: .1s;
 }
 
-#areas .fechar-menu {
+#cabecalho #areas .fechar-menu {
     display: none;
     justify-content: center;
     background-color: var(--azul-escuro);
@@ -159,11 +159,11 @@ body {
     border-radius: 1em;
     transition-duration: .4s;
 }
-#areas .fechar-menu:hover,
-#areas .fechar-menu:focus-visible {
+#cabecalho #areas .fechar-menu:hover,
+#cabecalho #areas .fechar-menu:focus-visible {
     background-color: var(--azul-claro);
 }
-#areas .fechar-menu:active {
+#cabecalho #areas .fechar-menu:active {
     background-color: var(--azul-transparente);
     color: var(--azul-claro);
     transition: .2s;
