@@ -290,10 +290,19 @@
         border-bottom-right-radius: 1em;
     }
 
+    #conteudo .parte .circulo {
+        width: 28%;
+    }
+    #conteudo .parte .retangulo .feituras#identidade {
+        width: max-content;
+    }
     #conteudo .parte .retangulo p {
         width: 50vw;
     }
 
+    #conteudo .sites .tela .site iframe {
+        height: 95vh;
+    }
     #conteudo .sites #btn-sites {
         max-width: 70vw;
     }
@@ -331,7 +340,6 @@
 
 /* Especificidades de cada tela em pé */
 @media only screen and (max-width: 600px) and (orientation: portrait) {
-
     #conteudo .videos-a-ver br {
         display: inline;
     }
@@ -350,7 +358,6 @@
 }
 
 @media only screen and (min-width: 600px) and (max-width: 769px) and (orientation: portrait) {
-
     #conteudo .videos-a-ver .capas.cimas .video figcaption, 
     #conteudo .videos-a-ver .capas.baixas .video figcaption {
         width: 90%;
@@ -367,7 +374,6 @@
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) and (orientation: portrait)  {
-
     #conteudo .videos-a-ver .capas.cimas .video figcaption, 
     #conteudo .videos-a-ver .capas.baixas .video figcaption {
         width: 96%;
@@ -383,7 +389,6 @@
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) and (orientation: portrait) {
-
     #conteudo .videos-a-ver .capas.cimas .video figcaption, 
     #conteudo .videos-a-ver .capas.baixas .video figcaption {
         width: 80%;
@@ -400,9 +405,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-
     #conteudo .parte .retangulo .feituras#identidade {
         width: max-content;
     }
-
 }
