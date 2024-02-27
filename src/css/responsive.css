@@ -149,7 +149,7 @@
         line-height: 1.8em;
     }
     #conteudo .txt p {
-        margin: 3% 0;
+        margin: 4% auto;
     }
     #conteudo .txt strong {
         padding: 1.4% 1.6%;
@@ -173,9 +173,6 @@
     #conteudo .parte .retangulo h2 {
         padding-bottom: 2%;
         font-size: 1.35em;
-    }
-    #conteudo .parte .retangulo p {
-        padding: 3%;
     }
     #conteudo .parte .retangulo p, 
     #conteudo .parte .retangulo .feituras {
