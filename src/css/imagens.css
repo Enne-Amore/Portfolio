@@ -14,9 +14,8 @@
     max-height: 90vh;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.212);
     border-radius: 1em;
-    transition: .4s ease-out;
+    transition: .2s ease;
 }
 #conteudo .imagens .iguali:hover {
-    transform: scale(1.02);
-    box-shadow: 0px 0px 10px 0px var(--rosa-claro);
+    box-shadow: 0px 0px 15px 0px var(--rosa-claro);
 }

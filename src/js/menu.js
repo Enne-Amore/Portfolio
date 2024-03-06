@@ -1,3 +1,7 @@
+// Chamando as tags de todos os escopos
+const pages_opt = document.querySelectorAll(".page")
+const areas = document.getElementById("areas")
+
 // Abrir o menu
 // Chamando a tag com uma constante
 const menu = document.getElementById('menu')
@@ -11,7 +15,7 @@ menu.addEventListener('click', () => {
         menu.style.boxShadow = '1px 1px 1px 1px #a479c0'
 
         // Nomes das páginas navegáveis por tab
-        for (let i = 0 ; i <= 5 ; i++) {
+        for (let i = 0 ; i < pages_opt.length ; i++) {
             let a = document.getElementsByTagName('a')[i]
             a.style.display = 'flex'
             btnFecharMenu.style.display = 'flex'
@@ -25,8 +29,8 @@ menu.addEventListener('keypress', (tecla) => {
         tecla.target.click()
 
         // Deixando a primeira opção do menu focalizada ao abrí-lo
-        const inicio = document.getElementsByTagName('a')[0]
-        inicio.focus()
+        const page_opt1 = document.querySelector(".page")
+        page_opt1.focus()
 
     }
 })
@@ -54,7 +58,7 @@ function sairDoMenu() {
     menu.style.boxShadow = '0px 0px 0px 0px #a479c0'
 
     // Nomes das páginas não navegáveis por tab
-    for (let i = 0 ; i <= 5 ; i++) {
+    for (let i = 0 ; i < pages_opt.length ; i++) {
         let a = document.getElementsByTagName('a')[i]
         a.style.display = 'none'
         btnFecharMenu.style.display = 'none'

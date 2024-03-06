@@ -280,13 +280,6 @@
         left: 2%;
     }
 
-    #cabecalho #areas {
-        position: absolute;
-        height: max-content;
-        padding-bottom: 2em;
-        border-bottom-right-radius: 1em;
-    }
-
     #conteudo .parte .circulo {
         width: 28%;
     }

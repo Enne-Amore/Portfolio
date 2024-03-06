@@ -6,17 +6,6 @@ body {
     max-width: 100vw;
     height: auto;
 }
-/* Variáveis para cores */
-:root {
-    --azul-claro: #7cc2ff;
-    --azul-escuro: #698bac;
-    --azul-transparente: #7cc2ff48;
-    --rosa-claro: #FFC8DD;
-    --rosa: #ff81b1;
-    --rosa-escuro: #ff609a;
-    --cinza-claro: #f8f8f8;
-    --roxo: #a479c0;
-}
 
 /* Cabeçalho */
 #cabecalho {
