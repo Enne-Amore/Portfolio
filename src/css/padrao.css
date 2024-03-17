@@ -274,24 +274,20 @@ body {
     width: 80%;
 }
 
-#final #contatos .table tbody tr td {
+#final #contatos .table .cima {
     border: 0.3em double var(--azul-claro);
-}
-
-#final #contatos .cima {
-    display: flex;
-    justify-content: center;
-    padding: 1%;
+    padding: 0.5em;
 }
 
 #final #contatos .cima a {
     display: flex;
     align-items: center;
-    gap: 3%;
+    justify-content: center;
+    gap: 0.5em;
     color: white;
     transition-duration: .6s;
     border-radius: 0.5em;
-    padding: 2%;
+    /* padding: 2%; */
 }
 
 #final #contatos .cima a .la {
@@ -349,7 +345,7 @@ body {
     border-radius: 0.4em;
     display: block;
     width: fit-content;
-    padding: 1%;
+    padding: 0.3em;
 }
 #final #autorias .list li a:hover,
 #final #autorias .list li a:focus-visible {

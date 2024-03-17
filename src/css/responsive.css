@@ -238,7 +238,7 @@
         font-size: 1.3em;
     }
     #final #contatos .table {
-        margin: auto auto 5%;
+        margin-bottom: 5%;
         display: flex;
         width: max-content;
     }
@@ -248,10 +248,8 @@
         flex-direction: column;
         text-align: left;
     }
-    #final #contatos .table tbody tr td {
+    #final #contatos .table .cima {
         padding: 0.3em;
-    }
-    #final #contatos .cima {
         display: flex;
     }
     #final #contatos .cima a .la {
