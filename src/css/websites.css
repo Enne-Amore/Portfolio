@@ -119,18 +119,18 @@
 #conteudo .sites #btn-sites .icone:not(.selecionado):hover,
 #conteudo .sites #btn-sites .icone:not(.selecionado):focus-visible {
     transform: translate(-5px, -5px);
-    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.082);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.082);
     outline: 2px dotted white;
 }
 
 #conteudo .sites #btn-sites .icone.selecionado {
     transform: translate(-5px, -5px);
-    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.082);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.082);
     outline: 2px solid white;
 }
 #conteudo .sites #btn-sites .icone.selecionado:hover,
 #conteudo .sites #btn-sites .icone.selecionado:focus-visible {
-    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.247);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.247);
     transform: translate(-8px, -8px);
 }
 
