@@ -66,5 +66,5 @@
 
 ## 🔧 Suporte
 
- Para me contatar como suporte, o meu email é EnneFofe10@gmail.com 
+ Para me contatar como suporte, o meu email é Enne.Pessoa@gmail.com 
 
