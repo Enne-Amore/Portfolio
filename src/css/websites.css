@@ -31,17 +31,25 @@
 
 #conteudo .sites .tela .btn-responsive .botoes {
     display: flex;
-    gap: 1em;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: .8em;
 }
 
 #conteudo .sites .tela .btn-responsive .botoes a {
+    display: flex;
+    align-items: center;
+    gap: .2em;
     background-color: var(--rosa-escuro);
     color: white;
     width: max-content;
     padding: 20px;
-    border-radius: 50%;
-    font-size: 1.3em;
+    border-radius: 2em;
     transition: .2s;
+}
+
+#conteudo .sites .tela .btn-responsive .botoes a .icone {
+    font-size: 1em;
 }
 
 #conteudo .sites .tela .site iframe {
@@ -61,7 +69,7 @@
 
 #conteudo .sites .tela .site .btn-site a {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 0.3em;
     background-color: var(--rosa-escuro);
@@ -71,7 +79,7 @@
     border: 1em;
     border-radius: 1em;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: 0.85em;
     font-weight: bolder;
     text-decoration: none;
