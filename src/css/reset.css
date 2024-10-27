@@ -29,6 +29,9 @@ button {
     background-color: transparent;
     cursor: pointer;
 }
+img {
+    user-select: none;
+}
 :focus {
     outline: 0;
 }
