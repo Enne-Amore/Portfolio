@@ -17,32 +17,93 @@
 
 ## ✅ Demonstração
 
- [Clique aqui para acessar o meu site](https://enne-amore.github.io/Portfolio/)
+ [Clique aqui para acessar o website](https://enne-amore.github.io/Portfolio/)
 
 
 ## 🚀 Tecnologias Utilizadas
 
- - HTML
- - CSS
- - JavaScript
- - ScrollReveal
+ <p align="left">
+   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" title="HTML" alt="HTML" width="40" height="40"/>
+   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" title="CSS" alt="CSS" width="40" height="40"/>
+   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>
+   <img src="https://scrollrevealjs.org/img/logomark.svg" title="ScrollReveal" alt="ScrollReveal" width="40" height="40">
+ </p>
 
 
-## 🌈 Documentação de cores
+## 📂 Estrutura do Projeto
 
-| Cor                  | Hexadecimal                                                              |
-| -------------------- | ------------------------------------------------------------------------ |
-| Azul Clara           | ![#7cc2ff](https://via.placeholder.com/10/7cc2ff?text=+) #7cc2ff         |
-| Azul Escura          | ![#698bac](https://via.placeholder.com/10/698bac?text=+) #698bac         |
-| Azul Transparente    | ![#7cc2ff48](https://via.placeholder.com/10/7cc2ff48?text=+) #7cc2ff48   |
-| Rosa Clara           | ![#FFC8DD](https://via.placeholder.com/10/FFC8DD?text=+) #FFC8DD         |
-| Rosa Neutra          | ![#ff81b1](https://via.placeholder.com/10/ff81b1?text=+) #ff81b1         |
-| Rosa Escura          | ![#ff609a](https://via.placeholder.com/10/ff609a?text=+) #ff609a         |
-| Cinza Clara          | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8         |
-| Roxa                 | ![#a479c0](https://via.placeholder.com/10/a479c0?text=+) #a479c0         |
+ ```plaintext
+ Portfolio/
+ ├── css/                    # Arquivos CSS
+ │   ├── imagens.css       
+ │   ├── index.css  
+ │   ├── padrao.css
+ │   ├── reset.css
+ │   ├── responsive.css
+ │   ├── tela.css
+ │   ├── video.css
+ │   ├── videos.css
+ │   ├── websites.css
+ ├── docs/                   # Arquivos de documentação do projeto
+ │   ├── autorias.txt
+ ├── fonts/                  # Arquivo da fonte utilizada  
+ │   ├── open-dyslexic.ttf
+ ├── img-padrao/             # Imagens utilizadas 
+ ├── js/                     # Arquivos JavaScript
+ │   ├── aparecer.js  
+ │   ├── menu.js 
+ │   ├── sites.js 
+ │   ├── topo.js
+ ├── view/                   # Arquivos das páginas secundárias
+ ├── index.html              # Arquivo principal de renderização
+ ├── LICENSE                 # Arquivo de licença do projeto
+ ├── README.md
+ ```
 
 
-## 🌟 Referências De Uso
+## 🛠️ Instalação Local
+
+ 1. **Clone o repositório**
+ 
+ No terminal, rode o seguinte comando:
+ 
+ ```bash
+ git clone https://github.com/Enne-Amore/Portfolio.git
+ ```
+ 
+ 2. **Entre no arquivo "index.html"**
+ 
+ 3. **Rode o arquivo principal de renderização:**
+ 
+ Clique com o botão direito do mouse e selecione a seguinte opção:
+ 
+ ```bash
+ Open with Live Server
+ ```
+
+
+## 🌈 Documentação de Cores
+
+ | Cor               | Hexadecimal |
+ | ----------------- | ----------- |
+ | Azul Clara        | `#7cc2ff`   |
+ | Azul Escura       | `#698bac`   |
+ | Azul Transparente | `#7cc2ff48` |
+ | Rosa Clara        | `#FFC8DD`   |
+ | Rosa Neutra       | `#ff81b1`   |
+ | Rosa Escura       | `#ff609a`   |
+ | Cinza Clara       | `#f8f8f8`   |
+ | Roxa              | `#a479c0`   |
+
+
+## 🔤 Fonte Usada
+
+ - **Open Dyslexic**  
+   Exemplo de uso:
+   `font-family: "inclusao";`
+
+
+## 🌟 Referências de Uso
 
  - [Instagram ícones criados por Freepik - Flaticon](https://www.flaticon.com/br/icones-gratis/instagram)
  - [Discordia ícones criados por Freepik - Flaticon](https://www.flaticon.com/br/icones-gratis/discordia)
@@ -66,5 +127,5 @@
 
 ## 🔧 Suporte
 
- Para me contatar como suporte, o meu email é Enne.Pessoa@gmail.com 
+ Para me contatar como suporte, o meu email é [Enne.Pessoa@gmail.com](mailto:Enne.Pessoa@gmail.com)
 
