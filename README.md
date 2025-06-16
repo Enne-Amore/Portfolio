@@ -35,7 +35,7 @@
  No terminal, rode o seguinte comando:
  
  ```bash
- git clone https://github.com/Enne-Amore/coletive-nb.git
+ git clone https://github.com/Enne-Amore/Portfolio.git
  ```
  
  2. **Entre no arquivo "index.html"**
@@ -61,6 +61,13 @@
  | Rosa Escura       | `#ff609a`   |
  | Cinza Clara       | `#f8f8f8`   |
  | Roxa              | `#a479c0`   |
+
+
+## 🔤 Fontes Usadas
+
+ - **Open Dyslexic**  
+   Exemplo de uso:
+   `font-family: "inclusao";`
 
 
 ## 🌟 Referências de Uso
