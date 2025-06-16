@@ -28,6 +28,37 @@
  - ScrollReveal
 
 
+## 📂 Estrutura do Projeto
+
+ ```plaintext
+ Portfolio/
+ ├── css/                    # Arquivos CSS
+ │   ├── imagens.css       
+ │   ├── index.css  
+ │   ├── padrao.css
+ │   ├── reset.css
+ │   ├── responsive.css
+ │   ├── tela.css
+ │   ├── video.css
+ │   ├── videos.css
+ │   ├── websites.css
+ ├── docs/                   # Arquivos de documentação do projeto
+ │   ├── autorias.txt
+ ├── fonts/                  # Arquivo da fonte utilizada  
+ │   ├── open-dyslexic.ttf
+ ├── img-padrao/             # Imagens utilizadas 
+ ├── js/                     # Arquivos JavaScript
+ │   ├── aparecer.js  
+ │   ├── menu.js 
+ │   ├── sites.js 
+ │   ├── topo.js
+ ├── view/                   # Arquivos das páginas secundárias
+ ├── index.html              # Arquivo principal de renderização
+ ├── LICENSE                 # Arquivo de licença do projeto
+ ├── README.md
+ ```
+
+
 ## 🛠️ Instalação Local
 
  1. **Clone o repositório**
@@ -63,7 +94,7 @@
  | Roxa              | `#a479c0`   |
 
 
-## 🔤 Fontes Usadas
+## 🔤 Fonte Usada
 
  - **Open Dyslexic**  
    Exemplo de uso:
