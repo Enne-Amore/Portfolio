@@ -17,7 +17,7 @@
 
 ## ✅ Demonstração
 
- [Clique aqui para acessar o meu site](https://enne-amore.github.io/Portfolio/)
+ [Clique aqui para acessar o website](https://enne-amore.github.io/Portfolio/)
 
 
 ## 🚀 Tecnologias Utilizadas
@@ -28,21 +28,42 @@
  - ScrollReveal
 
 
-## 🌈 Documentação de cores
+## 🛠️ Instalação Local
 
-| Cor                  | Hexadecimal                                                              |
-| -------------------- | ------------------------------------------------------------------------ |
-| Azul Clara           | ![#7cc2ff](https://via.placeholder.com/10/7cc2ff?text=+) #7cc2ff         |
-| Azul Escura          | ![#698bac](https://via.placeholder.com/10/698bac?text=+) #698bac         |
-| Azul Transparente    | ![#7cc2ff48](https://via.placeholder.com/10/7cc2ff48?text=+) #7cc2ff48   |
-| Rosa Clara           | ![#FFC8DD](https://via.placeholder.com/10/FFC8DD?text=+) #FFC8DD         |
-| Rosa Neutra          | ![#ff81b1](https://via.placeholder.com/10/ff81b1?text=+) #ff81b1         |
-| Rosa Escura          | ![#ff609a](https://via.placeholder.com/10/ff609a?text=+) #ff609a         |
-| Cinza Clara          | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8         |
-| Roxa                 | ![#a479c0](https://via.placeholder.com/10/a479c0?text=+) #a479c0         |
+ 1. **Clone o repositório**
+ 
+ No terminal, rode o seguinte comando:
+ 
+ ```bash
+ git clone https://github.com/Enne-Amore/coletive-nb.git
+ ```
+ 
+ 2. **Entre no arquivo "index.html"**
+ 
+ 3. **Rode o arquivo principal de renderização:**
+ 
+ Clique com o botão direito do mouse e selecione a seguinte opção:
+ 
+ ```bash
+ Open with Live Server
+ ```
 
 
-## 🌟 Referências De Uso
+## 🌈 Documentação de Cores
+
+ | Cor               | Hexadecimal |
+ | ----------------- | ----------- |
+ | Azul Clara        | `#7cc2ff`   |
+ | Azul Escura       | `#698bac`   |
+ | Azul Transparente | `#7cc2ff48` |
+ | Rosa Clara        | `#FFC8DD`   |
+ | Rosa Neutra       | `#ff81b1`   |
+ | Rosa Escura       | `#ff609a`   |
+ | Cinza Clara       | `#f8f8f8`   |
+ | Roxa              | `#a479c0`   |
+
+
+## 🌟 Referências de Uso
 
  - [Instagram ícones criados por Freepik - Flaticon](https://www.flaticon.com/br/icones-gratis/instagram)
  - [Discordia ícones criados por Freepik - Flaticon](https://www.flaticon.com/br/icones-gratis/discordia)
@@ -66,5 +87,5 @@
 
 ## 🔧 Suporte
 
- Para me contatar como suporte, o meu email é Enne.Pessoa@gmail.com 
+ Para me contatar como suporte, o meu email é [Enne.Pessoa@gmail.com](mailto:Enne.Pessoa@gmail.com)
 
