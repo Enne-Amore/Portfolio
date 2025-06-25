@@ -7,10 +7,10 @@ body {
     font-size: 1.8vw;
 }
 body#meus-videos{
-    background: url(../img-padrao/fundo-colorido-claro.jpg) center;
+    background: url(../img/fundo-colorido-claro.jpg) center;
 }
 body#inspiracoes-audiovisuais {
-    background: url(../img-padrao/ceu-rosa.jpg) bottom;
+    background: url(../img/ceu-rosa.jpg) bottom;
 }
 body#meus-videos, body#inspiracoes-audiovisuais {
     background-attachment: fixed;

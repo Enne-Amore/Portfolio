@@ -1,10 +1,21 @@
 
 # 🌸 Meu Portfólio
 
- Um site web que fala sobre mim mesme, minhas criações, inspirações e apreço pela diversidade.
+ Um site web que fala sobre mim mesme, minhas criações e meu apreço pela diversidade.
 
 
-## 🪄 Funcionalidades
+## 🌐 Aplicação Hospedada
+
+ [Clique aqui para acessar o website](https://enne-amore.github.io/Portfolio/)
+
+
+## 🎞️ Pré-visualização
+
+ <img src="img/preview.gif" alt="Pré-visualização do site" width="340" height="200">
+
+
+
+## ⚡ Funcionalidades
 
  - Menu de navegação por páginas abrível e fechável
  - Barra horizontal de navegação por dentro da página 
@@ -15,16 +26,11 @@
  - Botão de voltar ao topo da tela
 
 
-## ✅ Demonstração
-
- [Clique aqui para acessar o website](https://enne-amore.github.io/Portfolio/)
-
-
 ## 🚀 Tecnologias Utilizadas
 
  <p align="left">
    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" title="HTML" alt="HTML" width="40" height="40"/>
-   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" title="CSS" alt="CSS" width="40" height="40"/>
+   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Official_CSS_Logo.svg/2048px-Official_CSS_Logo.svg.png" title="CSS" alt="CSS" width="40" height="40"/>
    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>
    <img src="https://scrollrevealjs.org/img/logomark.svg" title="ScrollReveal" alt="ScrollReveal" width="40" height="40">
  </p>
@@ -46,9 +52,10 @@
  │   ├── websites.css
  ├── docs/                   # Arquivos de documentação do projeto
  │   ├── autorias.txt
+ │   ├── preview.mp4
  ├── fonts/                  # Arquivo da fonte utilizada  
  │   ├── open-dyslexic.ttf
- ├── img-padrao/             # Imagens utilizadas 
+ ├── img/                    # Imagens utilizadas 
  ├── js/                     # Arquivos JavaScript
  │   ├── aparecer.js  
  │   ├── menu.js 
@@ -82,21 +89,21 @@
  ```
 
 
-## 🌈 Documentação de Cores
+## 🌈 Cores
 
  | Cor               | Hexadecimal |
  | ----------------- | ----------- |
- | Azul Clara        | `#7cc2ff`   |
- | Azul Escura       | `#698bac`   |
- | Azul Transparente | `#7cc2ff48` |
+ | Azul Clara        | `#7CC2FF`   |
+ | Azul Escura       | `#698BAC`   |
+ | Azul Transparente | `#7CC2FF48` |
  | Rosa Clara        | `#FFC8DD`   |
- | Rosa Neutra       | `#ff81b1`   |
- | Rosa Escura       | `#ff609a`   |
- | Cinza Clara       | `#f8f8f8`   |
- | Roxa              | `#a479c0`   |
+ | Rosa Neutra       | `#FF81B1`   |
+ | Rosa Escura       | `#FF609A`   |
+ | Cinza Clara       | `#F8F8F8`   |
+ | Roxa              | `#A479C0`   |
 
 
-## 🔤 Fonte Usada
+## 🔤 Fontes Tipográficas
 
  - **Open Dyslexic**  
    Exemplo de uso:
